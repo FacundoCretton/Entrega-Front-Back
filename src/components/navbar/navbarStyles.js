@@ -89,7 +89,7 @@ export const CartStyled = styled.div`
     border-radius: 1rem;
     border: 1px solid white;
     color: white;
-    background-color: red;
+    background-color: orange;
     font-size: 0.9rem;
   }
 
