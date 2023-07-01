@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: 80%;
+  width: 80%; /* Cambia el ancho al 80% */
+  margin: 0 auto !important;
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.slide-title,
+.slide-text {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  z-index: 10;
+}
+
+.slide-text {
+  top: 65%;
+  font-size: 2rem;
+}
+
+.prev,
+.next {
+  color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin: -3rem 10rem 0;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.slider-container:hover .prev,
+.slider-container:hover .next {
+  color: black;
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+}
+
+.all-dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 85%;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: transparent;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider-container:hover .dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .active-dot {
+    background-color: rgba(255, 255, 255, 0.5);
+  } */
+
+.slider-container:hover .dot {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.slider-container:hover .active-dot {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.play-pause {
+  color: black;
+}
+
+/* .slide-image {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+  }
+  
+  .slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .slide-overlay:hover {
+    opacity: 1;
+  }
+  
+  .slide-title,
+  .slide-text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .slide-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .slide-button:hover {
+    background-color: #d32f2f;
+  } */
