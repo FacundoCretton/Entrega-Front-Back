@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Categories from "../Categories/Categories";
-import { ProductsContainer } from "./ProductCardStyled"; // Agrega la importación de ProductsContainer
+import { ProductsContainer } from "./ProductCardStyled"; 
 import ProductCard from "./ProductCard";
 import { useProductFilter } from "./ProductFilter";
 import LoadButtons from "./LoadButtons";
@@ -26,7 +26,7 @@ const AllProductsCards = () => {
         selectedCategory={selectedCategory}
       />
 
-      <ProductsContainer> {/* Agrega el ProductsContainer aquí */}
+      <ProductsContainer> 
         {visibleProducts.map((product) => (
           <ProductCard
             key={product.id}

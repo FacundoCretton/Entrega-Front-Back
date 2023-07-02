@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { products } from "../data/products";
+// import { products } from "../data/products";
+import {useSelector} from "react-redux"
 
 export const useProductFilter = (selectedCategory) => {
   const [visibleProductsCount, setVisibleProductsCount] = useState(3);
+  const products = useSelector(state => state.products.products)
+
 
   const filteredProducts = selectedCategory === "Todos"
     ? products

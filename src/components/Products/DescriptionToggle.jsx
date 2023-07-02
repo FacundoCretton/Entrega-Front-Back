@@ -26,7 +26,7 @@ const DescriptionToggle = ({ description }) => {
   return (
     <div>
       <span>{getDescriptionText()}</span>
-      {description.length > 100 && (
+      {description.length > 30 && (
         <ExpandSpan onClick={handleToggleExpand}>
           {expanded ? "Leer menos" : "Leer más"}
         </ExpandSpan>
