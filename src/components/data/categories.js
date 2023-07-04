@@ -5,18 +5,17 @@ import { FaBottleDroplet, FaJar } from "react-icons/fa6";
 import { GiCakeSlice } from "react-icons/gi";
 import { BsGridFill } from "react-icons/bs";
 
-
 export const categorias = [
   {
     id: 0,
     name: "Todos",
-    img: <BsGridFill />,
+    img: <BsGridFill/>,
     category: "Todos",
   },
   {
     id: 1,
     name: "Té",
-    img: <SiGitea />,
+    img: <SiGitea/> ,
     category: "Te",
   },
   {

@@ -49,3 +49,4 @@ export const ProductCardStyled = styled.div`
     font-size: 1.2rem;
   }
 `;
+

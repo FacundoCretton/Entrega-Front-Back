@@ -43,3 +43,4 @@ export const CategoryName = styled.div`
   font-size: 14px;
   text-align: center;
 `;
+

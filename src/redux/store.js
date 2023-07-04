@@ -32,13 +32,17 @@ const persistedReducer = persistReducer(persistConfig, reducers)
 
 
 //1 A este configureStore le pasamos  los reducers que vamos a usar y compartir con toda la app
-export const store = configureStore ({
-    reducer: persistedReducer
-
-
-});
-
+export const store = configureStore({
+    reducer: persistedReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: false,
+      }),
+  });
 
 //5 Acá exportamos el store y el persistor, una exporta la data en si y el otro persistir la data
+
+
+
 
 export const persistor = persistStore(store)

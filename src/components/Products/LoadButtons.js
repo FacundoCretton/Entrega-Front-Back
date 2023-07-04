@@ -1,21 +1,22 @@
 import React from "react";
-import { LoadMoreButton, LoadLessButton } from "./ProductButtons";
+import Button from "../UI/Button/Button";
+import { styled } from "styled-components";
 
-const LoadButtons = ({ visibleProductsCount, filteredProducts, handleLoadMore, handleLoadLess }) => {
-  return (
-    <>
-      {visibleProductsCount < filteredProducts.length ? (
-        <>
-          <LoadMoreButton onClick={handleLoadMore} />
-          {visibleProductsCount >= 6 && (
-            <LoadLessButton onClick={handleLoadLess} />
-          )}
-        </>
-      ) : (
-        <LoadLessButton onClick={handleLoadLess} />
-      )}
-    </>
-  );
+export const LoadMoreButton = ({ onClick }) => {
+  return <Button onClick={onClick}>Ver más</Button>;
 };
 
-export default LoadButtons;
+export const LoadLessButton = ({ onClick }) => {
+  return <Button onClick={onClick}>Ver menos</Button>;
+};
+
+
+export const LoadButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 20px
+  
+ 
+`;
+

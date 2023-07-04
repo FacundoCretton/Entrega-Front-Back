@@ -1,33 +1,44 @@
-import React, { useState } from "react";
-import Categories from "../Categories/Categories";
-import { ProductsContainer } from "./ProductCardStyled"; 
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { ProductsContainer } from "./ProductCardStyled";
 import ProductCard from "./ProductCard";
-import { useProductFilter } from "./ProductFilter";
-import LoadButtons from "./LoadButtons";
+import {LoadMoreButton, LoadLessButton, LoadButtonContainer} from "./LoadButtons";
+import { handleLoadMore, handleLoadLess } from "./ProductsController";
 
 const AllProductsCards = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Todos");
-  const {
-    visibleProducts,
-    filteredProducts,
-    visibleProductsCount,
-    handleLoadMore,
-    handleLoadLess,
-  } = useProductFilter(selectedCategory);
+  const products = useSelector((state) => state.products.products);
+  const selectedCategory = useSelector(
+    (state) => state.categories.selectedCategory
+  );
 
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
+  const [visibleProducts, setVisibleProducts] = useState(3);
+
+  let filteredProducts = products;
+
+  if (selectedCategory && selectedCategory !== "Todos") {
+    filteredProducts = products.filter(
+      (product) => product.category === selectedCategory
+    );
+  }
+
+  useEffect(() => {
+    setVisibleProducts(3); 
+  }, [selectedCategory]);
+  
+  const handleLoadMoreClick = () => {
+    handleLoadMore(visibleProducts, setVisibleProducts, filteredProducts.length);
   };
+
+  const handleLoadLessClick = () => {
+    handleLoadLess(visibleProducts, setVisibleProducts);
+  };
+
+  const visibleProductsData = filteredProducts.slice(0, visibleProducts);
 
   return (
     <>
-      <Categories
-        handleCategoryChange={handleCategoryChange}
-        selectedCategory={selectedCategory}
-      />
-
-      <ProductsContainer> 
-        {visibleProducts.map((product) => (
+      <ProductsContainer>
+        {visibleProductsData.map((product) => (
           <ProductCard
             key={product.id}
             img={product.img}
@@ -38,13 +49,14 @@ const AllProductsCards = () => {
           />
         ))}
       </ProductsContainer>
-
-      <LoadButtons
-        visibleProductsCount={visibleProductsCount}
-        filteredProducts={filteredProducts}
-        handleLoadMore={handleLoadMore}
-        handleLoadLess={handleLoadLess}
-      />
+      <LoadButtonContainer>
+          {visibleProducts < filteredProducts.length && (
+            <LoadMoreButton onClick={handleLoadMoreClick} />
+          )}
+          {visibleProducts > 3 && (
+            <LoadLessButton onClick={handleLoadLessClick} />
+          )}
+      </LoadButtonContainer>
     </>
   );
 };
