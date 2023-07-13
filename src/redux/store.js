@@ -5,6 +5,7 @@ import persistStore from 'redux-persist/lib/persistStore';
 // import productsReducer from './products/productsSlics';
 import categoriesReducer from './categories/categoriesSlice';
 import productsReducer from "./products/productsSlics"
+import cartReducer from './cart/cartSlide';
 
 
 
@@ -13,6 +14,7 @@ import productsReducer from "./products/productsSlics"
 const reducers = combineReducers({
     categories: categoriesReducer,
     products: productsReducer,
+    cart: cartReducer,
 });
 
 //3 Acá seteo la configuración de persistencia, que no es palabra reservada pero es habitual llamarla así
@@ -20,9 +22,11 @@ const persistConfig ={
 
     key:"root",
     storage: storage,
+    whitelist: ['cart']
     
     //key es el nombre con el que vamos a persistir los datos
     //storage es el tipo de almacenamiento que vamos a usar
+    //whitelist es un array con los nombres de los reducers que queremos persistir
 };
 
 

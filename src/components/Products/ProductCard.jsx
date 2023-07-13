@@ -3,9 +3,12 @@ import { ProductCardStyled, ImgContainer } from "./ProductCardStyled";
 import Button from "../UI/Button/Button";
 import { formatPrice } from "../../utils/formatPrice";
 import { getImagePath } from "../../utils/imageHelper"; 
+import {useDispatch} from "react-redux"
+import { addToCart } from "../../redux/cart/cartSlide";
 
 const ProductCard = ({ img, name, description, price, id }) => {
   const imagePath = getImagePath(img); 
+  const dispatch = useDispatch()
 
   return (
     <ProductCardStyled>
@@ -16,7 +19,7 @@ const ProductCard = ({ img, name, description, price, id }) => {
       <div className="product-info">
         {description}
         <p>{formatPrice(price)}</p>
-        <Button radius={"10"}>Agregar al carro</Button>
+        <Button onClick={()=>dispatch(addToCart({img, name, description, price, id}))} radius={"10"}>Agregar al carro</Button>
       </div>
     </ProductCardStyled>
   );

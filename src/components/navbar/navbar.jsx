@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { NavbarContainer, LogoStyle,NavbarMenu, NavbarMenuUl, NavbarItem, BarrsMenu, CartStyled  } from "./navbarStyles";
 import {GiHamburgerMenu} from "react-icons/gi";
 import CartIcon from "./Cart/CartIcon";
@@ -7,11 +6,10 @@ import ModalCart from "./Cart/ModalCart/ModalCart";
 
 
 const Navbar = () => {
-    const [hiddenCart, setHiddenCart] = useState(true);
 
     return (
         <NavbarContainer>
-            <ModalCart hiddenCart={hiddenCart} setHiddenCart={setHiddenCart} />
+            <ModalCart  />
             
                 <LogoStyle src="/Logo React.png" alt="logo" />
             
@@ -39,7 +37,7 @@ const Navbar = () => {
                 </NavbarMenuUl>
 
                 <CartStyled>
-                <CartIcon hiddenCart={hiddenCart} setHiddenCart={setHiddenCart} />
+                <CartIcon />
                 </CartStyled>
 
                 <BarrsMenu> <GiHamburgerMenu/> </BarrsMenu>

@@ -48,5 +48,9 @@ export const ProductCardStyled = styled.div`
     color: #666;
     font-size: 1.2rem;
   }
+  Button{
+    display: flex;
+    margin: auto;
+  }
 `;
 

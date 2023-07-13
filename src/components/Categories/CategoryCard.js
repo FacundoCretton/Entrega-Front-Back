@@ -3,19 +3,19 @@ import { Category, CategoryIcon, CategoryName } from "./StyledCategories";
 
 
 
-const CategoryCard = ({ categoria, handleCategoryChange, selectedCategory }) => {
+const CategoryCard = ({ categoria:{icon, name, category}, handleCategoryChange, selectedCategory }) => {
 
 
   return (
     <Category
-      onClick={() => handleCategoryChange(categoria.category)}
-      className={selectedCategory === categoria.category ? "active" : ""}
+      onClick={() => handleCategoryChange(category)}
+      className={selectedCategory === category ? "active" : ""}
     >
       <CategoryIcon>
-        {categoria.img}
+        {icon}
         
       </CategoryIcon>
-      <CategoryName>{categoria.name}</CategoryName>
+      <CategoryName>{name}</CategoryName>
     </Category>
     
   );

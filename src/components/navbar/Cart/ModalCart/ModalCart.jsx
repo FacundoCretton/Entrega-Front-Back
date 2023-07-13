@@ -8,7 +8,9 @@ import { formatPrice } from '../../../../utils/formatPrice';
 
 import Submit from '../../../UI/Submit/Submit';
 import Increase from '../../../UI/Incrense/Incrense';
-import ModalCartCard from './ModalCardCart';
+import ModalCardCart from './ModalCardCart';
+import {useDispatch, useSelector} from 'react-redux'
+import {clearCart, toggleCartHidden} from '../../../../redux/cart/cartSlide'
 
 import {
   ButtonContainerStyled,
@@ -26,14 +28,24 @@ import {
 } from './ModalCartStyles';
 import { ModalOverlayStyled } from '../../navbarStyles';
 
-const ModalCart = ({ hiddenCart, setHiddenCart }) => {
+const ModalCart = () => {
+  const hiddenCart = useSelector(state=>state.cart.hidden)
   const navigate = useNavigate();
+  const dispatch = useDispatch()
+  const {cartItems, shippingCost}= useSelector(state => state.cart)
+
+  const totalPrice = cartItems.reduce ((acc,item)=> {
+    return (acc += item.price * item.quantity)
+  }, 0)
+  const formattedShippingCost =
+  totalPrice > 2000 ? 'Gratis en compras superiores a $2000' : formatPrice(shippingCost);
+
 
   return (
     <>
       {!hiddenCart && (
         <ModalOverlayStyled
-          onClick={() => setHiddenCart(!hiddenCart)}
+          onClick={() => dispatch(toggleCartHidden())}
           isHidden={hiddenCart}
         />
       )}
@@ -50,7 +62,7 @@ const ModalCart = ({ hiddenCart, setHiddenCart }) => {
               <CloseButtonStyled
                 className='close__modal '
                 whileTap={{ scale: 0.95 }}
-                onClick={() => setHiddenCart(!hiddenCart)}
+                onClick={() => dispatch(toggleCartHidden())}
               >
                 <MdOutlineClose size='24px' />
               </CloseButtonStyled>
@@ -60,35 +72,51 @@ const ModalCart = ({ hiddenCart, setHiddenCart }) => {
               <TitleStyled>
                 <h1>Tus Productos</h1>
                 <Increase
-                  onClick={e => e.preventDefault()}
-                  bgColor='var(--magenta)'
-                  disabled='true'
+                  onClick={()=>dispatch(clearCart())}
+                  bgColor='blue'
+                  disabled={!cartItems.length}
                 >
                   <IoMdTrash />
                 </Increase>
               </TitleStyled>
 
               <ProductsWrapperStyled>
-                <ModalCartCard />
+                {
+                  cartItems.length ?(
+                    cartItems.map((item)=>{
+                      return <ModalCardCart {...item} key ={item.id} /> 
+
+                    })
+                   
+                  ) : (
+                    <p>No hay nada por aquí</p>
+                  )
+                }
+                
               </ProductsWrapperStyled>
+              
             </MainContainerStyled>
 
             <PriceContainerStyled>
               <SubtotalStyled>
                 <p>Subtotal:</p>
-                <span>{formatPrice(9000)}</span>
+                <span>{formatPrice(totalPrice)}</span>
               </SubtotalStyled>
               <EnvioStyled>
                 <p>Envio</p>
-                <span>{formatPrice(500)}</span>
+                <span>{formattedShippingCost}</span>
               </EnvioStyled>
               <hr />
               <TotalStyled>
                 <p>Total:</p>
-                <PriceStyled>{formatPrice(9000 + 500)}</PriceStyled>
+                <PriceStyled>{formatPrice(totalPrice+shippingCost)}</PriceStyled>
               </TotalStyled>
               <ButtonContainerStyled>
-                <Submit onClick={() => navigate('/checkout')}>
+                <Submit onClick={() => {navigate('/checkout');
+                dispatch(toggleCartHidden())}} //Para esconder el carrito al redirigir al checkout
+                disabled ={!cartItems.length}
+                
+                >
                   Iniciar pedido
                 </Submit>
               </ButtonContainerStyled>
@@ -96,8 +124,10 @@ const ModalCart = ({ hiddenCart, setHiddenCart }) => {
           </ContainerStyled>
         )}
       </AnimatePresence>
+      
     </>
   );
 };
 
 export default ModalCart;
+

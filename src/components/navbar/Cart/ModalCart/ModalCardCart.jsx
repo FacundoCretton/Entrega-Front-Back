@@ -15,27 +15,28 @@ import {
   PriceStyled,
   QuantityContainerStyled,
 } from './ModalCartStyles';
+import { getImagePath } from '../../../../utils/imageHelper';
 
-const ModalCardCart = () => {
+const ModalCardCart = ({img, name, price, id, quantity}) => {
+  const imagePath = getImagePath(img); 
+
   return (
     <ProductContainerStyled>
-      <img
-        src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648456/coding/NucbaZappi/Productos/muzza-mentolada_fmh9at.png'
-        alt='La Aco'
-      />
+        <img src={imagePath} alt={name} /> 
+
       <TextContainerStyled>
-        <CardTitleStyled>Te verde</CardTitleStyled>
+        <CardTitleStyled>{name}</CardTitleStyled>
         <TextStyled></TextStyled>
-        <PriceStyled>{formatPrice(3000)}</PriceStyled>
+        <PriceStyled>{formatPrice(price)}</PriceStyled>
       </TextContainerStyled>
       <QuantityContainerStyled>
         <Increase
-          bgColor='var(--btn-gradient-secondary)'
+          bgColor={'red'}
           onClick={e => e.preventDefault()}
         >
           <FaMinus />
         </Increase>
-        <Count>3</Count>
+        <Count>{quantity}</Count>
         <Increase onClick={e => e.preventDefault()}>
           <BsPlusLg />
         </Increase>
