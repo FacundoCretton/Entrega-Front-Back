@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addItemToCart, removeItemFromCart, resetShippingCost } from "./cartUtils";
-import { SHIPPING_COST, SHIPPING_PERCENTAGE, FREE_SHIPPING_THRESHOLD } from "../../utils/constants";
+import { addItemToCart, removeItemFromCart } from "./cartUtils";
+import {  SHIPPING_PERCENTAGE, FREE_SHIPPING_THRESHOLD } from "../../utils/constants";
 
 const INITIAL_STATE = {
   hidden: true,
@@ -34,10 +34,21 @@ const cartSlice = createSlice({
     },
 
     removeFromCart: (state, action) => {
+      const updatedCartItems = removeItemFromCart(state.cartItems, action.payload);
+
+      const totalPrice = updatedCartItems.reduce((acc, item) => {
+        return acc + item.price * item.quantity;
+      }, 0);
+
+      let shippingCost = totalPrice * (SHIPPING_PERCENTAGE); // Utilizamos el porcentaje inverso para cancelar el envío
+      if (totalPrice > FREE_SHIPPING_THRESHOLD) {
+        shippingCost = 0;
+      }
+
       return {
         ...state,
-        cartItems: removeItemFromCart(state.cartItems, action.payload),
-        shippingCost: resetShippingCost(state.cartItems, SHIPPING_COST),
+        shippingCost,
+        cartItems: updatedCartItems,
       };
     },
 

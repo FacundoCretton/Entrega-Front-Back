@@ -8,7 +8,7 @@ export const CardContainerStyled = styled.div`
 
   width: 85%;
 
-  background: var(--gray-bg);
+  background: #6B8E23CC;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
   padding: 1rem;
   border-radius: 15px;
@@ -45,9 +45,8 @@ export const PriceStyled = styled.span`
   font-weight: 700;
   font-size: 24px;
   line-height: 2rem;
-  background: var(--btn-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #666;
+ 
 `;
 
 export const QuantityContainerStyled = styled.span`
