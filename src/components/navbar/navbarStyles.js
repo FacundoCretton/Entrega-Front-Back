@@ -134,6 +134,34 @@ export const CartStyled = styled.div`
     margin-left: 5px;
   }
 `;
+export const ButtonBase = css`
+  position: relative;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: ${props => (props.isActive ? "#C2DAAF" : "rgba(107, 142, 35, 0.6)")};
+
+  &:hover {
+    background-color: ${props => (props.isActive ? "#AFCF94" : "rgba(107, 142, 35, 0.8)")};
+  }
+`;
+
+export const ActiveButton = css`
+  background-color: #AFCF94;
+  &:hover {
+    background-color: #C2DAAF;
+  }
+`;
+
+export const CustomButton = styled.button`
+  ${ButtonBase}
+  ${props => props.isActive && ActiveButton}
+`;
 
 export const BarrsMenu = styled.div`
   display: none;
