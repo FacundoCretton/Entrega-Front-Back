@@ -5,6 +5,7 @@ import AllProductsCards from './components/Products/AllProductsCards';
 import Routes from './redux/routes/routes';
 import Layout from './components/Layout/Layout'
 import Navbar from './components/navbar/navbar'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     
   
   </Layout>
+  <Footer/>
   </>
   );
 }

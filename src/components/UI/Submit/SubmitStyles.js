@@ -2,16 +2,17 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const ButtonSubmitStyled = styled(motion.button)`
-  padding: 0.8rem 1.5rem;
-  outline: none;
+  background-color: #c55f5f; 
+  color: #fff;
   border: none;
   border-radius: 10px;
-  background: var(--btn-gradient);
-  color: white;
-  text-transform: uppercase;
-  font-weight: 400;
+  padding: 10px 20px;
   cursor: pointer;
-  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: #8b4513; 
+  }
+
 
   &:disabled {
     cursor: not-allowed;

@@ -13,6 +13,7 @@ import {
   HrStyled,
   TotalStyled,
   PriceTotalStyled,
+  PClearStyled,
 } from './ProductsCkeckoutStyles';
 
 const ProductsCheckout = ({cartItems, shippingCost, price}) => {
@@ -29,7 +30,7 @@ const ProductsCheckout = ({cartItems, shippingCost, price}) => {
           
         )
         : (
-          <p>Nada por aquí</p>
+          <PClearStyled>Nada por aquí</PClearStyled>
         )
       }
 

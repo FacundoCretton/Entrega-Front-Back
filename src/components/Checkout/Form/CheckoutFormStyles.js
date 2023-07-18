@@ -11,19 +11,19 @@ export const Formik = styled(FormikContainer)`
   flex-wrap: wrap;
   flex-direction: column;
 `;
+
 export const Form = styled(FormikForm)`
   display: flex;
   flex-wrap: wrap;
-  background: #6B8E23CC;
+  background: #D3D3D3;
   justify-content: center;
   border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;
 
 export const TituloH2 = styled.h2`
-  color: black;
+  color: #B5651D; 
   text-align: center;
   margin-bottom: 1rem;
-
-
-
-`
+`;

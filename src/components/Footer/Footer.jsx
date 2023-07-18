@@ -1,48 +1,68 @@
-import { FLFli, FLFul, FooterContainer, FooterLeftFraction } from "./FooterStyles";
+import React from 'react';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaNewspaper, FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
+import {
+  FooterContainer,
+  FooterContent,
+  FooterLeftFraction,
+  FLFul,
+  FLFli,
+  FooterLogo,
+  FooterLogoImg,
+  FooterRedesSocialesContainer,
+  FooterRedSocialIcon,
+  FooterLinks,
+  FooterLink,
+  FooterSeparator,
+  FooterCopyRight,
+} from './FooterStyles';
 
-
-const Footer =() =>{
-<FooterContainer>
-  <FooterLeftFraction>
-        <FLFul>
+const Footer = () => {
+  return (
+    <FooterContainer>
+      <FooterContent>
+        <FooterLeftFraction>
+          <FLFul>
             <FLFli>
-                <i class="fas fa-map-marker-alt"></i>
-                <span>San Martin 12399</span>
+              <FaMapMarkerAlt />
+              <span>San Martin 12399</span>
             </FLFli>
             <FLFli>
-                <i class="fas fa-envelope"></i>
-                <span>NuevoMundo@agencia.com</span>
+              <FaEnvelope />
+              <span>NuevoMundo@agencia.com</span>
             </FLFli>
             <FLFli>
-                <i class="fas fa-phone"></i>
-                <span>+54911653476</span>
-            </FLFli>;
+              <FaPhone />
+              <span>+54911653476</span>
+            </FLFli>
             <FLFli>
-             <i class="fas fa-newspaper"></i>
-                <span>Últimas novedades</span>
-            </FLFli>;
-        </FLFul>
-    </FooterLeftFraction>
-  <div class="footer-logo">
-    <img src="./Assets/Img/Logo-Actualizado.svg" alt="Logo">
-  </div>
-  <div class="footer-redes-sociales-container">
-    <a href="#"><i class="fa fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fa fab fa-instagram"></i></a>
-    <a href="#"><i class="fa fab fa-youtube"></i></a>
-    <a href="#"><i class="fa fab fa-twitter"></i></a>
-  </div>
-  <div class="footer-links">
-    <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </div>
-</FooterContainer>
+              <FaNewspaper />
+              <span>Últimas novedades</span>
+            </FLFli>
+          </FLFul>
+        </FooterLeftFraction>
+        <FooterLogo>
+          <FooterLogoImg src="/Logo React.png" alt="logo" />
+        </FooterLogo>
+        <FooterRedesSocialesContainer>
+        <a href="https://www.facebook.com/"><FooterRedSocialIcon facebook><FaFacebookF /></FooterRedSocialIcon></a>
+          <a href="https://www.instagram.com/"><FooterRedSocialIcon instagram><FaInstagram /></FooterRedSocialIcon></a>
+          <a href="https://www.youtube.com/"><FooterRedSocialIcon youtube><FaYoutube /></FooterRedSocialIcon></a>
+          <a href="https://www.twitter.com/"><FooterRedSocialIcon twitter><FaTwitter /></FooterRedSocialIcon></a>
+        </FooterRedesSocialesContainer>
+        <FooterLinks>
+          <ul>
+            <li><FooterLink href="#">Inicio</FooterLink></li>
+            <li><FooterLink href="#">Servicios</FooterLink></li>
+            <li><FooterLink href="#">Contacto</FooterLink></li>
+          </ul>
+        </FooterLinks>
+      </FooterContent>
+      <FooterSeparator />
+      <FooterCopyRight>
+        <p>© 2023 La Despensa de la Abuela. Todos los derechos reservados.</p>
+      </FooterCopyRight>
+    </FooterContainer>
+  );
+};
 
-<div class="footer-copyright">
-  <p>© 2023 Nuevo Mundo. Todos los derechos reservados.</p>
-</div>
-</footer>
-}
+export default Footer;

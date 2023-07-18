@@ -6,8 +6,7 @@ import persistStore from 'redux-persist/lib/persistStore';
 import categoriesReducer from './categories/categoriesSlice';
 import productsReducer from "./products/productsSlics"
 import cartReducer from './cart/cartSlide';
-
-
+import userReducer from "./user/userSlice";
 
 
 //2= Acá seteo los reducers
@@ -15,6 +14,7 @@ const reducers = combineReducers({
     categories: categoriesReducer,
     products: productsReducer,
     cart: cartReducer,
+    user: userReducer,
 });
 
 //3 Acá seteo la configuración de persistencia, que no es palabra reservada pero es habitual llamarla así
@@ -22,7 +22,7 @@ const persistConfig ={
 
     key:"root",
     storage: storage,
-    whitelist: ['cart']
+    whitelist: ['cart', 'user']
     
     //key es el nombre con el que vamos a persistir los datos
     //storage es el tipo de almacenamiento que vamos a usar
@@ -43,6 +43,8 @@ export const store = configureStore({
         serializableCheck: false,
       }),
   });
+
+  //el middleware es para manejar las funciones asincrónicas. Es un manejador de data entre la salida de la data y la entrada de la data. En este caso, el serializableCheck es para que no nos tire error cuando persistimos la data. SIEMPRE SE HACE PARA MANEJAR LA DATA ASINCRÓNICA EN REDUX
 
 //5 Acá exportamos el store y el persistor, una exporta la data en si y el otro persistir la data
 
