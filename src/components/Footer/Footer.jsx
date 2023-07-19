@@ -6,8 +6,6 @@ import {
   FooterLeftFraction,
   FLFul,
   FLFli,
-  FooterLogo,
-  FooterLogoImg,
   FooterRedesSocialesContainer,
   FooterRedSocialIcon,
   FooterLinks,
@@ -28,7 +26,7 @@ const Footer = () => {
             </FLFli>
             <FLFli>
               <FaEnvelope />
-              <span>NuevoMundo@agencia.com</span>
+              <span>LaDespensadelaAbuela101@gmail.com</span>
             </FLFli>
             <FLFli>
               <FaPhone />

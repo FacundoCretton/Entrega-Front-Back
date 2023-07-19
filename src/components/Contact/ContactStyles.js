@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const ContactSection = styled.section`
   display: flex;
-  /* padding: 70px 30px; */
   width: 100%;
   justify-content: space-around;
   color: white;
@@ -13,9 +12,17 @@ export const ContactSection = styled.section`
   background-size: 50% 80%;
   background-repeat: no-repeat;
   background-position: left;
-  margin-top:100px;
-  
+  margin-top: 100px;
+  padding: 20px;
+  height: auto;
+  @media (max-width: 992px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:none;
+  }
 `;
+
 export const ContactColumn = styled.div`
   flex: 1;
   display: flex;
@@ -34,7 +41,14 @@ export const ContactColumn = styled.div`
     color: #6c4938;
     margin-bottom: 40px;
   }
+
+  @media (max-width: 992px) {
+    max-width: 300px; /* Ajustamos el ancho máximo en dispositivos móviles */
+    margin: 0 auto;
+    background-image: none; /* Eliminamos la imagen de fondo cuando se encolumnen */
+  }
 `;
+
 
 export const ContactHeading = styled.h2`
   font-size: 40px;
@@ -67,11 +81,21 @@ export const ContactFormContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 20px;
+  width: 100%;
+
+  @media (max-width: 992px) {
+    flex-direction: column; /* Cambiamos la dirección del flex en dispositivos móviles */
+    align-items: center;
+  }
 `;
 
 export const ContactForm = styled.form`
   width: 100%;
   max-width: 400px;
+
+  @media (max-width: 576px) {
+    max-width: 300px; /* Reducimos el tamaño del formulario en pantallas pequeñas */
+  }
 `;
 
 export const FormIntro = styled.p`

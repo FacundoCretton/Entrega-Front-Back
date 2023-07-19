@@ -33,13 +33,30 @@ export const NavbarMenuUl = styled.ul`
   padding: 0px 20px;
   align-items: center;
   justify-content: center;
-  @media (max-width: 768px){
-    display: none;
-  }
-    
-  
 
- 
+  @media (max-width: 768px) {
+    display: none;
+
+    ${(props) =>
+      props.isOpen &&
+      css`
+        position: absolute;
+        display: flex;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(107, 142, 35, 0.8);
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        z-index: 10000;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        
+        ${NavbarItem} {
+          margin: 10px 0;
+        }
+      `}
+  }
 `;
 
 export const NavbarItem = styled.li`
@@ -165,15 +182,12 @@ export const CustomButton = styled.button`
 
 export const BarrsMenu = styled.div`
   display: none;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.5rem;
 
-
-  @media (max-width: 768px){
-    display: block;
-
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
   }
-
-
 `;
