@@ -98,7 +98,6 @@ export const FooterRedesSocialesContainer = styled.div`
   grid-column: 2;
   grid-row: 2;
 
-  /* Estilos para el enlace (opcional) */
   a {
     color: inherit;
     text-decoration: none;

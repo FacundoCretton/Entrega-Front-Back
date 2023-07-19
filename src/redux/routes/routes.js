@@ -8,8 +8,10 @@ import AllProductsCards from '../../components/Products/AllProductsCards';
 import Checkout from '../../pages/Checkout/Checkout';
 import Login from "../../pages/Login/Login"
 import Register from '../../pages/Register/Register';
-import ProtectedRoute from "../../components/ProtectedRoute/ProtectedRoute"
-
+import ProtectedRoute from "../../components/ProtectedRoute/ProtectedRoute";
+import Ordenes from "../../pages/Ordenes/Ordenes";
+import Felicitaciones from "../../pages/Felicitaciones/Felicitaciones";
+import Contact from '../../components/Contact/Contact';
 function Routes() {
   return (
     <ReactDomRoutes>
@@ -26,6 +28,10 @@ function Routes() {
         }
       />
       <Route path='/login' element={<Login />} />
+      <Route path='/ordenes' element={<Ordenes />} />
+      <Route path='/felicitaciones' element={<Felicitaciones />} />
+
+
     </ReactDomRoutes>
   );
 }
@@ -36,6 +42,7 @@ function Home() {
       <Slider />
       <Categories />
       <AllProductsCards />
+      <Contact/>
     </>
   );
 }

@@ -7,7 +7,7 @@ import categoriesReducer from './categories/categoriesSlice';
 import productsReducer from "./products/productsSlics"
 import cartReducer from './cart/cartSlide';
 import userReducer from "./user/userSlice";
-
+import orderReducer from "./order/orderSlice";
 
 //2= Acá seteo los reducers
 const reducers = combineReducers({
@@ -15,6 +15,7 @@ const reducers = combineReducers({
     products: productsReducer,
     cart: cartReducer,
     user: userReducer,
+    orders: orderReducer
 });
 
 //3 Acá seteo la configuración de persistencia, que no es palabra reservada pero es habitual llamarla así
