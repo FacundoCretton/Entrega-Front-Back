@@ -1,17 +1,13 @@
 import React from "react";
 
-function SliderContent({ activeIndex, sliderImage }) {
-  // const handleButtonClick = (slide) => {
-  //   console.log(`Se hizo clic en el botón de la imagen ${slide.title}`);
-  //   // Aquí puedes realizar acciones adicionales, como redireccionar a una página o mostrar más información sobre la receta
-  // };
-
+function SliderContent({ activeIndex, sliderImage, onClick }) {
   return (
     <section>
       {sliderImage.map((slide, index) => (
         <div
           key={index}
           className={index === activeIndex ? "slides active" : "inactive"}
+          onClick={onClick} // Pasar la función para manejar el clic en el slide
         >
           <img className="slide-image" src={slide.urls} alt="" />
           <div className="slide-overlay">
@@ -26,6 +22,5 @@ function SliderContent({ activeIndex, sliderImage }) {
     </section>
   );
 }
-
 
 export default SliderContent;

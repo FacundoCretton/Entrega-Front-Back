@@ -10,10 +10,11 @@ export const ContactSection = styled.section`
   gap: 50px;
   scroll-margin-top: 115px;
   background-image: url("https://cdn.wallpapersafari.com/84/1/nNvX3f.jpg");
-  background-size: 50% 100%;
+  background-size: 50% 80%;
   background-repeat: no-repeat;
   background-position: left;
   margin-top:100px;
+  
 `;
 export const ContactColumn = styled.div`
   flex: 1;

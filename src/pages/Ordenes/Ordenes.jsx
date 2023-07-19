@@ -1,52 +1,52 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {useDispatch, useSelector} from "react-redux"
+import { useDispatch, useSelector } from 'react-redux';
 
 import Button from '../../components/UI/Button/Button';
-import CardsOrdenes from '../../components/Ordenes/CardsOrdenes'
+import CardsOrdenes from '../../components/Ordenes/CardsOrdenes';
 
 import {
-  OrdenesBtnContainerStyled,
   OrdenesContainerStyled,
-  OrdenesPatternStyled,
   OrdenesTitleStyled,
+  OrdenesSubtitleStyled,
+  OrdenesContentStyled,
+  OrdenesButtonContainerStyled,
 } from './OrdenesStyles';
 import { getOrders } from '../../Axios/Axios.orders';
-import { clearError, fetchOrderFail } from '../../redux/order/orderSlice';
+import { clearError, fetchOrdersFail } from '../../redux/order/orderSlice';
 
 const Ordenes = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const currentUser = useSelector(state => state.user.currentUser)
-  const {orders, error} = useSelector(state => state.orders);
+  const currentUser = useSelector((state) => state.user.currentUser);
+  const { orders, error } = useSelector((state) => state.orders);
 
   useEffect(() => {
-    if(!orders) {
-      getOrders(dispatch, currentUser)
+    if (!orders) {
+      getOrders(dispatch, currentUser);
     }
+  }, [currentUser, orders, dispatch]);
 
+  useEffect(() => {
     if (!currentUser?.token) {
-      dispatch(fetchOrderFail())
+      dispatch(fetchOrdersFail());
     } else {
-      error && dispatch(clearError())
+      error && dispatch(clearError());
     }
-  }, [currentUser, orders, error, dispatch])
+  }, [currentUser, error, dispatch]);
 
   return (
-    <>
-      <OrdenesContainerStyled>
-        <OrdenesTitleStyled>Mis órdenes</OrdenesTitleStyled>
+    <OrdenesContainerStyled>
+      <OrdenesTitleStyled>Mis Órdenes</OrdenesTitleStyled>
+      <OrdenesSubtitleStyled>Revisa tus compras anteriores</OrdenesSubtitleStyled>
+      <OrdenesContentStyled>
         <CardsOrdenes />
-        <OrdenesBtnContainerStyled>
+        <OrdenesButtonContainerStyled>
           <Button onClick={() => navigate('/')}>Volver a comprar</Button>
-        </OrdenesBtnContainerStyled>
-      </OrdenesContainerStyled>
-      <OrdenesPatternStyled
-        src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648434/coding/NucbaZappi/Assets/Pattern_lt5uru.png'
-        alt=''
-      />
-    </>
+        </OrdenesButtonContainerStyled>
+      </OrdenesContentStyled>
+    </OrdenesContainerStyled>
   );
 };
 

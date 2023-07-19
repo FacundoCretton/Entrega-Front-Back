@@ -1,14 +1,14 @@
 import axios from 'axios';
 import {
   createOrderFail,
-  fetchOrderFail,
-  fetchOrderStart,
-  fetchOrderSuccess,
+  fetchOrdersFail,
+  fetchOrdersStart,
+  fetchOrdersSuccess,
 } from '../redux/order/orderSlice';
 import { BASE_URL } from '../utils/constants';
 
 export const getOrders = async (dispatch, currentUser) => {
-  dispatch(fetchOrderStart());
+  dispatch(fetchOrdersStart());
 
   try {
     const orders = await axios.get(`${BASE_URL}orders`, {
@@ -18,13 +18,13 @@ export const getOrders = async (dispatch, currentUser) => {
     });
     console.log(orders);
     if (orders) {
-      dispatch(fetchOrderSuccess(orders.data.data));
+      dispatch(fetchOrdersSuccess(orders.data.data));
     }
   } catch (error) {
     console.log(error);
 
     dispatch(
-      fetchOrderFail('Ey, algo malio sal. Sin usuario, no hay ordenes')
+      fetchOrdersFail('Ocurrio un problema y no se pudo procesar la solicitud')
     );
   }
 };

@@ -40,9 +40,7 @@ const Footer = () => {
             </FLFli>
           </FLFul>
         </FooterLeftFraction>
-        <FooterLogo>
-          <FooterLogoImg src="/Logo React.png" alt="logo" />
-        </FooterLogo>
+
         <FooterRedesSocialesContainer>
         <a href="https://www.facebook.com/"><FooterRedSocialIcon facebook><FaFacebookF /></FooterRedSocialIcon></a>
           <a href="https://www.instagram.com/"><FooterRedSocialIcon instagram><FaInstagram /></FooterRedSocialIcon></a>

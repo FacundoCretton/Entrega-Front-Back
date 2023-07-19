@@ -8,17 +8,17 @@ import { CheckoutDatosStyled, Formik, Form, TituloH2 } from './CheckoutFormStyle
 
 import {checkoutInitialValues} from "../../../Formik/initialValues"
 import {checkoutValidationSchema} from "../../../Formik/validationSchema"
-// import { createOrder } from '../../../axios/axios-orders';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart } from '../../../redux/cart/cartSlide';
 
 import Loader from "../../UI/Loader/Loader"
+import { createOrder } from '../../../Axios/Axios.orders';
 
 const CheckoutForm = ({cartItems, price, shippingCost}) => {
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  // const {currentUser} = useSelector(state => state.user)
+  const {currentUser} = useSelector(state => state.user)
 
   return (
     <CheckoutDatosStyled>
@@ -27,18 +27,18 @@ const CheckoutForm = ({cartItems, price, shippingCost}) => {
         initialValues={checkoutInitialValues}
         validationSchema={checkoutValidationSchema}
         onSubmit={ async (values) => {
-          // const orderData = {
-          //   items: cartItems,
-          //   price,
-          //   shippingCost,
-          //   total: price + shippingCost,
-          //   shippingDetails: {
-          //     ...values
-          //   }
-          // };
+          const orderData = {
+            items: cartItems,
+            price,
+            shippingCost,
+            total: price + shippingCost,
+            shippingDetails: {
+              ...values
+            }
+          };
 
           try {
-            // await createOrder(orderData, dispatch, currentUser);
+            await createOrder(orderData, dispatch, currentUser);
             navigate("/felicitaciones");
             dispatch(clearCart());
           } catch (error) {
