@@ -32,7 +32,7 @@ const Navbar = () => {
       <ModalUser />
       <ModalCart />
       <LogoStyle src="/Logo React.png" alt="logo" />
-      <NavbarMenuUl isOpen={isMenuOpen}> {/* Agregamos isOpen como prop */}
+      <NavbarMenuUl isOpen={isMenuOpen}> 
         <NavbarItem>
           <a href="/">Home</a>
         </NavbarItem>

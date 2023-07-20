@@ -12,6 +12,7 @@ import ProtectedRoute from "../../components/ProtectedRoute/ProtectedRoute";
 import Ordenes from "../../pages/Ordenes/Ordenes";
 import Felicitaciones from "../../pages/Felicitaciones/Felicitaciones";
 import Contact from '../../components/Contact/Contact';
+import About from '../../components/About/About';
 function Routes() {
   return (
     <ReactDomRoutes>
@@ -42,6 +43,7 @@ function Home() {
       <Slider />
       <Categories />
       <AllProductsCards />
+      <About />
       <Contact/>
     </>
   );
