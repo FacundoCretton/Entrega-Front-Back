@@ -4,8 +4,8 @@ export const RecipeCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 70%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
   background-color: #e0c4ac;

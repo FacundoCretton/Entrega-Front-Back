@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import CategoryList from '../../components/Recetario/CategoryList';
 import RecipeCard from '../../components/Recetario/RecipeCard';
-import RecipeCardMiniatura from '../../components/Recetario/RecipeCardMiniatura'; 
+import RecipeCardMiniatura from '../../components/Recetario/RecipeCardMiniatura';
 import SearchBar from '../../components/Recetario/SearchBar';
 import { recetas } from '../../components/data/recetas';
-import { RecipeCardMiniaturaListContainer, RecipeDetailButton } from './recetarioPageStyles';
-
+import { RecetarioContainer, Title, CategoryContainer, SearchBarContainer, RecipeCardMiniaturaListContainer, RecipeDetailButton, RecipeDetailContainer } from './recetarioPageStyles';
 
 const RecetarioPage = () => {
   const [currentRecipe, setCurrentRecipe] = useState(null);
@@ -17,7 +16,7 @@ const RecetarioPage = () => {
     setSearchTerm(term);
     setSelectedCategory('');
     setCurrentRecipe(null);
-    setShowRecipes(false);
+    setShowRecipes(!!term);
   };
 
   const handleCategorySelect = (category) => {
@@ -44,34 +43,37 @@ const RecetarioPage = () => {
   };
 
   return (
-    <div>
-      <h1>Recetario de la Abuela</h1>
-      <CategoryList
-        categories={getUniqueCategories(recetas)}
-        onCategorySelect={handleCategorySelect}
-      />
-      <SearchBar onSearch={handleSearch} />
+    <RecetarioContainer>
+      <Title>Recetario de la Abuela</Title>
+
+      <CategoryContainer>
+        <CategoryList categories={getUniqueCategories(recetas)} onCategorySelect={handleCategorySelect} />
+      </CategoryContainer>
+
+      <SearchBarContainer>
+        <SearchBar onSearch={handleSearch} />
+      </SearchBarContainer>
+
       {currentRecipe ? (
-        <div>
-          <RecipeDetailButton onClick={() => setCurrentRecipe(null)}>Volver</RecipeDetailButton>
-          <RecipeCard receta={currentRecipe} />
-        </div>
+        <RecipeDetailContainer>
+        <RecipeDetailButton onClick={() => setCurrentRecipe(null)}>Volver</RecipeDetailButton>
+        <RecipeCard receta={currentRecipe} />
+      </RecipeDetailContainer>
       ) : (
         <RecipeCardMiniaturaListContainer>
-        {showRecipes &&
-          filterRecipes().map((receta) => (
-            <RecipeCardMiniatura
-              key={receta.id}
-              receta={receta}
-              onClick={() => handleRecipeSelect(receta)}
-            />
-          ))}
-      </RecipeCardMiniaturaListContainer>
+          {showRecipes &&
+            filterRecipes().map((receta) => (
+              <RecipeCardMiniatura
+                key={receta.id}
+                receta={receta}
+                onClick={() => handleRecipeSelect(receta)}
+              />
+            ))}
+        </RecipeCardMiniaturaListContainer>
       )}
-    </div>
+    </RecetarioContainer>
   );
 };
-
 const getUniqueCategories = (recetas) => [...new Set(recetas.map((receta) => receta.categoria))];
 
 export default RecetarioPage;
