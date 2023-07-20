@@ -57,7 +57,7 @@ export const AboutLeft = styled.div`
         height: 11.2rem;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         grid-auto-rows: auto;
         overflow: hidden;
         gap: 5px;
