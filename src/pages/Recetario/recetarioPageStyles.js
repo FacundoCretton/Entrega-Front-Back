@@ -81,21 +81,21 @@ export const RecetarioContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f9f2ea; /* Color de fondo vintage */
+  background-color: #f9f2ea;
 `;
 
 export const Title = styled.h1`
   font-size: 36px;
-  margin-bottom: 30px; /* Agregamos margen inferior para separar del contenido siguiente */
-  color: #6b4226; /* Color de título marrón */
+  margin-bottom: 30px; 
+  color: #6b4226; 
 `;
 
 export const CategoryContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Agregamos margen inferior para separar de la barra de búsqueda */
+  margin-bottom: 20px; 
 `;
 
 export const SearchBarContainer = styled.div`
-  margin-bottom: 20px; /* Agregamos margen inferior para separar del contenido siguiente */
+  margin-bottom: 20px; 
 `;

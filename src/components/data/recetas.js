@@ -806,7 +806,7 @@ export const recetas = [
             nombre: "Curry de Coco y Pollo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Tailandesa", "Curry"],
-            imagen: "https://www.recetasenlamochila.com/wp-content/uploads/2018/04/curry-pollo-leche-coco-anacardos-1280x742.jpg",
+            imagen: "https://miraquereceta.com/wp-content/uploads/2020/02/Pollo-al-curry-con-verduras-y-leche-de-coco.png",
             ingredientes: [
               "Pechugas de pollo",
               "Cebolla",
@@ -990,7 +990,7 @@ export const recetas = [
             nombre: "Ajiaco",
             categoria: "Plato principal",
             categoriasAdicionales: ["Colombiana", "Sopas"],
-            imagen: "uhttps://cdn.colombia.com/gastronomia/2011/07/22/ajiaco-1458.jpg",
+            imagen: "https://cdn.colombia.com/gastronomia/2011/07/22/ajiaco-1458.jpg",
             ingredientes: [
               "Papas",
               "Pollo",
@@ -1251,7 +1251,7 @@ export const recetas = [
             nombre: "Paella",
             categoria: "Plato principal",
             categoriasAdicionales: ["Española", "Arroz"],
-            imagen: "https://cdn-geocp.nitrocdn.com/fDFrSSYWfGItWOEZGsrBIHnCqgylYQCG/assets/images/optimized/rev-bcb82f2/wp-content/themes/Nutrioli/img/null.jpg",
+            imagen: "https://images.hola.com/imagenes/cocina/recetas/20200917175530/paella-valenciana-clasica/0-866-670/paella-age-t.jpg",
             ingredientes: ["Arroz", "Pollo", "Conejo", "Mariscos", "Pimientos", "Azafrán", "Aceite de oliva", "Caldo de pescado"],
             instrucciones: [
               "1. En una paellera, calienta aceite de oliva y añade el pollo y el conejo troceados.",
@@ -2085,7 +2085,7 @@ export const recetas = [
             nombre: "Estofado de Ternera",
             categoria: "Plato principal",
             categoriasAdicionales: ["Carnes", "Hogareño"],
-            imagen: "https://amimaneracocinando.com/wp-content/uploads/2021/09/estofado-de-carne-700-.jpg",
+            imagen: "https://www.cocinacaserayfacil.net/wp-content/uploads/2020/08/Estofado-de-ternera.jpg",
             ingredientes: ["Ternera en trozos", "Cebolla picada", "Zanahorias en rodajas", "Patatas en cubos", "Caldo de carne", "Vino tinto", "Tomate triturado", "Ajo picado", "Aceite de oliva", "Sal", "Pimienta", "Hierbas aromáticas"],
             instrucciones: [
               "1. En una olla grande, calienta un poco de aceite de oliva a fuego medio-alto.",
