@@ -6,10 +6,11 @@ import { FaCheck } from 'react-icons/fa';
 export const AboutContainer = styled.div`
     padding: 0 2rem;
     display: flex;
-    gap:4rem;
+    gap:2rem;
     margin-top: 4rem;
+    max-width: 1200px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1052px) {
         flex-direction: column;
         gap: 2.3rem;
 
@@ -28,6 +29,7 @@ export const AboutLeft = styled.div`
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     grid-auto-rows: 1fr;
+    flex-wrap: wrap;
 
     & > :first-child{
         width: 12rem;
@@ -100,6 +102,13 @@ export const AboutRight = styled.div`
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    margin:auto;
+    @media screen and (max-width: 992px) {
+
+        width: 100%;
+        max-width: 430px;
+    }
+    
 
     
 
@@ -111,6 +120,7 @@ export const ContenedorSpan = styled.div`
     font-size: 12px;
     font-style: italic;
     font-weight: 600;
+    max-width: 500px;
 `;
 
 export const DetallesRight = styled.div`
