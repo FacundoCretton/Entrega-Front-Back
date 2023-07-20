@@ -1,27 +1,23 @@
 import React from 'react';
-import { IndexContainer, Title, CategoriesContainer, CategoryLink } from './indexPageStyles';
-import {recetas} from '../../components/data/recetas'
+import CategoryList from '../../components/Recetario/CategoryList';
+import { recetas } from '../../components/data/recetas';
+import { CategoriesContainer, Container, Title } from './indexPageStyles';
 
+// Definir la función getUniqueCategories aquí
+const getUniqueCategories = (recetas) => [...new Set(recetas.map((receta) => receta.categoria))];
 
+const IndexPage = () => {
+  const categories = getUniqueCategories(recetas);
 
+  return (
+    <Container>
+      <Title>Recetario de la Abuela</Title>
+      <CategoriesContainer>
+        {/* No es necesario pasar handleCategorySelect */}
+        <CategoryList categories={categories} />
+      </CategoriesContainer>
+    </Container>
+  );
+};
 
-const renderCategoryLinks = () => {
-    const uniqueCategories = [...new Set(recetas.map((receta) => receta.categoria))];
-  
-    return uniqueCategories.map((categoria) => (
-      <CategoryLink key={categoria} href={`#${categoria}`}>
-        {categoria}
-      </CategoryLink>
-    ));
-  };
-  
-  const IndexPage = () => {
-    return (
-      <IndexContainer>
-        <Title>Recetario de la Abuela</Title>
-        <CategoriesContainer>{renderCategoryLinks()}</CategoriesContainer>
-      </IndexContainer>
-    );
-  };
-  
-  export default IndexPage;
+export default IndexPage;

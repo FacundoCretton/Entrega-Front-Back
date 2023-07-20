@@ -1,259 +1,397 @@
 export const recetas = [
-    {
-      id: 1,
-      nombre: "Ensalada Caprese",
-      categoria: "Entrada",
-      categoriasAdicionales: ["Ensaladas"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Tomate",
-        "Mozzarella",
-        "Albahaca",
-        "Aceite de oliva",
-        "Sal",
-        "Pimienta"
-      ],
-      instrucciones: "1. Corta los tomates y la mozzarella en rodajas.\n2. Alterna capas de tomate y mozzarella en un plato.\n3. Espolvorea con hojas de albahaca.\n4. Rocía con aceite de oliva y sazona con sal y pimienta al gusto."
-    },
-    {
-      id: 2,
-      nombre: "Lomo de Cerdo al Horno",
-      categoria: "Plato principal",
-      categoriasAdicionales: ["Carnes"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Lomo de cerdo",
-        "Ajo",
-        "Romero",
-        "Sal",
-        "Pimienta",
-        "Aceite de oliva"
-      ],
-      instrucciones: "1. Precalienta el horno a 180°C.\n2. Haz cortes en el lomo de cerdo e inserta rodajas de ajo y ramitas de romero.\n3. Sazona con sal y pimienta al gusto.\n4. Rocía con aceite de oliva y hornea por 30-40 minutos o hasta que esté cocido."
-    },
-    {
-      id: 3,
-      nombre: "Tarta de Manzana",
-      categoria: "Postre",
-      categoriasAdicionales: ["Pasteles"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Masa de tarta",
-        "Manzanas",
-        "Azúcar",
-        "Canela",
-        "Jugo de limón",
-        "Mantequilla"
-      ],
-      instrucciones: "1. Precalienta el horno a 180°C.\n2. Estira la masa de tarta y colócala en un molde.\n3. Pela y corta las manzanas en rodajas.\n4. Mezcla las rodajas de manzana con azúcar, canela y jugo de limón.\n5. Coloca las rodajas de manzana sobre la masa de tarta.\n6. Agrega pequeños trozos de mantequilla por encima.\n7. Hornea por 30-35 minutos o hasta que la masa esté dorada."
-    },
-    {
-      id: 4,
-      nombre: "Sopa de Tomate",
-      categoria: "Entrada",
-      categoriasAdicionales: ["Sopas"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Tomates",
-        "Cebolla",
-        "Ajo",
-        "Caldo de verduras",
-        "Aceite de oliva",
-        "Sal",
-        "Pimienta",
-        "Albahaca fresca"
-      ],
-      instrucciones: "1. Calienta el aceite de oliva en una olla y sofríe la cebolla y el ajo.\n2. Agrega los tomates troceados y cocina por unos minutos.\n3. Añade el caldo de verduras y lleva a ebullición.\n4. Reduce el fuego y cocina a fuego lento durante 20-30 minutos.\n5. Condimenta con sal, pimienta y albahaca fresca al gusto.\n6. Tritura la sopa con una batidora de mano o en una licuadora.\n7. Vuelve a calentar la sopa antes de servir."
-    },
-    {
-      id: 5,
-      nombre: "Espaguetis a la Bolognesa",
-      categoria: "Plato principal",
-      categoriasAdicionales: ["Pastas", "Carnes"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Espaguetis",
-        "Carne picada",
-        "Cebolla",
-        "Zanahoria",
-        "Apio",
-        "Ajo",
-        "Tomate triturado",
-        "Vino tinto",
-        "Aceite de oliva",
-        "Sal",
-        "Pimienta",
-        "Orégano",
-        "Queso parmesano"
-      ],
-      instrucciones: "1. Calienta el aceite de oliva en una sartén y sofríe la cebolla, la zanahoria, el apio y el ajo.\n2. Agrega la carne picada y cocina hasta que esté dorada.\n3. Añade el tomate triturado y el vino tinto. Cocina a fuego lento durante unos 30-40 minutos.\n4. Condimenta con sal, pimienta y orégano al gusto.\n5. Mientras tanto, cuece los espaguetis en agua con sal según las instrucciones del paquete.\n6. Sirve los espaguetis con la salsa bolognesa por encima y espolvorea con queso parmesano."
-    },
-    {
-      id: 6,
-      nombre: "Tortilla de Patatas",
-      categoria: "Plato principal",
-      categoriasAdicionales: ["Tortillas"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Patatas",
-        "Huevos",
-        "Cebolla",
-        "Aceite de oliva",
-        "Sal"
-      ],
-      instrucciones: "1. Pela las patatas y córtalas en rodajas finas.\n2. Pela y corta la cebolla en juliana.\n3. Calienta el aceite de oliva en una sartén y fríe las patatas y la cebolla a fuego medio-bajo hasta que estén tiernas.\n4. Mientras tanto, bate los huevos en un bol grande y añade sal al gusto.\n5. Escurre las patatas y la cebolla y agrégalas al bol con los huevos batidos.\n6. Mezcla bien.\n7. Calienta un poco de aceite en una sartén y vierte la mezcla.\n8. Cocina a fuego medio-bajo hasta que la tortilla esté cuajada por un lado.\n9. Dale la vuelta a la tortilla y cocina el otro lado hasta que esté dorado.\n10. Sirve caliente o a temperatura ambiente."
-    },
-    {
-      id: 7,
-      nombre: "Flan de Caramelo",
-      categoria: "Postre",
-      categoriasAdicionales: ["Postres caseros"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Huevos",
-        "Leche",
-        "Azúcar",
-        "Esencia de vainilla"
-      ],
-      instrucciones: "1. Precalienta el horno a 180°C.\n2. En una cacerola, calienta el azúcar a fuego medio hasta que se derrita y se forme un caramelo líquido.\n3. Vierte el caramelo en el fondo de un molde para flan y extiéndelo por todo el fondo.\n4. En un bol, bate los huevos, la leche y la esencia de vainilla hasta que estén bien mezclados.\n5. Vierte la mezcla sobre el caramelo en el molde.\n6. Coloca el molde en una bandeja para hornear más grande y llénala con agua caliente hasta alcanzar aproximadamente la mitad del molde para flan.\n7. Hornea durante 45-50 minutos o hasta que el flan esté firme pero tembloroso en el centro.\n8. Deja enfriar a temperatura ambiente y luego refrigera durante al menos 2 horas antes de servir."
-    },
-    {
-      id: 8,
-      nombre: "Gazpacho Andaluz",
-      categoria: "Entrada",
-      categoriasAdicionales: ["Sopas", "Verduras"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Tomates",
-        "Pepino",
-        "Pimiento verde",
-        "Cebolla",
-        "Ajo",
-        "Pan duro",
-        "Vinagre de vino",
-        "Aceite de oliva",
-        "Sal",
-        "Pimienta"
-      ],
-      instrucciones: "1. Trocea los tomates, el pepino, el pimiento verde y la cebolla.\n2. En una batidora, añade los tomates, el pepino, el pimiento verde, la cebolla, el ajo y el pan duro previamente remojado en agua.\n3. Agrega el vinagre de vino, el aceite de oliva, la sal y la pimienta al gusto.\n4. Tritura todos los ingredientes hasta obtener una mezcla suave.\n5. Si lo prefieres, pasa la mezcla por un colador para obtener una textura más fina.\n6. Deja enfriar en la nevera durante al menos 1 hora antes de servir."
-    },
-    {
-      id: 9,
-      nombre: "Pollo al Horno con Verduras",
-      categoria: "Plato principal",
-      categoriasAdicionales: ["Carnes", "Horneado", "Verduras"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Pollo",
-        "Patatas",
-        "Zanahorias",
-        "Cebolla",
-        "Ajo",
-        "Aceite de oliva",
-        "Sal",
-        "Pimienta",
-        "Romero"
-      ],
-      instrucciones: "1. Precalienta el horno a 180°C.\n2. Lava y pela las patatas y las zanahorias, y córtalas en trozos medianos.\n3. Pela la cebolla y córtala en juliana.\n4. Coloca las patatas, las zanahorias, la cebolla y los dientes de ajo en una bandeja para horno.\n5. Riega con aceite de oliva y sazona con sal, pimienta y romero al gusto. Mezcla bien.\n6. Añade el pollo a la bandeja, salpimiéntalo y rocíalo con un poco más de aceite de oliva y romero.\n7. Hornea durante aproximadamente 1 hora o hasta que el pollo esté bien cocido y las verduras estén tiernas y doradas.\n8. Sirve caliente."
-    },
-    {
-      id: 10,
-      nombre: "Mousse de Chocolate",
-      categoria: "Postre",
-      categoriasAdicionales: ["Postres caseros"],
-      imagen: "url_de_la_imagen",
-      ingredientes: [
-        "Chocolate negro",
-        "Huevos",
-        "Azúcar",
-        "Esencia de vainilla",
-        "Nata para montar"
-      ],
-      instrucciones: "1. Derrite el chocolate negro al baño maría o en el microondas.\n2. Separa las yemas de las claras de huevo.\n3. En un bol, bate las yemas de huevo con el azúcar y la esencia de vainilla hasta obtener una mezcla cremosa.\n4. Añade el chocolate derretido a la mezcla de yemas y mezcla bien.\n5. En otro bol, bate las claras de huevo hasta que estén firmes.\n6. En otro recipiente aparte, bate la nata para montar hasta que forme picos suaves.\n7. Incorpora las claras de huevo batidas a la mezcla de chocolate y yemas con movimientos suaves y envolventes.\n8. Añade la nata montada y mezcla hasta que esté bien combinado.\n9. Reparte la mousse en recipientes individuales y refrigera durante al menos 2 horas antes de servir."
-    },
-  
-      
-    {
-       id: 11,
-          nombre: "Sopa de Cebolla",
-          categoria: "Entrada",
-          categoriasAdicionales: ["Sopas", "Vegetariano"],
-          imagen: "url_de_la_imagen",
-          ingredientes: [
-            "Cebollas",
-            "Caldo de verduras",
-            "Mantequilla",
-            "Harina",
-            "Pan",
-            "Queso rallado"
-          ],
-          instrucciones: "1. Corta las cebollas en juliana.\n2. En una olla, derrite la mantequilla y añade las cebollas. Cocina a fuego medio-bajo hasta que estén caramelizadas.\n3. Espolvorea la harina sobre las cebollas caramelizadas y mezcla bien.\n4. Vierte el caldo de verduras y lleva a ebullición. Luego reduce el fuego y cocina a fuego lento durante unos 20-30 minutos.\n5. Tuesta rebanadas de pan en el horno o en una tostadora.\n6. Sirve la sopa caliente en tazones para horno o cazuelas individuales.\n7. Coloca una rebanada de pan tostado en cada tazón y espolvorea queso rallado por encima.\n8. Gratina en el horno hasta que el queso esté dorado y burbujeante."
-        },
-        {
-          id: 12,
-          nombre: "Lasaña de Verduras",
-          categoria: "Plato principal",
-          categoriasAdicionales: ["Pastas", "Vegetariano"],
-          imagen: "url_de_la_imagen",
-          ingredientes: [
-            "Láminas de lasaña",
-            "Calabacín",
-            "Berenjena",
-            "Pimiento rojo",
-            "Cebolla",
-            "Ajo",
-            "Tomate triturado",
-            "Queso rallado",
-            "Aceite de oliva",
-            "Sal",
-            "Pimienta",
-            "Orégano",
-            "Albahaca"
-          ],
-          instrucciones: "1. Precalienta el horno a 180°C.\n2. Corta el calabacín, la berenjena, el pimiento rojo, la cebolla y el ajo en rodajas o trozos.\n3. En una sartén grande, calienta aceite de oliva y saltea las verduras hasta que estén tiernas.\n4. Añade el tomate triturado, sal, pimienta, orégano y albahaca al gusto. Cocina a fuego lento durante unos 10-15 minutos.\n5. En un molde para horno, alterna capas de láminas de lasaña, verduras y queso rallado. Repite hasta que se agoten los ingredientes, terminando con una capa de queso rallado en la parte superior.\n6. Hornea durante 25-30 minutos o hasta que la lasaña esté caliente y el queso esté derretido y dorado.\n7. Deja reposar unos minutos antes de servir."
-        },
-     {
-          id: 13,
-          nombre: "Tarta de Limón",
-          categoria: "Postre",
-          categoriasAdicionales: ["Postres caseros"],
-          imagen: "url_de_la_imagen",
-          ingredientes: [
-            "Galletas",
-            "Mantequilla",
-            "Leche condensada",
-            "Zumo de limón",
-            "Huevos",
-            "Azúcar glass",
-            "Ralladura de limón"
-          ],
-          instrucciones: "1. Tritura las galletas hasta obtener migas finas.\n2. Derrite la mantequilla y mézclala con las migas de galleta hasta que estén bien combinadas.\n3. En un molde para tarta, presiona la mezcla de galleta en el fondo y a los lados para formar la base de la tarta. Refrigera durante 30 minutos.\n4. En un bol, mezcla la leche condensada, el zumo de limón y las yemas de huevo hasta obtener una mezcla suave.\n5. En otro bol, bate las claras de huevo a punto de nieve.\n6. Incorpora las claras de huevo batidas a la mezcla de limón con movimientos suaves y envolventes.\n7. Vierte la mezcla sobre la base de galleta y extiéndela de manera uniforme.\n8. Hornea a 180°C durante 15-20 minutos o hasta que la tarta esté firme al tacto.\n9. Deja enfriar a temperatura ambiente y luego refrigera durante al menos 2 horas antes de servir.\n10. Espolvorea con azúcar glass y ralladura de limón antes de servir."
-        },
-        {
-          id: 14,
-          nombre: "Ensalada Caprese",
-          categoria: "Entrada",
-          categoriasAdicionales: ["Ensaladas", "Italiano"],
-          imagen: "url_de_la_imagen",
-          ingredientes: [
-            "Tomates",
-            "Mozzarella",
-            "Hojas de albahaca",
-            "Aceite de oliva",
-            "Vinagre balsámico",
-            "Sal",
-            "Pimienta"
-          ],
-          instrucciones: "1. Corta los tomates y la mozzarella en rodajas de grosor medio.\n2. En un plato, coloca una rodaja de tomate, luego una rodaja de mozzarella y una hoja de albahaca.\n3. Repite hasta que hayas utilizado todos los tomates y la mozzarella.\n4. Espolvorea con sal y pimienta al gusto.\n5. Riega con aceite de oliva y vinagre balsámico.\n6. Deja reposar durante unos minutos para que los sabores se mezclen antes de servir."
-        },
-        {
-          id: 15,
-          nombre: "Risotto de Champiñones",
-          categoria: "Plato principal",
-          categoriasAdicionales: ["Arroces", "Vegetariano"],
-          imagen: "url_de_la_imagen",
-          ingredientes: [
-            "Arroz Arborio",
+  {
+    id: 1,
+    nombre: "Ensalada Caprese",
+    categoria: "Entrada",
+    categoriasAdicionales: ["Ensaladas"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Tomate",
+      "Mozzarella",
+      "Albahaca",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta"
+    ],
+    instrucciones: [
+      "1. Corta los tomates y la mozzarella en rodajas.",
+      "2. Alterna capas de tomate y mozzarella en un plato.",
+      "3. Espolvorea con hojas de albahaca.",
+      "4. Rocía con aceite de oliva y sazona con sal y pimienta al gusto."
+    ]
+  },
+  {
+    id: 2,
+    nombre: "Lomo de Cerdo al Horno",
+    categoria: "Plato principal",
+    categoriasAdicionales: ["Carnes"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Lomo de cerdo",
+      "Ajo",
+      "Romero",
+      "Sal",
+      "Pimienta",
+      "Aceite de oliva"
+    ],
+    instrucciones: [
+      "1. Precalienta el horno a 180°C.",
+      "2. Haz cortes en el lomo de cerdo e inserta rodajas de ajo y ramitas de romero.",
+      "3. Sazona con sal y pimienta al gusto.",
+      "4. Rocía con aceite de oliva y hornea por 30-40 minutos o hasta que esté cocido."
+    ]
+  },
+  {
+    id: 3,
+    nombre: "Tarta de Manzana",
+    categoria: "Postre",
+    categoriasAdicionales: ["Pasteles"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Masa de tarta",
+      "Manzanas",
+      "Azúcar",
+      "Canela",
+      "Jugo de limón",
+      "Mantequilla"
+    ],
+    instrucciones: [
+      "1. Precalienta el horno a 180°C.",
+      "2. Estira la masa de tarta y colócala en un molde.",
+      "3. Pela y corta las manzanas en rodajas.",
+      "4. Mezcla las rodajas de manzana con azúcar, canela y jugo de limón.",
+      "5. Coloca las rodajas de manzana sobre la masa de tarta.",
+      "6. Agrega pequeños trozos de mantequilla por encima.",
+      "7. Hornea por 30-35 minutos o hasta que la masa esté dorada."
+    ]
+  },
+  {
+    id: 4,
+    nombre: "Sopa de Tomate",
+    categoria: "Entrada",
+    categoriasAdicionales: ["Sopas"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Tomates",
+      "Cebolla",
+      "Ajo",
+      "Caldo de verduras",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Albahaca fresca"
+    ],
+    instrucciones: [
+      "1. Calienta el aceite de oliva en una olla y sofríe la cebolla y el ajo.",
+      "2. Agrega los tomates troceados y cocina por unos minutos.",
+      "3. Añade el caldo de verduras y lleva a ebullición.",
+      "4. Reduce el fuego y cocina a fuego lento durante 20-30 minutos.",
+      "5. Condimenta con sal, pimienta y albahaca fresca al gusto.",
+      "6. Tritura la sopa con una batidora de mano o en una licuadora.",
+      "7. Vuelve a calentar la sopa antes de servir."
+    ]
+  },
+  {
+    id: 5,
+    nombre: "Espaguetis a la Bolognesa",
+    categoria: "Plato principal",
+    categoriasAdicionales: ["Pastas", "Carnes"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Espaguetis",
+      "Carne picada",
+      "Cebolla",
+      "Zanahoria",
+      "Apio",
+      "Ajo",
+      "Tomate triturado",
+      "Vino tinto",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Orégano",
+      "Queso parmesano"
+    ],
+    instrucciones: [
+      "1. Calienta el aceite de oliva en una sartén y sofríe la cebolla, la zanahoria, el apio y el ajo.",
+      "2. Agrega la carne picada y cocina hasta que esté dorada.",
+      "3. Añade el tomate triturado y el vino tinto. Cocina a fuego lento durante unos 30-40 minutos.",
+      "4. Condimenta con sal, pimienta y orégano al gusto.",
+      "5. Mientras tanto, cuece los espaguetis en agua con sal según las instrucciones del paquete.",
+      "6. Sirve los espaguetis con la salsa bolognesa por encima y espolvorea con queso parmesano."
+    ]
+  },
+  {
+    id: 6,
+    nombre: "Tortilla de Patatas",
+    categoria: "Plato principal",
+    categoriasAdicionales: ["Tortillas"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Patatas",
+      "Huevos",
+      "Cebolla",
+      "Aceite de oliva",
+      "Sal"
+    ],
+    instrucciones: [
+      "1. Pela las patatas y córtalas en rodajas finas.",
+      "2. Pela y corta la cebolla en juliana.",
+      "3. Calienta abundante aceite en una sartén y fríe las patatas hasta que estén tiernas pero no doradas.",
+      "4. Escurre las patatas del exceso de aceite y resérvalas.",
+      "5. Bate los huevos en un bol grande y sazona con sal.",
+      "6. Agrega las patatas y la cebolla a los huevos batidos.",
+      "7. Calienta una sartén más pequeña con unas gotas de aceite.",
+      "8. Vierte la mezcla en la sartén y cocina a fuego lento hasta que la tortilla esté dorada por un lado.",
+      "9. Voltea la tortilla con la ayuda de un plato y cocina por el otro lado.",
+      "10. Sirve la tortilla caliente o fría, cortada en triángulos o cuadrados."
+    ]
+  },
+  {
+    id: 7,
+    nombre: "Pastel de Chocolate",
+    categoria: "Postre",
+    categoriasAdicionales: ["Pasteles"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Harina",
+      "Cacao en polvo",
+      "Azúcar",
+      "Mantequilla",
+      "Huevos",
+      "Leche",
+      "Levadura",
+      "Esencia de vainilla",
+      "Sal",
+      "Crema de chocolate"
+    ],
+    instrucciones: [
+      "1. Precalienta el horno a 180°C.",
+      "2. En un bol, mezcla la harina, el cacao en polvo, el azúcar, la levadura y una pizca de sal.",
+      "3. Añade los huevos, la leche, la mantequilla derretida y la esencia de vainilla.",
+      "4. Mezcla bien hasta obtener una masa homogénea.",
+      "5. Vierte la masa en un molde previamente engrasado y enharinado.",
+      "6. Hornea durante 25-30 minutos o hasta que al insertar un palillo en el centro, salga limpio.",
+      "7. Deja enfriar el pastel antes de desmoldarlo.",
+      "8. Cubre con una generosa capa de crema de chocolate.",
+      "9. Decora con virutas de chocolate o frutos secos al gusto."
+    ]
+  },
+  {
+    id: 8,
+    nombre: "Gazpacho",
+    categoria: "Entrada",
+    categoriasAdicionales: ["Sopas", "Verano"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Tomates",
+      "Pimiento verde",
+      "Pepino",
+      "Cebolla",
+      "Ajo",
+      "Pan duro",
+      "Vinagre",
+      "Aceite de oliva",
+      "Agua",
+      "Sal",
+      "Pimienta"
+    ],
+    instrucciones: [
+      "1. Pela los tomates y córtalos en trozos.",
+      "2. Lava y corta el pimiento verde y el pepino en trozos.",
+      "3. Pela y pica la cebolla y el ajo.",
+      "4. En un bol grande, mezcla los tomates, el pimiento verde, el pepino, la cebolla y el ajo.",
+      "5. Remoja el pan duro en vinagre y agrégalo a la mezcla anterior.",
+      "6. Añade aceite de oliva, sal y pimienta al gusto.",
+      "7. Tritura todos los ingredientes con una batidora de mano o en una licuadora.",
+      "8. Agrega agua fría hasta obtener la consistencia deseada.",
+      "9. Refrigera el gazpacho durante al menos 2 horas antes de servir.",
+      "10. Sirve frío y decora con trozos de verduras."
+    ]
+  },
+  {
+    id: 9,
+    nombre: "Pollo al Curry",
+    categoria: "Plato principal",
+    categoriasAdicionales: ["Carnes", "Cocina asiática"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Pollo",
+      "Cebolla",
+      "Pimiento rojo",
+      "Leche de coco",
+      "Curry en polvo",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Arroz"
+    ],
+    instrucciones: [
+      "1. Corta el pollo en trozos pequeños y sazona con sal y pimienta.",
+      "2. En una sartén grande, calienta aceite de oliva y cocina el pollo hasta que esté dorado.",
+      "3. Agrega la cebolla picada y el pimiento rojo cortado en tiras.",
+      "4. Cocina hasta que las verduras estén tiernas.",
+      "5. Añade el curry en polvo y mezcla bien.",
+      "6. Vierte la leche de coco y cocina a fuego lento durante unos minutos.",
+      "7. Mientras tanto, cocina el arroz según las instrucciones del paquete.",
+      "8. Sirve el pollo al curry sobre una cama de arroz y decora con hojas de cilantro.",
+      "9. Acompaña con pan de naan o pan de ajo si lo deseas."
+    ]
+  },
+  {
+    id: 10,
+    nombre: "Cheesecake de Fresa",
+    categoria: "Postre",
+    categoriasAdicionales: ["Pasteles", "Frutas"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Galletas",
+      "Mantequilla",
+      "Queso crema",
+      "Azúcar",
+      "Esencia de vainilla",
+      "Huevos",
+      "Fresas",
+      "Mermelada de fresa"
+    ],
+    instrucciones: [
+      "1. Tritura las galletas hasta obtener migas finas.",
+      "2. Derrite la mantequilla y mézclala con las migas de galleta hasta que estén bien combinadas.",
+      "3. Presiona la mezcla de galleta en el fondo de un molde para tarta y refrigera durante 30 minutos.",
+      "4. En un bol grande, bate el queso crema, el azúcar y la esencia de vainilla hasta obtener una mezcla suave.",
+      "5. Añade los huevos uno por uno, batiendo bien después de cada adición.",
+      "6. Vierte la mezcla de queso crema sobre la base de galleta en el molde.",
+      "7. Hornea a 160°C durante 50-60 minutos o hasta que el cheesecake esté firme al tacto.",
+      "8. Deja enfriar a temperatura ambiente y luego refrigera durante al menos 4 horas antes de desmoldar.",
+      "9. Cubre con mermelada de fresa y decora con fresas frescas antes de servir."
+    ]
+  },
+  {
+    id: 11,
+    nombre: "Ensalada César",
+    categoria: "Entrada",
+    categoriasAdicionales: ["Ensaladas"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Lechuga romana",
+      "Pan tostado",
+      "Queso parmesano",
+      "Pechuga de pollo",
+      "Aceite de oliva",
+      "Ajo",
+      "Anchoas (opcional)",
+      "Huevo",
+      "Mostaza",
+      "Vinagre",
+      "Salsa Worcestershire",
+      "Sal",
+      "Pimienta"
+    ],
+    instrucciones: [
+      "1. Lava y corta la lechuga romana en trozos pequeños.",
+      "2. En una sartén, calienta un poco de aceite de oliva y dora el pan tostado en cubos para hacer los crutones.",
+      "3. En otra sartén, cocina la pechuga de pollo hasta que esté dorada y cocida por completo.",
+      "4. Prepara el aderezo mezclando en un bol el ajo picado, las anchoas (si las usas), el huevo, la mostaza, el vinagre y la salsa Worcestershire.",
+      "5. Agrega aceite de oliva en forma de hilo mientras bates para emulsionar el aderezo.",
+      "6. Condimenta con sal y pimienta al gusto.",
+      "7. En un bol grande, mezcla la lechuga, los crutones, el pollo cortado en tiras y el queso parmesano rallado.",
+      "8. Añade el aderezo a la ensalada y mezcla bien para que todos los ingredientes se impregnen del aderezo.",
+      "9. Sirve la ensalada César con más queso parmesano y crutones por encima."
+    ]
+  },
+  {
+    id: 12,
+    nombre: "Lasaña de Verduras",
+    categoria: "Plato principal",
+    categoriasAdicionales: ["Pastas", "Vegetariano"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Láminas de lasaña",
+      "Calabacín",
+      "Berenjena",
+      "Pimiento rojo",
+      "Cebolla",
+      "Ajo",
+      "Tomate triturado",
+      "Queso rallado",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Orégano",
+      "Albahaca"
+    ],
+    instrucciones: [
+      "1. Precalienta el horno a 180°C.",
+      "2. Corta el calabacín, la berenjena, el pimiento rojo, la cebolla y el ajo en rodajas o trozos.",
+      "3. En una sartén grande, calienta aceite de oliva y saltea las verduras hasta que estén tiernas.",
+      "4. Añade el tomate triturado, sal, pimienta, orégano y albahaca al gusto. Cocina a fuego lento durante unos 10-15 minutos.",
+      "5. En un molde para horno, alterna capas de láminas de lasaña, verduras y queso rallado. Repite hasta que se agoten los ingredientes, terminando con una capa de queso rallado en la parte superior.",
+      "6. Hornea durante 25-30 minutos o hasta que la lasaña esté caliente y el queso esté derretido y dorado.",
+      "7. Deja reposar unos minutos antes de servir."
+    ]
+  },
+  {
+    id: 13,
+    nombre: "Tarta de Limón",
+    categoria: "Postre",
+    categoriasAdicionales: ["Postres caseros"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Galletas",
+      "Mantequilla",
+      "Leche condensada",
+      "Zumo de limón",
+      "Huevos",
+      "Azúcar glass",
+      "Ralladura de limón"
+    ],
+    instrucciones: [
+      "1. Tritura las galletas hasta obtener migas finas.",
+      "2. Derrite la mantequilla y mézclala con las migas de galleta hasta que estén bien combinadas.",
+      "3. En un molde para tarta, presiona la mezcla de galleta en el fondo y a los lados para formar la base de la tarta. Refrigera durante 30 minutos.",
+      "4. En un bol, mezcla la leche condensada, el zumo de limón y las yemas de huevo hasta obtener una mezcla suave.",
+      "5. En otro bol, bate las claras de huevo a punto de nieve.",
+      "6. Incorpora las claras de huevo batidas a la mezcla de limón con movimientos suaves y envolventes.",
+      "7. Vierte la mezcla sobre la base de galleta y extiéndela de manera uniforme.",
+      "8. Hornea a 180°C durante 15-20 minutos o hasta que la tarta esté firme al tacto.",
+      "9. Deja enfriar a temperatura ambiente y luego refrigera durante al menos 2 horas antes de servir.",
+      "10. Espolvorea con azúcar glass y ralladura de limón antes de servir."
+    ]
+  },
+  {
+    id: 14,
+    nombre: "Ensalada Caprese",
+    categoria: "Entrada",
+    categoriasAdicionales: ["Ensaladas", "Italiano"],
+    imagen: "url_de_la_imagen",
+    ingredientes: [
+      "Tomates",
+      "Mozzarella",
+      "Hojas de albahaca",
+      "Aceite de oliva",
+      "Vinagre balsámico",
+      "Sal",
+      "Pimienta"
+    ],
+    instrucciones: [
+      "1. Corta los tomates y la mozzarella en rodajas de grosor medio.",
+      "2. En un plato, coloca una rodaja de tomate, luego una rodaja de mozzarella y una hoja de albahaca.",
+      "3. Repite hasta que hayas utilizado todos los tomates y la mozzarella.",
+      "4. Espolvorea con sal y pimienta al gusto.",
+      "5. Riega con aceite de oliva y vinagre balsámico justo antes de servir.",
+      "6. Puedes decorar con más hojas de albahaca si lo deseas.",
+      "7. Sirve la ensalada Caprese fría y disfruta de esta deliciosa especialidad italiana."
+    ]
+  },
+
+  {
+    id: 15,
+    nombre: "Risotto de Champiñones",
+    categoria: "Plato principal",
+    imagen: "url_de_la_imagen",
+    categoriasAdicionales: ["Arroces", "Vegetariano"],
+    ingredientes: [
+              "Arroz Arborio",
             "Champiñones",
             "Cebolla",
             "Ajo",
@@ -266,7 +404,7 @@ export const recetas = [
             "Pimienta",
             "Perejil"
           ],
-          instrucciones: "1. En una olla, calienta el caldo de verduras y mantenlo caliente a fuego bajo.\n2. En otra olla grande, derrite la mantequilla y añade el aceite de oliva.\n3. Añade la cebolla picada y el ajo picado y cocina hasta que estén tiernos.\n4. Agrega los champiñones en rodajas y cocínalos hasta que estén dorados.\n5. Añade el arroz Arborio y remueve para que se impregne de la mezcla.\n6. Agrega el vino blanco y remueve hasta que se haya evaporado.\n7. Añade poco a poco el caldo de verduras caliente, removiendo constantemente hasta que se haya absorbido antes de añadir más caldo. Continúa hasta que el arroz esté al dente y haya absorbido la mayor parte del caldo (aproximadamente 20-25 minutos).\n8. Retira del fuego y añade el queso parmesano rallado. Remueve hasta que se derrita y se mezcle con el arroz.\n9. Sazona con sal y pimienta al gusto.\n10. Sirve caliente, espolvoreado con perejil fresco picado."
+          instrucciones: ["1. En una olla, calienta el caldo de verduras y mantenlo caliente a fuego bajo.\n2. En otra olla grande, derrite la mantequilla y añade el aceite de oliva.\n3. Añade la cebolla picada y el ajo picado y cocina hasta que estén tiernos.\n4. Agrega los champiñones en rodajas y cocínalos hasta que estén dorados.\n5. Añade el arroz Arborio y remueve para que se impregne de la mezcla.\n6. Agrega el vino blanco y remueve hasta que se haya evaporado.\n7. Añade poco a poco el caldo de verduras caliente, removiendo constantemente hasta que se haya absorbido antes de añadir más caldo. Continúa hasta que el arroz esté al dente y haya absorbido la mayor parte del caldo (aproximadamente 20-25 minutos).\n8. Retira del fuego y añade el queso parmesano rallado. Remueve hasta que se derrita y se mezcle con el arroz.\n9. Sazona con sal y pimienta al gusto.\n10. Sirve caliente, espolvoreado con perejil fresco picado."]
         },
         {
           id: 16,
@@ -280,7 +418,7 @@ export const recetas = [
             "Azúcar",
             "Esencia de vainilla"
           ],
-          instrucciones: "1. Precalienta el horno a 180°C.\n2. En una cacerola, calienta el azúcar a fuego medio hasta que se derrita y se forme un caramelo líquido.\n3. Vierte el caramelo en el fondo de un molde para flan y extiéndelo por todo el fondo.\n4. En un bol, bate los huevos, la leche y la esencia de vainilla hasta que estén bien mezclados.\n5. Vierte la mezcla sobre el caramelo en el molde.\n6. Coloca el molde en una bandeja para hornear más grande y llénala con agua caliente hasta alcanzar aproximadamente la mitad del molde para flan.\n7. Hornea durante 45-50 minutos o hasta que el flan esté firme pero tembloroso en el centro.\n8. Deja enfriar a temperatura ambiente y luego refrigera durante al menos 2 horas antes de servir."
+          instrucciones: ["1. Precalienta el horno a 180°C.\n2. En una cacerola, calienta el azúcar a fuego medio hasta que se derrita y se forme un caramelo líquido.\n3. Vierte el caramelo en el fondo de un molde para flan y extiéndelo por todo el fondo.\n4. En un bol, bate los huevos, la leche y la esencia de vainilla hasta que estén bien mezclados.\n5. Vierte la mezcla sobre el caramelo en el molde.\n6. Coloca el molde en una bandeja para hornear más grande y llénala con agua caliente hasta alcanzar aproximadamente la mitad del molde para flan.\n7. Hornea durante 45-50 minutos o hasta que el flan esté firme pero tembloroso en el centro.\n8. Deja enfriar a temperatura ambiente y luego refrigera durante al menos 2 horas antes de servir."]
         },
         {
             id: 17,
@@ -301,7 +439,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Prepara la masa mezclando la harina de trigo con la manteca cortada en cubitos. Amasa hasta obtener una masa suave y homogénea. Envuelve en papel film y deja reposar en el refrigerador durante 30 minutos.\n2. Mientras tanto, prepara el relleno calentando una sartén con un poco de aceite. Agrega la cebolla picada y el pimiento rojo picado y cocina hasta que estén tiernos.\n3. Añade la carne picada y cocina hasta que esté bien dorada.\n4. Agrega las aceitunas picadas, el comino, el pimentón, la sal y la pimienta al gusto. Mezcla bien todos los ingredientes y retira del fuego.\n5. Precalienta el horno a 180°C.\n6. Estira la masa sobre una superficie enharinada y corta círculos del tamaño deseado para las empanadas.\n7. Coloca una porción de relleno en el centro de cada círculo de masa. Dobla la masa por la mitad y presiona los bordes con un tenedor para sellar las empanadas.\n8. Coloca las empanadas en una bandeja para horno y báñalas con huevo batido.\n9. Hornea durante aproximadamente 20-25 minutos o hasta que estén doradas y crujientes."
+            instrucciones: ["1. Prepara la masa mezclando la harina de trigo con la manteca cortada en cubitos. Amasa hasta obtener una masa suave y homogénea. Envuelve en papel film y deja reposar en el refrigerador durante 30 minutos.\n2. Mientras tanto, prepara el relleno calentando una sartén con un poco de aceite. Agrega la cebolla picada y el pimiento rojo picado y cocina hasta que estén tiernos.\n3. Añade la carne picada y cocina hasta que esté bien dorada.\n4. Agrega las aceitunas picadas, el comino, el pimentón, la sal y la pimienta al gusto. Mezcla bien todos los ingredientes y retira del fuego.\n5. Precalienta el horno a 180°C.\n6. Estira la masa sobre una superficie enharinada y corta círculos del tamaño deseado para las empanadas.\n7. Coloca una porción de relleno en el centro de cada círculo de masa. Dobla la masa por la mitad y presiona los bordes con un tenedor para sellar las empanadas.\n8. Coloca las empanadas en una bandeja para horno y báñalas con huevo batido.\n9. Hornea durante aproximadamente 20-25 minutos o hasta que estén doradas y crujientes."]
           },
         {
           id: 18,
@@ -321,7 +459,7 @@ export const recetas = [
             "Sal",
             "Pimienta"
           ],
-          instrucciones: "1. En un bol, sazona la carne picada con sal y pimienta al gusto y mezcla bien.\n2. Divide la carne picada en porciones iguales y dales forma de hamburguesa.\n3. Cocina las hamburguesas a la parrilla, en una sartén o en la barbacoa hasta que estén cocidas a tu gusto.\n4. Mientras tanto, corta el pan de hamburguesa y tuesta ligeramente los panes.\n5. Prepara los ingredientes para la hamburguesa, como la lechuga, el tomate, la cebolla, el queso y los condimentos.\n6. Una vez que las hamburguesas estén cocidas, coloca una hamburguesa en cada pan y agrega los ingredientes deseados.\n7. Cubre con la otra mitad del pan y disfruta de tu hamburguesa casera."
+          instrucciones: ["1. En un bol, sazona la carne picada con sal y pimienta al gusto y mezcla bien.\n2. Divide la carne picada en porciones iguales y dales forma de hamburguesa.\n3. Cocina las hamburguesas a la parrilla, en una sartén o en la barbacoa hasta que estén cocidas a tu gusto.\n4. Mientras tanto, corta el pan de hamburguesa y tuesta ligeramente los panes.\n5. Prepara los ingredientes para la hamburguesa, como la lechuga, el tomate, la cebolla, el queso y los condimentos.\n6. Una vez que las hamburguesas estén cocidas, coloca una hamburguesa en cada pan y agrega los ingredientes deseados.\n7. Cubre con la otra mitad del pan y disfruta de tu hamburguesa casera."]
         },
         {
           id: 19,
@@ -338,7 +476,7 @@ export const recetas = [
             "Huevos",
             "Cacao en polvo"
           ],
-          instrucciones: "1. Prepara café espresso fuerte y déjalo enfriar.\n2. En un bol, mezcla el queso mascarpone, el azúcar y las yemas de huevo hasta obtener una mezcla suave.\n3. En otro bol, bate las claras de huevo a punto de nieve.\n4. Incorpora las claras de huevo batidas a la mezcla de mascarpone con movimientos suaves y envolventes.\n5. En un plato hondo, mezcla el café espresso con el licor de café.\n6. Sumerge los bizcochos de soletilla en la mezcla de café y colócalos en el fondo de un molde para tarta o en copas individuales.\n7. Cubre con una capa de la mezcla de mascarpone.\n8. Repite el proceso de capas de bizcochos y mascarpone hasta agotar los ingredientes, terminando con una capa de mascarpone en la parte superior.\n9. Espolvorea generosamente con cacao en polvo.\n10. Refrigera durante al menos 4 horas o durante toda la noche antes de servir."
+          instrucciones: ["1. Prepara café espresso fuerte y déjalo enfriar.\n2. En un bol, mezcla el queso mascarpone, el azúcar y las yemas de huevo hasta obtener una mezcla suave.\n3. En otro bol, bate las claras de huevo a punto de nieve.\n4. Incorpora las claras de huevo batidas a la mezcla de mascarpone con movimientos suaves y envolventes.\n5. En un plato hondo, mezcla el café espresso con el licor de café.\n6. Sumerge los bizcochos de soletilla en la mezcla de café y colócalos en el fondo de un molde para tarta o en copas individuales.\n7. Cubre con una capa de la mezcla de mascarpone.\n8. Repite el proceso de capas de bizcochos y mascarpone hasta agotar los ingredientes, terminando con una capa de mascarpone en la parte superior.\n9. Espolvorea generosamente con cacao en polvo.\n10. Refrigera durante al menos 4 horas o durante toda la noche antes de servir."]
         },
         {
           id: 20,
@@ -358,7 +496,7 @@ export const recetas = [
             "Sal",
             "Pimienta"
           ],
-          instrucciones: "1. Corta los filetes de pescado en cubos pequeños.\n2. Exprime suficientes limones para cubrir el pescado y deja que se marine en el jugo de limón durante al menos 30 minutos.\n3. En un recipiente aparte, mezcla la cebolla roja picada, el ají amarillo picado, el cilantro picado y el tomate picado.\n4. Si lo deseas, puedes añadir camarones cocidos y pelados a la mezcla.\n5. Escurre el pescado del jugo de limón y añádelo a la mezcla de cebolla, ají, cilantro y tomate.\n6. Mezcla todo junto y sazona con sal y pimienta al gusto.\n7. Si lo deseas, puedes añadir maíz cocido a la mezcla para darle más textura.\n8. Sirve frío y disfruta del ceviche de pescado."
+          instrucciones: ["1. Corta los filetes de pescado en cubos pequeños.\n2. Exprime suficientes limones para cubrir el pescado y deja que se marine en el jugo de limón durante al menos 30 minutos.\n3. En un recipiente aparte, mezcla la cebolla roja picada, el ají amarillo picado, el cilantro picado y el tomate picado.\n4. Si lo deseas, puedes añadir camarones cocidos y pelados a la mezcla.\n5. Escurre el pescado del jugo de limón y añádelo a la mezcla de cebolla, ají, cilantro y tomate.\n6. Mezcla todo junto y sazona con sal y pimienta al gusto.\n7. Si lo deseas, puedes añadir maíz cocido a la mezcla para darle más textura.\n8. Sirve frío y disfruta del ceviche de pescado."]
         },   
         {
             id: 21,
@@ -378,7 +516,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Tritura todos los ingredientes en una licuadora hasta obtener una mezcla suave.\n2. Añade sal y pimienta al gusto.\n3. Refrigera durante al menos una hora antes de servir."
+            instrucciones: ["1. Tritura todos los ingredientes en una licuadora hasta obtener una mezcla suave.\n2. Añade sal y pimienta al gusto.\n3. Refrigera durante al menos una hora antes de servir."]
           },
           {
             id: 22,
@@ -396,7 +534,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla, saltea la cebolla y el ajo hasta que estén dorados.\n2. Añade la calabaza en cubos y el caldo de verduras. Cocina hasta que la calabaza esté tierna.\n3. Tritura la sopa con una licuadora o batidora de mano hasta obtener una consistencia suave.\n4. Añade la crema de leche y la nuez moscada. Mezcla bien.\n5. Sazona con sal y pimienta al gusto.\n6. Calienta la sopa a fuego medio hasta que esté bien caliente.\n7. Sirve caliente y decora con un poco de crema de leche y nuez moscada rallada."
+            instrucciones: ["1. En una olla, saltea la cebolla y el ajo hasta que estén dorados.\n2. Añade la calabaza en cubos y el caldo de verduras. Cocina hasta que la calabaza esté tierna.\n3. Tritura la sopa con una licuadora o batidora de mano hasta obtener una consistencia suave.\n4. Añade la crema de leche y la nuez moscada. Mezcla bien.\n5. Sazona con sal y pimienta al gusto.\n6. Calienta la sopa a fuego medio hasta que esté bien caliente.\n7. Sirve caliente y decora con un poco de crema de leche y nuez moscada rallada."]
           },
           {
             id: 23,
@@ -413,7 +551,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Corta los tomates y el queso mozzarella en rodajas.\n2. Dispón las rodajas de tomate y queso alternativamente en un plato.\n3. Espolvorea con hojas de albahaca fresca.\n4. Riega con aceite de oliva y vinagre balsámico.\n5. Sazona con sal y pimienta al gusto.\n6. Deja reposar durante unos minutos para que los sabores se mezclen.\n7. Sirve y disfruta."
+            instrucciones: ["1. Corta los tomates y el queso mozzarella en rodajas.\n2. Dispón las rodajas de tomate y queso alternativamente en un plato.\n3. Espolvorea con hojas de albahaca fresca.\n4. Riega con aceite de oliva y vinagre balsámico.\n5. Sazona con sal y pimienta al gusto.\n6. Deja reposar durante unos minutos para que los sabores se mezclen.\n7. Sirve y disfruta."]
           },
           {
             id: 24,
@@ -434,7 +572,7 @@ export const recetas = [
               "Pimienta",
               "Arroz blanco"
             ],
-            instrucciones: "1. Corta el lomo de res en tiras delgadas.\n2. En una sartén grande o wok, calienta el aceite vegetal a fuego alto.\n3. Agrega la cebolla cortada en juliana y cocina hasta que esté transparente.\n4. Añade el tomate cortado en rodajas y el ají amarillo sin semillas y en tiras.\n5. Incorpora el lomo de res y cocina hasta que esté dorado.\n6. Agrega las papas cortadas en bastones y saltea durante unos minutos.\n7. Vierte el vinagre de vino tinto y la salsa de soja. Revuelve bien.\n8. Sazona con sal y pimienta al gusto.\n9. Sirve el lomo saltado caliente sobre arroz blanco."
+            instrucciones: ["1. Corta el lomo de res en tiras delgadas.\n2. En una sartén grande o wok, calienta el aceite vegetal a fuego alto.\n3. Agrega la cebolla cortada en juliana y cocina hasta que esté transparente.\n4. Añade el tomate cortado en rodajas y el ají amarillo sin semillas y en tiras.\n5. Incorpora el lomo de res y cocina hasta que esté dorado.\n6. Agrega las papas cortadas en bastones y saltea durante unos minutos.\n7. Vierte el vinagre de vino tinto y la salsa de soja. Revuelve bien.\n8. Sazona con sal y pimienta al gusto.\n9. Sirve el lomo saltado caliente sobre arroz blanco."]
           },
           {
             id: 25,
@@ -455,7 +593,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Corta las berenjenas, calabacines, pimientos y cebolla en rodajas finas.\n2. En una sartén grande, calienta el aceite de oliva a fuego medio-alto.\n3. Añade la cebolla y el ajo picados y cocínalos hasta que estén dorados.\n4. Agrega los pimientos y cocínalos durante unos minutos.\n5. Incorpora las berenjenas y calabacines y cocina hasta que estén tiernos.\n6. Agrega los tomates picados y las hierbas provenzales. Mezcla bien.\n7. Sazona con sal y pimienta al gusto.\n8. Cocina a fuego bajo durante unos 10-15 minutos para que los sabores se mezclen.\n9. Sirve el ratatouille caliente como plato principal o como acompañamiento."
+            instrucciones: ["1. Corta las berenjenas, calabacines, pimientos y cebolla en rodajas finas.\n2. En una sartén grande, calienta el aceite de oliva a fuego medio-alto.\n3. Añade la cebolla y el ajo picados y cocínalos hasta que estén dorados.\n4. Agrega los pimientos y cocínalos durante unos minutos.\n5. Incorpora las berenjenas y calabacines y cocina hasta que estén tiernos.\n6. Agrega los tomates picados y las hierbas provenzales. Mezcla bien.\n7. Sazona con sal y pimienta al gusto.\n8. Cocina a fuego bajo durante unos 10-15 minutos para que los sabores se mezclen.\n9. Sirve el ratatouille caliente como plato principal o como acompañamiento."]
           },
           {
             id: 26,
@@ -472,7 +610,7 @@ export const recetas = [
               "Mantequilla",
               "Azúcar glas (opcional)"
             ],
-            instrucciones: "1. Precalienta el horno a 180°C (350°F).\n2. Extiende la masa para tarta en un molde y pincha el fondo con un tenedor.\n3. Ralla la cáscara de los limones y exprime su jugo.\n4. En un bol, bate los huevos con el azúcar hasta obtener una mezcla homogénea.\n5. Añade la ralladura de limón, el jugo de limón, la harina y la mantequilla derretida. Mezcla bien.\n6. Vierte la mezcla sobre la masa para tarta.\n7. Hornea durante aproximadamente 30-35 minutos o hasta que la tarta esté dorada y firme al tacto.\n8. Deja enfriar antes de desmoldar.\n9. Opcionalmente, espolvorea con azúcar glas antes de servir."
+            instrucciones: ["1. Precalienta el horno a 180°C (350°F).\n2. Extiende la masa para tarta en un molde y pincha el fondo con un tenedor.\n3. Ralla la cáscara de los limones y exprime su jugo.\n4. En un bol, bate los huevos con el azúcar hasta obtener una mezcla homogénea.\n5. Añade la ralladura de limón, el jugo de limón, la harina y la mantequilla derretida. Mezcla bien.\n6. Vierte la mezcla sobre la masa para tarta.\n7. Hornea durante aproximadamente 30-35 minutos o hasta que la tarta esté dorada y firme al tacto.\n8. Deja enfriar antes de desmoldar.\n9. Opcionalmente, espolvorea con azúcar glas antes de servir."]
           },
           {
             id: 27,
@@ -487,7 +625,7 @@ export const recetas = [
               "Nata para montar",
               "Esencia de vainilla"
             ],
-            instrucciones: "1. Derrite el chocolate negro al baño maría o en el microondas.\n2. Separa las yemas de las claras de los huevos.\n3. En un bol, bate las yemas con el azúcar hasta obtener una mezcla espumosa.\n4. Añade el chocolate derretido a la mezcla de yemas y azúcar. Mezcla bien.\n5. En otro bol, bate la nata para montar hasta que esté cremosa.\n6. Agrega la nata montada y la esencia de vainilla a la mezcla de chocolate y yemas. Mezcla con movimientos suaves y envolventes.\n7. En otro bol, bate las claras de los huevos a punto de nieve.\n8. Incorpora las claras batidas a la mezcla de chocolate y nata. Mezcla con movimientos suaves y envolventes hasta obtener una textura suave.\n9. Vierte la mezcla en recipientes individuales.\n10. Refrigera durante al menos 2 horas o hasta que la mousse esté firme.\n11. Decora con ralladura de chocolate o nata montada antes de servir."
+            instrucciones: ["1. Derrite el chocolate negro al baño maría o en el microondas.\n2. Separa las yemas de las claras de los huevos.\n3. En un bol, bate las yemas con el azúcar hasta obtener una mezcla espumosa.\n4. Añade el chocolate derretido a la mezcla de yemas y azúcar. Mezcla bien.\n5. En otro bol, bate la nata para montar hasta que esté cremosa.\n6. Agrega la nata montada y la esencia de vainilla a la mezcla de chocolate y yemas. Mezcla con movimientos suaves y envolventes.\n7. En otro bol, bate las claras de los huevos a punto de nieve.\n8. Incorpora las claras batidas a la mezcla de chocolate y nata. Mezcla con movimientos suaves y envolventes hasta obtener una textura suave.\n9. Vierte la mezcla en recipientes individuales.\n10. Refrigera durante al menos 2 horas o hasta que la mousse esté firme.\n11. Decora con ralladura de chocolate o nata montada antes de servir."]
           },
           {
             id: 28,
@@ -507,7 +645,7 @@ export const recetas = [
               "Pimienta",
               "Perejil fresco"
             ],
-            instrucciones: "1. En una olla, calienta el aceite de oliva a fuego medio.\n2. Añade la cebolla picada, el ajo picado, el apio en rodajas y las zanahorias en rodajas finas. Cocina hasta que las verduras estén tiernas.\n3. Agrega el caldo de pollo y lleva a ebullición.\n4. Añade los fideos y cocina según las instrucciones del paquete.\n5. Sazona con sal y pimienta al gusto.\n6. Sirve la sopa caliente y decora con perejil fresco picado."
+            instrucciones: ["1. En una olla, calienta el aceite de oliva a fuego medio.\n2. Añade la cebolla picada, el ajo picado, el apio en rodajas y las zanahorias en rodajas finas. Cocina hasta que las verduras estén tiernas.\n3. Agrega el caldo de pollo y lleva a ebullición.\n4. Añade los fideos y cocina según las instrucciones del paquete.\n5. Sazona con sal y pimienta al gusto.\n6. Sirve la sopa caliente y decora con perejil fresco picado."]
           },
           {
             id: 29,
@@ -529,7 +667,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Corta las pechugas de pollo en trozos.\n2. En una sartén grande, calienta el aceite de oliva a fuego medio-alto.\n3. Añade la cebolla picada, el ajo picado y el jengibre rallado. Cocina hasta que estén dorados.\n4. Agrega el pollo y cocina hasta que esté dorado por todos los lados.\n5. Añade el curry en polvo, la cúrcuma y el comino. Mezcla bien.\n6. Vierte la leche de coco y deja que hierva.\n7. Reduce el fuego y cocina a fuego lento durante unos 15-20 minutos, o hasta que el pollo esté tierno y la salsa se haya espesado.\n8. Sazona con sal y pimienta al gusto.\n9. Espolvorea con cilantro fresco picado antes de servir.\n10. Sirve con arroz blanco o naan."
+            instrucciones: ["1. Corta las pechugas de pollo en trozos.\n2. En una sartén grande, calienta el aceite de oliva a fuego medio-alto.\n3. Añade la cebolla picada, el ajo picado y el jengibre rallado. Cocina hasta que estén dorados.\n4. Agrega el pollo y cocina hasta que esté dorado por todos los lados.\n5. Añade el curry en polvo, la cúrcuma y el comino. Mezcla bien.\n6. Vierte la leche de coco y deja que hierva.\n7. Reduce el fuego y cocina a fuego lento durante unos 15-20 minutos, o hasta que el pollo esté tierno y la salsa se haya espesado.\n8. Sazona con sal y pimienta al gusto.\n9. Espolvorea con cilantro fresco picado antes de servir.\n10. Sirve con arroz blanco o naan."]
           },
           {
             id: 30,
@@ -546,7 +684,7 @@ export const recetas = [
               "Mantequilla",
               "Azúcar glas (opcional)"
             ],
-            instrucciones: "1. Precalienta el horno a 180°C (350°F).\n2. Forra un molde para tarta con la masa y pincha el fondo con un tenedor.\n3. Pela y corta las manzanas en rodajas finas.\n4. En un bol, mezcla el azúcar, la canela y la harina.\n5. Coloca una capa de manzanas en el molde para tarta y espolvorea con la mezcla de azúcar, canela y harina.\n6. Repite el proceso hasta que todas las manzanas estén utilizadas.\n7. Distribuye pequeños trozos de mantequilla sobre la capa superior.\n8. Hornea durante aproximadamente 40-45 minutos o hasta que la tarta esté dorada y las manzanas estén tiernas.\n9. Deja enfriar antes de desmoldar.\n10. Opcionalmente, espolvorea con azúcar glas antes de servir."
+            instrucciones: ["1. Precalienta el horno a 180°C (350°F).\n2. Forra un molde para tarta con la masa y pincha el fondo con un tenedor.\n3. Pela y corta las manzanas en rodajas finas.\n4. En un bol, mezcla el azúcar, la canela y la harina.\n5. Coloca una capa de manzanas en el molde para tarta y espolvorea con la mezcla de azúcar, canela y harina.\n6. Repite el proceso hasta que todas las manzanas estén utilizadas.\n7. Distribuye pequeños trozos de mantequilla sobre la capa superior.\n8. Hornea durante aproximadamente 40-45 minutos o hasta que la tarta esté dorada y las manzanas estén tiernas.\n9. Deja enfriar antes de desmoldar.\n10. Opcionalmente, espolvorea con azúcar glas antes de servir."]
           },
     
           {
@@ -569,7 +707,7 @@ export const recetas = [
               "Chiles",
               "Limones"
             ],
-            instrucciones: "1. Cocina los fideos de arroz según las instrucciones del paquete.\n2. En una sartén grande, calienta un poco de aceite y añade el tofu cortado en cubos. Cocina hasta que esté dorado.\n3. Agrega los camarones y los huevos batidos. Remueve hasta que los huevos estén cocidos.\n4. Añade las cebollas verdes en rodajas, los brotes de soja y los cacahuetes. Remueve bien.\n5. En un bol aparte, mezcla la salsa de pescado, la salsa de tamarindo, el azúcar y los chiles picados. Vierte esta mezcla sobre los ingredientes en la sartén y remueve.\n6. Añade los fideos de arroz cocidos y mezcla hasta que todo esté bien combinado.\n7. Sirve el Pad Thai caliente con un poco de jugo de limón por encima."
+            instrucciones: ["1. Cocina los fideos de arroz según las instrucciones del paquete.\n2. En una sartén grande, calienta un poco de aceite y añade el tofu cortado en cubos. Cocina hasta que esté dorado.\n3. Agrega los camarones y los huevos batidos. Remueve hasta que los huevos estén cocidos.\n4. Añade las cebollas verdes en rodajas, los brotes de soja y los cacahuetes. Remueve bien.\n5. En un bol aparte, mezcla la salsa de pescado, la salsa de tamarindo, el azúcar y los chiles picados. Vierte esta mezcla sobre los ingredientes en la sartén y remueve.\n6. Añade los fideos de arroz cocidos y mezcla hasta que todo esté bien combinado.\n7. Sirve el Pad Thai caliente con un poco de jugo de limón por encima."]
           },
           {
             id: 32,
@@ -589,7 +727,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Corta el pescado en trozos pequeños y colócalo en un bol.\n2. Exprime el jugo de limón sobre el pescado y asegúrate de cubrirlo por completo. Deja marinar durante unos minutos hasta que el pescado se cocine en el jugo de limón.\n3. Agrega la cebolla morada cortada en juliana y el ají amarillo picado finamente. Mezcla bien.\n4. Añade el cilantro picado, el maíz y la cancha. Mezcla nuevamente.\n5. Si lo deseas, puedes agregar camarones cocidos y pelados.\n6. Sazona con sal y pimienta al gusto.\n7. Sirve el ceviche frío como entrada o como plato principal acompañado de camote y maíz."
+            instrucciones: ["1. Corta el pescado en trozos pequeños y colócalo en un bol.\n2. Exprime el jugo de limón sobre el pescado y asegúrate de cubrirlo por completo. Deja marinar durante unos minutos hasta que el pescado se cocine en el jugo de limón.\n3. Agrega la cebolla morada cortada en juliana y el ají amarillo picado finamente. Mezcla bien.\n4. Añade el cilantro picado, el maíz y la cancha. Mezcla nuevamente.\n5. Si lo deseas, puedes agregar camarones cocidos y pelados.\n6. Sazona con sal y pimienta al gusto.\n7. Sirve el ceviche frío como entrada o como plato principal acompañado de camote y maíz."]
           },
           {
             id: 33,
@@ -614,7 +752,7 @@ export const recetas = [
               "Sal",
               "Cilantro fresco"
             ],
-            instrucciones: "1. Corta las pechugas de pollo en trozos.\n2. En una sartén grande, calienta un poco de aceite de oliva a fuego medio-alto.\n3. Añade la cebolla picada, los pimientos en trozos, las zanahorias en rodajas y los champiñones. Cocina hasta que las verduras estén tiernas.\n4. Agrega el pollo y cocina hasta que esté dorado por todos los lados.\n5. En un bol aparte, mezcla la leche de coco, el curry en polvo, la cúrcuma, el jengibre rallado, la salsa de pescado y el azúcar. Vierte esta mezcla sobre los ingredientes en la sartén.\n6. Reduce el fuego y deja que el curry de coco y pollo se cocine a fuego lento durante unos 15-20 minutos, o hasta que el pollo esté tierno y la salsa se haya espesado.\n7. Sazona con sal al gusto.\n8. Sirve el curry de coco y pollo caliente con arroz y espolvorea cilantro fresco por encima."
+            instrucciones: ["1. Corta las pechugas de pollo en trozos.\n2. En una sartén grande, calienta un poco de aceite de oliva a fuego medio-alto.\n3. Añade la cebolla picada, los pimientos en trozos, las zanahorias en rodajas y los champiñones. Cocina hasta que las verduras estén tiernas.\n4. Agrega el pollo y cocina hasta que esté dorado por todos los lados.\n5. En un bol aparte, mezcla la leche de coco, el curry en polvo, la cúrcuma, el jengibre rallado, la salsa de pescado y el azúcar. Vierte esta mezcla sobre los ingredientes en la sartén.\n6. Reduce el fuego y deja que el curry de coco y pollo se cocine a fuego lento durante unos 15-20 minutos, o hasta que el pollo esté tierno y la salsa se haya espesado.\n7. Sazona con sal al gusto.\n8. Sirve el curry de coco y pollo caliente con arroz y espolvorea cilantro fresco por encima."]
           },
           {
             id: 34,
@@ -654,7 +792,7 @@ export const recetas = [
               "Wasabi",
               "Jengibre encurtido"
             ],
-            instrucciones: "1. Cocina el arroz para sushi según las instrucciones del paquete y déjalo enfriar.\n2. Corta el pescado fresco, el pepino y el aguacate en tiras delgadas.\n3. Coloca una hoja de alga nori sobre una esterilla de bambú.\n4. Humedece tus manos con agua y toma una porción de arroz para sushi. Extiende el arroz uniformemente sobre el alga nori dejando un borde sin cubrir.\n5. Coloca las tiras de pescado, pepino y aguacate en el centro del arroz.\n6. Enrolla el sushi con la ayuda de la esterilla de bambú, aplicando una ligera presión para asegurarlo.\n7. Repite el proceso con el resto de los ingredientes.\n8. Con un cuchillo afilado, corta cada rollo de sushi en rodajas delgadas.\n9. Sirve el sushi con salsa de soja, wasabi y jengibre encurtido."
+            instrucciones: ["1. Cocina el arroz para sushi según las instrucciones del paquete y déjalo enfriar.\n2. Corta el pescado fresco, el pepino y el aguacate en tiras delgadas.\n3. Coloca una hoja de alga nori sobre una esterilla de bambú.\n4. Humedece tus manos con agua y toma una porción de arroz para sushi. Extiende el arroz uniformemente sobre el alga nori dejando un borde sin cubrir.\n5. Coloca las tiras de pescado, pepino y aguacate en el centro del arroz.\n6. Enrolla el sushi con la ayuda de la esterilla de bambú, aplicando una ligera presión para asegurarlo.\n7. Repite el proceso con el resto de los ingredientes.\n8. Con un cuchillo afilado, corta cada rollo de sushi en rodajas delgadas.\n9. Sirve el sushi con salsa de soja, wasabi y jengibre encurtido."]
           },
           {
             id: 36,
@@ -677,7 +815,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Corta el lomo de res en tiras delgadas.\n2. En una sartén grande, calienta un poco de aceite vegetal a fuego alto y saltea la carne hasta que esté dorada. Retira de la sartén y reserva.\n3. En la misma sartén, añade un poco más de aceite y saltea la cebolla roja, el tomate picado, el ají amarillo y el ajo picado hasta que estén tiernos.\n4. Agrega la carne reservada y mezcla bien.\n5. Añade las papas fritas y mezcla nuevamente.\n6. Agrega un poco de vinagre de vino y salsa de soja al gusto. Remueve bien.\n7. Sazona con sal y pimienta al gusto.\n8. Sirve el lomo saltado caliente sobre un lecho de arroz blanco y espolvorea cilantro fresco por encima."
+            instrucciones: ["1. Corta el lomo de res en tiras delgadas.\n2. En una sartén grande, calienta un poco de aceite vegetal a fuego alto y saltea la carne hasta que esté dorada. Retira de la sartén y reserva.\n3. En la misma sartén, añade un poco más de aceite y saltea la cebolla roja, el tomate picado, el ají amarillo y el ajo picado hasta que estén tiernos.\n4. Agrega la carne reservada y mezcla bien.\n5. Añade las papas fritas y mezcla nuevamente.\n6. Agrega un poco de vinagre de vino y salsa de soja al gusto. Remueve bien.\n7. Sazona con sal y pimienta al gusto.\n8. Sirve el lomo saltado caliente sobre un lecho de arroz blanco y espolvorea cilantro fresco por encima."]
           },
           {
             id: 37,
@@ -700,7 +838,7 @@ export const recetas = [
               "Sal",
               "Limones"
             ],
-            instrucciones: "1. Corta la carne de cerdo en trozos pequeños.\n2. En un recipiente, mezcla el achiote, el comino, el pimentón, el vinagre de manzana, el jugo de naranja, el aceite vegetal y la sal para crear una marinada.\n3. Coloca la carne de cerdo en la marinada y déjala reposar en el refrigerador durante al menos una hora, preferiblemente toda la noche.\n4. Prepara el trompo de carne de cerdo colocando los trozos en un pincho junto con rodajas de piña y cebolla.\n5. Asa el trompo de carne de cerdo en un asador o en el horno a fuego alto hasta que esté bien cocido.\n6. Corta la carne asada en trozos delgados.\n7. Calienta las tortillas de maíz en una sartén caliente.\n8. Rellena cada tortilla con la carne de cerdo, cebolla picada, cilantro y un poco de jugo de limón.\n9. Sirve los tacos al pastor calientes y disfruta."
+            instrucciones: ["1. Corta la carne de cerdo en trozos pequeños.\n2. En un recipiente, mezcla el achiote, el comino, el pimentón, el vinagre de manzana, el jugo de naranja, el aceite vegetal y la sal para crear una marinada.\n3. Coloca la carne de cerdo en la marinada y déjala reposar en el refrigerador durante al menos una hora, preferiblemente toda la noche.\n4. Prepara el trompo de carne de cerdo colocando los trozos en un pincho junto con rodajas de piña y cebolla.\n5. Asa el trompo de carne de cerdo en un asador o en el horno a fuego alto hasta que esté bien cocido.\n6. Corta la carne asada en trozos delgados.\n7. Calienta las tortillas de maíz en una sartén caliente.\n8. Rellena cada tortilla con la carne de cerdo, cebolla picada, cilantro y un poco de jugo de limón.\n9. Sirve los tacos al pastor calientes y disfruta."]
           },
           {
             id: 38,
@@ -722,7 +860,7 @@ export const recetas = [
               "Chiles",
               "Cilantro fresco"
             ],
-            instrucciones: "1. Corta las pechugas de pollo en trozos pequeños y colócalas en una olla.\n2. Añade leche de coco y caldo de pollo a la olla y lleva a ebullición.\n3. Agrega los hongos shiitake, la galanga rebanada, el lemongrass y la hoja de lima kaffir a la olla. Reduce el fuego y cocina a fuego lento durante unos minutos hasta que los sabores se mezclen.\n4. Retira la galanga, el lemongrass y la hoja de lima kaffir de la sopa.\n5. Añade salsa de pescado, azúcar y jugo de limón al gusto. Agrega chiles picados si deseas un poco de picante.\n6. Sazona con sal al gusto.\n7. Sirve la sopa Tom Kha Gai caliente y decora con cilantro fresco."
+            instrucciones: ["1. Corta las pechugas de pollo en trozos pequeños y colócalas en una olla.\n2. Añade leche de coco y caldo de pollo a la olla y lleva a ebullición.\n3. Agrega los hongos shiitake, la galanga rebanada, el lemongrass y la hoja de lima kaffir a la olla. Reduce el fuego y cocina a fuego lento durante unos minutos hasta que los sabores se mezclen.\n4. Retira la galanga, el lemongrass y la hoja de lima kaffir de la sopa.\n5. Añade salsa de pescado, azúcar y jugo de limón al gusto. Agrega chiles picados si deseas un poco de picante.\n6. Sazona con sal al gusto.\n7. Sirve la sopa Tom Kha Gai caliente y decora con cilantro fresco."]
           },
           {
             id: 39,
@@ -746,7 +884,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Corta las berenjenas en rodajas y las papas en rodajas delgadas.\n2. Precalienta el horno a 180°C (350°F).\n3. En una sartén grande, cocina la carne molida junto con la cebolla picada y el ajo picado hasta que estén dorados.\n4. Agrega el tomate picado y el vino tinto. Cocina a fuego lento durante unos minutos hasta que la salsa se espese.\n5. En una fuente para horno, coloca una capa de berenjenas y una capa de papas. Vierte una parte de la salsa de carne sobre las capas.\n6. Repite el proceso hasta terminar con una capa de salsa de carne.\n7. En una cacerola, prepara una bechamel mezclando leche, harina, mantequilla, nuez moscada, sal y pimienta. Cocina a fuego medio hasta que la mezcla espese.\n8. Vierte la bechamel sobre la capa de salsa de carne.\n9. Espolvorea queso parmesano rallado por encima.\n10. Hornea la moussaka durante aproximadamente 45 minutos o hasta que esté dorada y burbujeante.\n11. Deja reposar durante unos minutos antes de servir."
+            instrucciones: ["1. Corta las berenjenas en rodajas y las papas en rodajas delgadas.\n2. Precalienta el horno a 180°C (350°F).\n3. En una sartén grande, cocina la carne molida junto con la cebolla picada y el ajo picado hasta que estén dorados.\n4. Agrega el tomate picado y el vino tinto. Cocina a fuego lento durante unos minutos hasta que la salsa se espese.\n5. En una fuente para horno, coloca una capa de berenjenas y una capa de papas. Vierte una parte de la salsa de carne sobre las capas.\n6. Repite el proceso hasta terminar con una capa de salsa de carne.\n7. En una cacerola, prepara una bechamel mezclando leche, harina, mantequilla, nuez moscada, sal y pimienta. Cocina a fuego medio hasta que la mezcla espese.\n8. Vierte la bechamel sobre la capa de salsa de carne.\n9. Espolvorea queso parmesano rallado por encima.\n10. Hornea la moussaka durante aproximadamente 45 minutos o hasta que esté dorada y burbujeante.\n11. Deja reposar durante unos minutos antes de servir."]
           },
           {
             id: 40,
@@ -768,7 +906,7 @@ export const recetas = [
               "Pimienta",
               "Aceite vegetal"
             ],
-            instrucciones: "1. Remoja los garbanzos durante al menos 8 horas o toda la noche.\n2. Escurre y enjuaga los garbanzos.\n3. En un procesador de alimentos, mezcla los garbanzos, la cebolla picada, el ajo picado, el cilantro, el perejil, el comino, la cúrcuma, la harina de garbanzo, la levadura en polvo, la sal y la pimienta. Procesa hasta obtener una masa homogénea.\n4. Forma pequeñas bolas o discos con la masa de falafel.\n5. Calienta abundante aceite vegetal en una sartén a fuego medio-alto.\n6. Fríe los falafel hasta que estén dorados y crujientes por fuera, unos 3-4 minutos por cada lado.\n7. Retira los falafel del aceite y colócalos sobre papel absorbente para eliminar el exceso de aceite.\n8. Sirve los falafel calientes con salsa de yogur, hummus o en un pan de pita con verduras frescas."
+            instrucciones: ["1. Remoja los garbanzos durante al menos 8 horas o toda la noche.\n2. Escurre y enjuaga los garbanzos.\n3. En un procesador de alimentos, mezcla los garbanzos, la cebolla picada, el ajo picado, el cilantro, el perejil, el comino, la cúrcuma, la harina de garbanzo, la levadura en polvo, la sal y la pimienta. Procesa hasta obtener una masa homogénea.\n4. Forma pequeñas bolas o discos con la masa de falafel.\n5. Calienta abundante aceite vegetal en una sartén a fuego medio-alto.\n6. Fríe los falafel hasta que estén dorados y crujientes por fuera, unos 3-4 minutos por cada lado.\n7. Retira los falafel del aceite y colócalos sobre papel absorbente para eliminar el exceso de aceite.\n8. Sirve los falafel calientes con salsa de yogur, hummus o en un pan de pita con verduras frescas."]
           },
           {
             id: 41,
@@ -789,7 +927,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla grande, coloca las papas peladas y cortadas en trozos grandes.\n2. Agrega el pollo troceado, el maíz y las hojas de guascas a la olla.\n3. Añade suficiente agua para cubrir los ingredientes.\n4. Cocina a fuego medio-alto hasta que las papas estén tiernas y el pollo esté bien cocido.\n5. Retira el pollo de la olla y desmenúzalo en trozos pequeños.\n6. Regresa el pollo desmenuzado a la olla y agrega la cebolla picada y el ajo picado.\n7. Cocina a fuego medio durante unos minutos hasta que la cebolla esté tierna.\n8. Agrega la crema de leche y las alcaparras a la olla. Mezcla bien.\n9. Sazona con sal y pimienta al gusto.\n10. Sirve el ajiaco caliente y espolvorea cilantro fresco picado por encima."
+            instrucciones: ["1. En una olla grande, coloca las papas peladas y cortadas en trozos grandes.\n2. Agrega el pollo troceado, el maíz y las hojas de guascas a la olla.\n3. Añade suficiente agua para cubrir los ingredientes.\n4. Cocina a fuego medio-alto hasta que las papas estén tiernas y el pollo esté bien cocido.\n5. Retira el pollo de la olla y desmenúzalo en trozos pequeños.\n6. Regresa el pollo desmenuzado a la olla y agrega la cebolla picada y el ajo picado.\n7. Cocina a fuego medio durante unos minutos hasta que la cebolla esté tierna.\n8. Agrega la crema de leche y las alcaparras a la olla. Mezcla bien.\n9. Sazona con sal y pimienta al gusto.\n10. Sirve el ajiaco caliente y espolvorea cilantro fresco picado por encima."]
           },
           {
             id: 42,
@@ -812,7 +950,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Cocina las papas amarillas en agua con sal hasta que estén tiernas. Luego, pélalas y déjalas enfriar.\n2. En un procesador de alimentos, mezcla el ají amarillo, el jugo de limón, el aceite vegetal, sal y pimienta hasta obtener una salsa suave.\n3. Desmenuza el pollo y mézclalo con mayonesa al gusto.\n4. En un recipiente, aplasta las papas con un tenedor y agrega la mitad de la salsa de ají amarillo. Mezcla bien.\n5. En otro recipiente, mezcla la palta machacada con jugo de limón, sal y pimienta.\n6. En un molde rectangular, coloca una capa de puré de papas, luego una capa de pollo, una capa de palta y finalmente otra capa de puré de papas.\n7. Refrigera durante al menos 30 minutos.\n8. Desmolda la causa y decórala con rodajas de huevo duro, aceitunas, cebolla picada y cilantro fresco.\n9. Sirve la causa limeña fría y acompáñala con la salsa de ají amarillo restante."
+            instrucciones: ["1. Cocina las papas amarillas en agua con sal hasta que estén tiernas. Luego, pélalas y déjalas enfriar.\n2. En un procesador de alimentos, mezcla el ají amarillo, el jugo de limón, el aceite vegetal, sal y pimienta hasta obtener una salsa suave.\n3. Desmenuza el pollo y mézclalo con mayonesa al gusto.\n4. En un recipiente, aplasta las papas con un tenedor y agrega la mitad de la salsa de ají amarillo. Mezcla bien.\n5. En otro recipiente, mezcla la palta machacada con jugo de limón, sal y pimienta.\n6. En un molde rectangular, coloca una capa de puré de papas, luego una capa de pollo, una capa de palta y finalmente otra capa de puré de papas.\n7. Refrigera durante al menos 30 minutos.\n8. Desmolda la causa y decórala con rodajas de huevo duro, aceitunas, cebolla picada y cilantro fresco.\n9. Sirve la causa limeña fría y acompáñala con la salsa de ají amarillo restante."]
           },
           {
             id: 43,
@@ -835,7 +973,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla grande, coloca el zapallo cortado en trozos grandes, el maíz previamente remojado y los porotos remojados.\n2. Añade suficiente agua para cubrir los ingredientes y lleva a ebullición.\n3. Cocina a fuego medio-bajo hasta que los porotos estén tiernos y el zapallo se deshaga.\n4. En una sartén aparte, cocina la carne de cerdo cortada en trozos y el chorizo en aceite vegetal hasta que estén dorados.\n5. Agrega la cebolla picada y el pimiento rojo picado a la sartén. Cocina hasta que las verduras estén tiernas.\n6. Añade la carne y el chorizo a la olla con el zapallo y los porotos.\n7. Espolvorea comino, pimentón, perejil picado, sal y pimienta al gusto. Remueve bien.\n8. Cocina a fuego bajo durante unos minutos para que los sabores se mezclen.\n9. Sirve el locro caliente y disfruta."
+            instrucciones: ["1. En una olla grande, coloca el zapallo cortado en trozos grandes, el maíz previamente remojado y los porotos remojados.\n2. Añade suficiente agua para cubrir los ingredientes y lleva a ebullición.\n3. Cocina a fuego medio-bajo hasta que los porotos estén tiernos y el zapallo se deshaga.\n4. En una sartén aparte, cocina la carne de cerdo cortada en trozos y el chorizo en aceite vegetal hasta que estén dorados.\n5. Agrega la cebolla picada y el pimiento rojo picado a la sartén. Cocina hasta que las verduras estén tiernas.\n6. Añade la carne y el chorizo a la olla con el zapallo y los porotos.\n7. Espolvorea comino, pimentón, perejil picado, sal y pimienta al gusto. Remueve bien.\n8. Cocina a fuego bajo durante unos minutos para que los sabores se mezclen.\n9. Sirve el locro caliente y disfruta."]
           },
           {
             id: 44,
@@ -858,7 +996,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado, el pimiento rojo y el pimiento amarillo en juliana. Sofríe hasta que las verduras estén tiernas.\n2. Añade los frijoles a la sartén y mezcla bien.\n3. Agrega el arroz cocido y remueve para que se integre con los frijoles y las verduras.\n4. Agrega el chorizo cortado en rodajas y cocina hasta que esté dorado.\n5. En otra sartén aparte, fríe los huevos al gusto.\n6. Sirve el tacu tacu caliente, colocando un huevo frito encima de cada porción.\n7. Espolvorea cilantro fresco picado y acompaña con salsa criolla."
+            instrucciones:[ "1. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado, el pimiento rojo y el pimiento amarillo en juliana. Sofríe hasta que las verduras estén tiernas.\n2. Añade los frijoles a la sartén y mezcla bien.\n3. Agrega el arroz cocido y remueve para que se integre con los frijoles y las verduras.\n4. Agrega el chorizo cortado en rodajas y cocina hasta que esté dorado.\n5. En otra sartén aparte, fríe los huevos al gusto.\n6. Sirve el tacu tacu caliente, colocando un huevo frito encima de cada porción.\n7. Espolvorea cilantro fresco picado y acompaña con salsa criolla."]
           },
           {
             id: 45,
@@ -880,7 +1018,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Retira las hojas de las mazorcas de maíz y reserva algunas para envolver las humitas.\n2. Ralla las mazorcas de maíz con un rallador o procesador de alimentos.\n3. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado y el pimiento rojo picado. Sofríe hasta que las verduras estén tiernas.\n4. Agrega el maíz rallado a la sartén y cocina a fuego medio hasta que el maíz esté tierno y se haya evaporado el exceso de líquido.\n5. Añade el queso fresco rallado, el comino, la sal y la pimienta. Mezcla bien.\n6. En un recipiente aparte, mezcla la harina de maíz y la leche para obtener una masa espesa.\n7. Agrega la masa de harina de maíz a la sartén con el maíz y mezcla hasta obtener una consistencia homogénea.\n8. Si deseas, envuelve las humitas en hojas de choclo y ata con un hilo de cocina.\n9. Coloca las humitas en una olla grande con agua hirviendo y cocina a fuego medio-alto durante unos 40-45 minutos o hasta que estén firmes.\n10. Retira las humitas del agua y deja enfriar antes de servir."
+            instrucciones: ["1. Retira las hojas de las mazorcas de maíz y reserva algunas para envolver las humitas.\n2. Ralla las mazorcas de maíz con un rallador o procesador de alimentos.\n3. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado y el pimiento rojo picado. Sofríe hasta que las verduras estén tiernas.\n4. Agrega el maíz rallado a la sartén y cocina a fuego medio hasta que el maíz esté tierno y se haya evaporado el exceso de líquido.\n5. Añade el queso fresco rallado, el comino, la sal y la pimienta. Mezcla bien.\n6. En un recipiente aparte, mezcla la harina de maíz y la leche para obtener una masa espesa.\n7. Agrega la masa de harina de maíz a la sartén con el maíz y mezcla hasta obtener una consistencia homogénea.\n8. Si deseas, envuelve las humitas en hojas de choclo y ata con un hilo de cocina.\n9. Coloca las humitas en una olla grande con agua hirviendo y cocina a fuego medio-alto durante unos 40-45 minutos o hasta que estén firmes.\n10. Retira las humitas del agua y deja enfriar antes de servir."]
           },
           {
             id: 46,
@@ -904,7 +1042,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. Limpia y corta el congrio en trozos grandes.\n2. En una olla grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado, el pimiento rojo picado y la zanahoria cortada en rodajas. Sofríe hasta que las verduras estén tiernas.\n3. Agrega el tomate picado y cocina hasta que se haya ablandado.\n4. Añade el vino blanco y deja que se evapore el alcohol.\n5. Agrega el caldo de pescado y lleva a ebullición.\n6. Añade el congrio a la olla y cocina a fuego medio-bajo durante unos 15-20 minutos o hasta que esté tierno.\n7. Agrega las papas peladas y cortadas en trozos grandes. Cocina hasta que las papas estén tiernas.\n8. Sazona con sal y pimienta al gusto.\n9. Espolvorea perejil y cilantro fresco picado por encima.\n10. Sirve el caldillo de congrio caliente acompañado de arroz blanco."
+            instrucciones: ["1. Limpia y corta el congrio en trozos grandes.\n2. En una olla grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado, el pimiento rojo picado y la zanahoria cortada en rodajas. Sofríe hasta que las verduras estén tiernas.\n3. Agrega el tomate picado y cocina hasta que se haya ablandado.\n4. Añade el vino blanco y deja que se evapore el alcohol.\n5. Agrega el caldo de pescado y lleva a ebullición.\n6. Añade el congrio a la olla y cocina a fuego medio-bajo durante unos 15-20 minutos o hasta que esté tierno.\n7. Agrega las papas peladas y cortadas en trozos grandes. Cocina hasta que las papas estén tiernas.\n8. Sazona con sal y pimienta al gusto.\n9. Espolvorea perejil y cilantro fresco picado por encima.\n10. Sirve el caldillo de congrio caliente acompañado de arroz blanco."]
           },
           {
             id: 47,
@@ -928,7 +1066,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado y el tomate picado. Sofríe hasta que las verduras estén tiernas.\n2. Añade el ají amarillo y el ají panca, previamente molidos, a la olla y cocina durante unos minutos.\n3. Agrega el pollo troceado a la olla y cocina hasta que esté dorado.\n4. Añade las papas peladas y cortadas en trozos grandes, y las arvejas. Mezcla bien.\n5. Agrega el caldo de pollo y sazona con comino, orégano, sal y pimienta al gusto.\n6. Cocina a fuego medio-bajo hasta que las papas estén tiernas y el pollo esté bien cocido.\n7. Sirve el picante de pollo caliente y acompáñalo con arroz blanco."
+            instrucciones: ["1. En una olla grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado y el tomate picado. Sofríe hasta que las verduras estén tiernas.\n2. Añade el ají amarillo y el ají panca, previamente molidos, a la olla y cocina durante unos minutos.\n3. Agrega el pollo troceado a la olla y cocina hasta que esté dorado.\n4. Añade las papas peladas y cortadas en trozos grandes, y las arvejas. Mezcla bien.\n5. Agrega el caldo de pollo y sazona con comino, orégano, sal y pimienta al gusto.\n6. Cocina a fuego medio-bajo hasta que las papas estén tiernas y el pollo esté bien cocido.\n7. Sirve el picante de pollo caliente y acompáñalo con arroz blanco."]
           },
           {
             id: 48,
@@ -951,7 +1089,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla grande, hierve el choclo hasta que esté tierno. Luego, muele el choclo con una licuadora o procesador de alimentos.\n2. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado y el ají amarillo picado. Sofríe hasta que las verduras estén tiernas.\n3. Agrega la carne de res molida a la sartén y cocina hasta que esté dorada.\n4. Añade las aceitunas y las pasas a la sartén. Mezcla bien.\n5. En un recipiente aparte, bate los huevos con la leche y el azúcar. Añade sal y pimienta al gusto.\n6. En un molde para horno, coloca una capa de la mezcla de choclo, luego una capa de la mezcla de carne y finalmente otra capa de la mezcla de choclo.\n7. Vierte la mezcla de huevos batidos por encima del pastel.\n8. Hornea el pastel de choclo a 180°C durante aproximadamente 45 minutos o hasta que esté dorado y firme.\n9. Sirve el pastel de choclo caliente y disfruta."
+            instrucciones:[ "1. En una olla grande, hierve el choclo hasta que esté tierno. Luego, muele el choclo con una licuadora o procesador de alimentos.\n2. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el ajo picado y el ají amarillo picado. Sofríe hasta que las verduras estén tiernas.\n3. Agrega la carne de res molida a la sartén y cocina hasta que esté dorada.\n4. Añade las aceitunas y las pasas a la sartén. Mezcla bien.\n5. En un recipiente aparte, bate los huevos con la leche y el azúcar. Añade sal y pimienta al gusto.\n6. En un molde para horno, coloca una capa de la mezcla de choclo, luego una capa de la mezcla de carne y finalmente otra capa de la mezcla de choclo.\n7. Vierte la mezcla de huevos batidos por encima del pastel.\n8. Hornea el pastel de choclo a 180°C durante aproximadamente 45 minutos o hasta que esté dorado y firme.\n9. Sirve el pastel de choclo caliente y disfruta."]
           },
           {
             id: 49,
@@ -977,7 +1115,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla grande, coloca la carne de res, el pollo y las costillas de cerdo. Cubre con suficiente agua y lleva a ebullición.\n2. Reduce el fuego y cocina a fuego medio-bajo durante aproximadamente 1 hora o hasta que las carnes estén tiernas.\n3. Agrega la yuca pelada y cortada en trozos grandes, el plátano verde pelado y cortado en rodajas gruesas, las mazorcas de maíz cortadas en trozos, las papas peladas y cortadas en trozos grandes. Cocina hasta que las verduras estén tiernas.\n4. En una sartén aparte, calienta aceite vegetal y añade la cebolla picada, el ajo picado, el cilantro fresco picado y el ají picado. Sofríe hasta que las verduras estén tiernas.\n5. Agrega la mezcla de cebolla, ajo, cilantro y ají a la olla con las carnes y las verduras.\n6. Sazona con comino, orégano, sal y pimienta al gusto. Mezcla bien.\n7. Cocina a fuego bajo durante unos minutos para que los sabores se mezclen.\n8. Sirve el sancocho caliente y acompáñalo con arroz blanco y aguacate."
+            instrucciones: ["1. En una olla grande, coloca la carne de res, el pollo y las costillas de cerdo. Cubre con suficiente agua y lleva a ebullición.\n2. Reduce el fuego y cocina a fuego medio-bajo durante aproximadamente 1 hora o hasta que las carnes estén tiernas.\n3. Agrega la yuca pelada y cortada en trozos grandes, el plátano verde pelado y cortado en rodajas gruesas, las mazorcas de maíz cortadas en trozos, las papas peladas y cortadas en trozos grandes. Cocina hasta que las verduras estén tiernas.\n4. En una sartén aparte, calienta aceite vegetal y añade la cebolla picada, el ajo picado, el cilantro fresco picado y el ají picado. Sofríe hasta que las verduras estén tiernas.\n5. Agrega la mezcla de cebolla, ajo, cilantro y ají a la olla con las carnes y las verduras.\n6. Sazona con comino, orégano, sal y pimienta al gusto. Mezcla bien.\n7. Cocina a fuego bajo durante unos minutos para que los sabores se mezclen.\n8. Sirve el sancocho caliente y acompáñalo con arroz blanco y aguacate."]
           },
           {
             id: 50,
@@ -1000,7 +1138,7 @@ export const recetas = [
               "Sal",
               "Pimienta"
             ],
-            instrucciones: "1. En una olla grande, cocina la carne de res hasta que esté tierna. Luego, desmenúzala.\n2. En otra olla, cocina los frijoles negros hasta que estén tiernos.\n3. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el pimiento picado y el ajo picado. Sofríe hasta que las verduras estén tiernas.\n4. Agrega la carne desmenuzada y mezcla bien.\n5. Añade salsa de tomate, vinagre, comino, sal y pimienta al gusto. Cocina a fuego medio durante unos minutos.\n6. En otra sartén, fríe los plátanos maduros cortados en rodajas hasta que estén dorados.\n7. Sirve el pabellón criollo colocando una porción de arroz blanco, una porción de carne guisada, una porción de frijoles negros y unas rodajas de plátano frito en cada plato."
+            instrucciones: ["1. En una olla grande, cocina la carne de res hasta que esté tierna. Luego, desmenúzala.\n2. En otra olla, cocina los frijoles negros hasta que estén tiernos.\n3. En una sartén grande, calienta aceite vegetal y añade la cebolla picada, el pimiento picado y el ajo picado. Sofríe hasta que las verduras estén tiernas.\n4. Agrega la carne desmenuzada y mezcla bien.\n5. Añade salsa de tomate, vinagre, comino, sal y pimienta al gusto. Cocina a fuego medio durante unos minutos.\n6. En otra sartén, fríe los plátanos maduros cortados en rodajas hasta que estén dorados.\n7. Sirve el pabellón criollo colocando una porción de arroz blanco, una porción de carne guisada, una porción de frijoles negros y unas rodajas de plátano frito en cada plato."]
           },
           {
             id: 51,
@@ -2127,7 +2265,7 @@ export const recetas = [
   {
     id: 111,
     nombre: "Pan de Campo",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina", "Sal", "Levadura", "Agua"],
@@ -2145,7 +2283,7 @@ export const recetas = [
   {
     id: 112,
     nombre: "Facturas de Manteca",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina", "Azúcar", "Manteca", "Leche", "Levadura", "Esencia de vainilla", "Dulce de leche", "Azúcar impalpable"],
@@ -2165,7 +2303,7 @@ export const recetas = [
   {
     id: 113,
     nombre: "Pan de Centeno",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina de centeno", "Harina de trigo", "Sal", "Levadura", "Agua"],
@@ -2183,7 +2321,7 @@ export const recetas = [
   {
     id: 114,
     nombre: "Medialunas",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina", "Azúcar", "Manteca", "Leche", "Levadura", "Esencia de vainilla", "Sal"],
@@ -2204,7 +2342,7 @@ export const recetas = [
   {
     id: 115,
     nombre: "Pan de Leche",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina", "Azúcar", "Leche", "Manteca", "Levadura", "Sal", "Huevo"],
@@ -2224,7 +2362,7 @@ export const recetas = [
   {
     id: 116,
     nombre: "Facturas de Dulce de Leche",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina", "Azúcar", "Levadura", "Leche", "Manteca", "Dulce de leche", "Azúcar impalpable"],
@@ -2244,7 +2382,7 @@ export const recetas = [
   {
     id: 117,
     nombre: "Pan de Maíz",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina de maíz", "Harina de trigo", "Azúcar", "Levadura", "Sal", "Agua"],
@@ -2262,7 +2400,7 @@ export const recetas = [
   {
     id: 118,
     nombre: "Budín de Pan",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Pan viejo", "Leche", "Azúcar", "Huevos", "Esencia de vainilla", "Pasas de uva", "Caramelo líquido"],
@@ -2278,7 +2416,7 @@ export const recetas = [
   {
     id: 119,
     nombre: "Pan de Ajo",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Pan baguette", "Mantequilla", "Ajo", "Perejil", "Sal"],
@@ -2295,7 +2433,7 @@ export const recetas = [
   {
     id: 120,
     nombre: "Medialunas de Grasa",
-    categoria: "Panadería",
+    categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
     imagen: "url_de_la_imagen",
     ingredientes: ["Harina", "Azúcar", "Sal", "Levadura", "Manteca", "Leche", "Huevo"],
@@ -2314,196 +2452,8 @@ export const recetas = [
       "12. Retira las medialunas del horno y déjalas enfriar antes de servir."
     ]
   },
-  {
-    id: 111,
-    nombre: "Pan de Campo",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina", "Sal", "Levadura", "Agua"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina y la sal.",
-      "2. Disuelve la levadura en agua tibia y agrégala a la mezcla de harina.",
-      "3. Amasa la masa hasta que esté suave y elástica.",
-      "4. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "5. Precalienta el horno a 200°C.",
-      "6. Forma la masa en forma de pan y colócala en una bandeja para hornear.",
-      "7. Hornea el pan durante aproximadamente 30 minutos o hasta que esté dorado en la parte superior y suene hueco al golpearlo.",
-      "8. Deja enfriar el pan antes de cortarlo y servirlo."
-    ]
-  },
-  {
-    id: 112,
-    nombre: "Facturas de Manteca",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina", "Azúcar", "Manteca", "Leche", "Levadura", "Esencia de vainilla", "Dulce de leche", "Azúcar impalpable"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina, el azúcar y la levadura.",
-      "2. Agrega la manteca derretida, la leche tibia y la esencia de vainilla. Mezcla bien.",
-      "3. Amasa la masa hasta que esté suave y elástica.",
-      "4. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "5. Precalienta el horno a 180°C.",
-      "6. Divide la masa en porciones y dales forma de factura.",
-      "7. Coloca las facturas en una bandeja para hornear y déjalas reposar durante unos minutos.",
-      "8. Hornea las facturas durante aproximadamente 15-20 minutos o hasta que estén doradas.",
-      "9. Retira las facturas del horno y déjalas enfriar.",
-      "10. Rellena las facturas con dulce de leche y espolvoréalas con azúcar impalpable antes de servir."
-    ]
-  },
-  {
-    id: 113,
-    nombre: "Pan de Centeno",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina de centeno", "Harina de trigo", "Sal", "Levadura", "Agua"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina de centeno, la harina de trigo y la sal.",
-      "2. Disuelve la levadura en agua tibia y agrégala a la mezcla de harinas.",
-      "3. Amasa la masa hasta que esté suave y elástica.",
-      "4. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "5. Precalienta el horno a 200°C.",
-      "6. Forma la masa en forma de pan y colócala en una bandeja para hornear.",
-      "7. Hornea el pan durante aproximadamente 30 minutos o hasta que esté dorado en la parte superior y suene hueco al golpearlo.",
-      "8. Deja enfriar el pan antes de cortarlo y servirlo."
-    ]
-  },
-  {
-    id: 114,
-    nombre: "Medialunas",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina", "Azúcar", "Manteca", "Leche", "Levadura", "Esencia de vainilla", "Sal"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina, el azúcar y la sal.",
-      "2. Agrega la manteca derretida, la leche tibia y la esencia de vainilla. Mezcla bien.",
-      "3. Disuelve la levadura en agua tibia y agrégala a la mezcla de harina.",
-      "4. Amasa la masa hasta que esté suave y elástica.",
-      "5. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "6. Precalienta el horno a 180°C.",
-      "7. Estira la masa en forma rectangular y corta triángulos.",
-      "8. Enrolla cada triángulo comenzando desde la base hasta la punta.",
-      "9. Coloca las medialunas en una bandeja para hornear y déjalas reposar durante unos minutos.",
-      "10. Hornea las medialunas durante aproximadamente 15-20 minutos o hasta que estén doradas.",
-      "11. Retira las medialunas del horno y déjalas enfriar antes de servir."
-    ]
-  },
-  {
-    id: 115,
-    nombre: "Pan de Leche",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina", "Azúcar", "Leche", "Manteca", "Levadura", "Sal", "Huevo"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina, el azúcar y la sal.",
-      "2. Disuelve la levadura en leche tibia y agrégala a la mezcla de harina.",
-      "3. Agrega la manteca derretida y el huevo. Mezcla bien.",
-      "4. Amasa la masa hasta que esté suave y elástica.",
-      "5. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "6. Precalienta el horno a 180°C.",
-      "7. Forma bollos con la masa y colócalos en una bandeja para hornear.",
-      "8. Deja reposar los bollos durante unos minutos.",
-      "9. Hornea el pan de leche durante aproximadamente 15-20 minutos o hasta que esté dorado en la parte superior.",
-      "10. Deja enfriar el pan antes de cortarlo y servirlo."
-    ]
-  },
-  {
-    id: 116,
-    nombre: "Facturas de Dulce de Leche",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina", "Azúcar", "Levadura", "Leche", "Manteca", "Dulce de leche", "Azúcar impalpable"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina, el azúcar y la levadura.",
-      "2. Agrega la leche tibia y la manteca derretida. Mezcla bien.",
-      "3. Amasa la masa hasta que esté suave y elástica.",
-      "4. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "5. Precalienta el horno a 180°C.",
-      "6. Divide la masa en porciones y dales forma de factura.",
-      "7. Coloca las facturas en una bandeja para hornear y déjalas reposar durante unos minutos.",
-      "8. Hornea las facturas durante aproximadamente 15-20 minutos o hasta que estén doradas.",
-      "9. Retira las facturas del horno y déjalas enfriar.",
-      "10. Rellena las facturas con dulce de leche y espolvoréalas con azúcar impalpable antes de servir."
-    ]
-  },
-  {
-    id: 117,
-    nombre: "Pan de Maíz",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina de maíz", "Harina de trigo", "Azúcar", "Levadura", "Sal", "Agua"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina de maíz, la harina de trigo, el azúcar y la sal.",
-      "2. Disuelve la levadura en agua tibia y agrégala a la mezcla de harinas.",
-      "3. Amasa la masa hasta que esté suave y elástica.",
-      "4. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "5. Precalienta el horno a 200°C.",
-      "6. Forma la masa en forma de pan y colócala en una bandeja para hornear.",
-      "7. Hornea el pan durante aproximadamente 30 minutos o hasta que esté dorado en la parte superior y suene hueco al golpearlo.",
-      "8. Deja enfriar el pan antes de cortarlo y servirlo."
-    ]
-  },
-  {
-    id: 118,
-    nombre: "Budín de Pan",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Pan viejo", "Leche", "Azúcar", "Huevos", "Esencia de vainilla", "Pasas de uva", "Caramelo líquido"],
-    instrucciones: [
-      "1. Remoja el pan viejo en leche caliente hasta que esté suave.",
-      "2. Añade el azúcar, los huevos, la esencia de vainilla y las pasas de uva a la mezcla de pan y leche. Mezcla bien.",
-      "3. Vierte la mezcla en un molde previamente caramelizado.",
-      "4. Precalienta el horno a 180°C.",
-      "5. Hornea el budín de pan durante aproximadamente 45-60 minutos o hasta que esté firme y dorado en la parte superior.",
-      "6. Deja enfriar el budín antes de desmoldarlo y servirlo."
-    ]
-  },
-  {
-    id: 119,
-    nombre: "Pan de Ajo",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Pan baguette", "Mantequilla", "Ajo", "Perejil", "Sal"],
-    instrucciones: [
-      "1. Precalienta el horno a 180°C.",
-      "2. Corta el pan baguette en rebanadas sin llegar hasta el final.",
-      "3. En un recipiente, mezcla la mantequilla derretida, el ajo picado, el perejil y la sal.",
-      "4. Unta la mezcla de mantequilla de ajo entre las rebanadas de pan.",
-      "5. Envuelve el pan en papel de aluminio y colócalo en el horno durante aproximadamente 10-15 minutos.",
-      "6. Retira el papel de aluminio y hornea el pan durante otros 5 minutos o hasta que esté dorado y crujiente.",
-      "7. Sirve el pan de ajo caliente."
-    ]
-  },
-  {
-    id: 120,
-    nombre: "Medialunas de Grasa",
-    categoria: "Panadería",
-    categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
-    ingredientes: ["Harina", "Azúcar", "Sal", "Levadura", "Manteca", "Leche", "Huevo"],
-    instrucciones: [
-      "1. En un tazón grande, mezcla la harina, el azúcar y la sal.",
-      "2. Disuelve la levadura en leche tibia y agrégala a la mezcla de harina.",
-      "3. Agrega la manteca derretida y el huevo. Mezcla bien.",
-      "4. Amasa la masa hasta que esté suave y elástica.",
-      "5. Cubre la masa con un paño y déjala reposar en un lugar cálido hasta que duplique su tamaño.",
-      "6. Precalienta el horno a 180°C.",
-      "7. Estira la masa en forma rectangular y esparce manteca sobre la superficie.",
-      "8. Enrolla la masa desde un extremo hasta el centro y luego desde el otro extremo hasta el centro.",
-      "9. Corta la masa en triángulos y dales forma de medialuna.",
-      "10. Coloca las medialunas en una bandeja para hornear y déjalas reposar durante unos minutos.",
-      "11. Hornea las medialunas durante aproximadamente 15-20 minutos o hasta que estén doradas.",
-      "12. Retira las medialunas del horno y déjalas enfriar antes de servir."
-    ]
-  }
+  
+  
 ];
 
 

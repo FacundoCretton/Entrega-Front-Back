@@ -33,9 +33,8 @@ export const FooterLeftFraction = styled.div`
   grid-column: 1;
   grid-row: 2;
   @media (max-width: 576px) {
-    margin: 10px;
-    width: 25px;
-    height: 25px;
+    margin: auto;
+
   }
 `;
 

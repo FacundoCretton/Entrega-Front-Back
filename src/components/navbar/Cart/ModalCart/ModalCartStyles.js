@@ -19,6 +19,11 @@ export const ContainerStyled = styled(motion.div)`
   background-color: #6B8E23CC;
   border-radius: 0 0 0 1rem;
   box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+
+  @media (max-width: 500px) {
+    max-width: 350px;
+  }
 `;
 
 export const CloseButtonContainerStyled = styled.div`

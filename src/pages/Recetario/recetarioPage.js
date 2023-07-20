@@ -1,31 +1,24 @@
 import React, { useState } from 'react';
-import IndexPage from './indexPage';
-import RecipePage from './RecipePage';
-import SearchBar from './SearchBar';
-import {recetas} from '../../components/data/recetas';
-
+import CategoryList from '../../components/Recetario/CategoryList';
+import RecipeCard from '../../components/Recetario/RecipeCard';
+import SearchBar from '../../components/Recetario/SearchBar';
+import { recetas } from '../../components/data/recetas';
 
 const RecetarioPage = () => {
-  const [currentRecipeId, setCurrentRecipeId] = useState(null);
+  const [currentRecipe, setCurrentRecipe] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearch = (searchTerm) => {
-    const matchingRecipe = recetas.find((receta) =>
-      receta.nombre.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    if (matchingRecipe) {
-      setCurrentRecipeId(matchingRecipe.id);
-      setSelectedCategory('');
-    } else {
-      setCurrentRecipeId(null);
-      setSelectedCategory('');
-    }
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+    setSelectedCategory('');
+    setCurrentRecipe(null);
   };
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
-    setCurrentRecipeId(null); // Resetea el ID de la receta actual al cambiar de categoría
+    setCurrentRecipe(null);
+    setSearchTerm('');
   };
 
   const filterRecipesByCategory = () => {
@@ -36,40 +29,53 @@ const RecetarioPage = () => {
     return recetas.filter((receta) => receta.categoria === selectedCategory);
   };
 
-  const RecipeCard = ({ receta }) => (
-    <div>
-      <h3>{receta.nombre}</h3>
-      <p>{receta.descripcion}</p>
-      {/* Agrega más detalles de la receta si lo deseas */}
-    </div>
-  );
+  const filterRecipesBySearchTerm = () => {
+    if (!searchTerm) {
+      return recetas;
+    }
 
-  const CategoryList = ({ onCategorySelect }) => (
-    <div>
-      <button onClick={() => onCategorySelect('Entradas')}>Entradas</button>
-      <button onClick={() => onCategorySelect('Plato Principal')}>Plato Principal</button>
-      <button onClick={() => onCategorySelect('Postre')}>Postre</button>
-      {/* Agrega más botones para otras categorías si lo deseas */}
-    </div>
-  );
+    return recetas.filter((receta) =>
+      receta.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  };
+
+  const handleRecipeSelect = (recipe) => {
+    setCurrentRecipe(recipe);
+  };
 
   return (
     <div>
-      <IndexPage>
-        <CategoryList onCategorySelect={handleCategorySelect} />
-      </IndexPage>
+      <h1>Recetario de la Abuela</h1>
+      <CategoryList categories={getUniqueCategories(recetas)} onCategorySelect={handleCategorySelect} />
       <SearchBar onSearch={handleSearch} />
-      {currentRecipeId ? (
-        <RecipePage id={currentRecipeId} />
+      {currentRecipe ? (
+        <div>
+          <button onClick={() => { setCurrentRecipe(null); setSelectedCategory(''); }}>
+            Volver
+          </button>
+          <RecipeCard receta={currentRecipe} />
+        </div>
       ) : (
         <div>
-          {filterRecipesByCategory().map((receta) => (
-            <RecipeCard key={receta.id} receta={receta} />
-          ))}
+          {selectedCategory
+            ? filterRecipesByCategory().map((receta) => (
+                <div key={receta.id} onClick={() => handleRecipeSelect(receta)}>
+                  <h3>{receta.nombre}</h3>
+                  <p>{receta.descripcion}</p>
+                </div>
+              ))
+            : filterRecipesBySearchTerm().map((receta) => (
+                <div key={receta.id} onClick={() => handleRecipeSelect(receta)}>
+                  <h3>{receta.nombre}</h3>
+                  <p>{receta.descripcion}</p>
+                </div>
+              ))}
         </div>
       )}
     </div>
   );
 };
+
+const getUniqueCategories = (recetas) => [...new Set(recetas.map((receta) => receta.categoria))];
 
 export default RecetarioPage;

@@ -26,7 +26,7 @@ const Footer = () => {
             </FLFli>
             <FLFli>
               <FaEnvelope />
-              <span>LaDespensadelaAbuela101@gmail.com</span>
+              <span>LaDespensa1@gmail.com</span>
             </FLFli>
             <FLFli>
               <FaPhone />
