@@ -107,6 +107,7 @@ export const AboutRight = styled.div`
 
         width: 100%;
         max-width: 430px;
+        padding: 0 1rem;
     }
     
 
@@ -121,12 +122,7 @@ export const ContenedorSpan = styled.div`
     font-style: italic;
     font-weight: 600;
     max-width: 500px;
-    @media screen and (max-width: 576px) {
-        margin: auto;
 
-    
-    
-    }
 `;
 
 export const DetallesRight = styled.div`
