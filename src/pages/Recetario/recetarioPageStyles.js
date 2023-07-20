@@ -14,7 +14,6 @@ export const Title = styled.h1`
   color: #6b4226; /* Color de título marrón */
 `;
 
-// Estilos adicionales para los cuadros de recetas
 export const RecipeCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -41,40 +40,11 @@ export const RecipeTitle = styled.h3`
   font-size: 24px;
   margin-bottom: 10px;
   color: #6b4226; /* Color de texto marrón */
+  text-align: center;
 `;
 
 export const RecipeDescription = styled.p`
   color: #6b4226; /* Color de texto marrón */
-`;
-
-// Estilos adicionales para el formulario de búsqueda
-export const SearchForm = styled.form`
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-`;
-
-export const SearchInput = styled.input`
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  margin-right: 10px;
-  font-size: 16px;
-`;
-
-export const SearchButton = styled.button`
-  padding: 10px 20px;
-  background-color: #e0c4ac; /* Color de fondo de botón de búsqueda */
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  color: #6b4226; /* Color de texto marrón */
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-
-  &:hover {
-    background-color: #f9f2ea; /* Color de fondo al pasar el mouse */
-  }
 `;
 
 // Estilos adicionales para el detalle de la receta
