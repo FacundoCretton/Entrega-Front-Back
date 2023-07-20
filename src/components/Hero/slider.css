@@ -73,15 +73,21 @@ section {
   z-index: 100;
   position: absolute;
   top: 50%;
-  width: auto;
-  margin: -3rem 10rem 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
   font-weight: bold;
   border-radius: 5px;
   color: #fff;
-  font-size: 48px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px;
-  border-radius: 50%;
+}
+
+.next {
+  right: 0;
 }
 
 .slider-container:hover .prev,
@@ -135,4 +141,23 @@ section {
 
 .play-pause {
   color: black;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .slider-container {
+    padding-bottom: 60%;
+  }
+
+  .slides {
+    height: 100%;
+  }
 }

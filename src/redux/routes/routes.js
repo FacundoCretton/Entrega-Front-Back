@@ -21,7 +21,6 @@ function Routes() {
       <Route path="/" element={<Home />} />
       <Route path="/recetas" element={<RecetarioPage />} />
       <Route path="/recetas/:id" element={<RecipeCard />} />
-
       <Route path='/register' element={<Register />} />
       
       <Route

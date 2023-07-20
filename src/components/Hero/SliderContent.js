@@ -7,7 +7,7 @@ function SliderContent({ activeIndex, sliderImage, onClick }) {
         <div
           key={index}
           className={index === activeIndex ? "slides active" : "inactive"}
-          onClick={onClick} // Pasar la función para manejar el clic en el slide
+          onClick={onClick} 
         >
           <img className="slide-image" src={slide.urls} alt="" />
           <div className="slide-overlay">

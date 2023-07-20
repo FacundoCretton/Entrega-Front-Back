@@ -8,7 +8,7 @@ export const NavbarContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  /* gap: 1rem; */
   height:60px ;
   margin: auto;
   font-family: 'Bebas Neue';
@@ -34,7 +34,7 @@ export const NavbarMenuUl = styled.ul`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 821px) {
     display: none;
 
     ${(props) =>
@@ -119,7 +119,7 @@ export const CartStyled = styled.div`
     padding: 10px;
     z-index: 1;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-    width: 250px; /* Ajusta el ancho según tus necesidades */
+    width: 250px; 
   }
 
   .cart-header {
@@ -183,7 +183,7 @@ export const CustomButton = styled.button`
 export const BarrsMenu = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 821px) {
     display: flex;
     align-items: center;
     cursor: pointer;

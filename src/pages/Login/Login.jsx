@@ -22,7 +22,7 @@ const Login =()=>{
 
 
     return(
-      <LoginContainerStyled>
+      <LoginContainerStyled className="login-page">
         <LoginH2>Login</LoginH2>
         <Formik
           initialValues={loginInitialValues}
