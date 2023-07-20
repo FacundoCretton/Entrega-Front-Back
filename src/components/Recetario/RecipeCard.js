@@ -1,22 +1,33 @@
 import React from 'react';
+import {
+  RecipeCardContainer,
+  RecipeImage,
+  RecipeTitle,
+  RecipeSubtitle,
+  IngredientList,
+  InstructionList,
+} from './RecipeCardStyles';
 
 const RecipeCard = ({ receta }) => {
   return (
-    <div>
-      <h2>{receta.nombre}</h2>
+    <RecipeCardContainer>
+      <RecipeTitle>{receta.nombre}</RecipeTitle>
+      <RecipeImage src={receta.imagen} alt={receta.nombre} />
+
+      <RecipeSubtitle>Categoría: {receta.categoria}</RecipeSubtitle>
       <h3>Ingredientes:</h3>
-      <ul>
+      <IngredientList>
         {receta.ingredientes.map((ingrediente, index) => (
           <li key={index}>{ingrediente}</li>
         ))}
-      </ul>
+      </IngredientList>
       <h3>Instrucciones:</h3>
-      <ol>
+      <InstructionList>
         {receta.instrucciones.map((paso, index) => (
           <li key={index}>{paso}</li>
         ))}
-      </ol>
-    </div>
+      </InstructionList>
+    </RecipeCardContainer>
   );
 };
 

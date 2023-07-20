@@ -4,7 +4,7 @@ export const recetas = [
     nombre: "Ensalada Caprese",
     categoria: "Entrada",
     categoriasAdicionales: ["Ensaladas"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://okdiario.com/img/2016/11/26/receta-de-ensalada-caprese.jpg",
     ingredientes: [
       "Tomate",
       "Mozzarella",
@@ -25,7 +25,7 @@ export const recetas = [
     nombre: "Lomo de Cerdo al Horno",
     categoria: "Plato principal",
     categoriasAdicionales: ["Carnes"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://static.onecms.io/wp-content/uploads/sites/21/2017/03/19/lomo-de-cerdo-al-horno-2000.jpg",
     ingredientes: [
       "Lomo de cerdo",
       "Ajo",
@@ -46,7 +46,7 @@ export const recetas = [
     nombre: "Tarta de Manzana",
     categoria: "Postre",
     categoriasAdicionales: ["Pasteles"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://www.eladerezo.com/wp-content/uploads/2009/05/tarta-de-manzana-2-1536x1269.jpg",
     ingredientes: [
       "Masa de tarta",
       "Manzanas",
@@ -70,7 +70,7 @@ export const recetas = [
     nombre: "Sopa de Tomate",
     categoria: "Entrada",
     categoriasAdicionales: ["Sopas"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://t1.uc.ltmcdn.com/es/posts/3/0/9/como_hacer_sopa_de_tomate_casera_25903_orig.jpg",
     ingredientes: [
       "Tomates",
       "Cebolla",
@@ -96,7 +96,7 @@ export const recetas = [
     nombre: "Espaguetis a la Bolognesa",
     categoria: "Plato principal",
     categoriasAdicionales: ["Pastas", "Carnes"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://w6h5a5r4.rocketcdn.me/wp-content/uploads/2019/05/espaguetis-a-la-bolonesa-1080x671.jpg",
     ingredientes: [
       "Espaguetis",
       "Carne picada",
@@ -123,10 +123,10 @@ export const recetas = [
   },
   {
     id: 6,
-    nombre: "Tortilla de Patatas",
+    nombre: "Tortilla de Papas",
     categoria: "Plato principal",
     categoriasAdicionales: ["Tortillas"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://assets.unileversolutions.com/recipes-v2/37805.jpg?imwidth=2000",
     ingredientes: [
       "Patatas",
       "Huevos",
@@ -152,7 +152,7 @@ export const recetas = [
     nombre: "Pastel de Chocolate",
     categoria: "Postre",
     categoriasAdicionales: ["Pasteles"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://content-cocina.lecturas.com/medio/2023/03/23/el-mejor-pastel-de-chocolate_24bd9cda_1200x1200.jpg",
     ingredientes: [
       "Harina",
       "Cacao en polvo",
@@ -182,7 +182,7 @@ export const recetas = [
     nombre: "Gazpacho",
     categoria: "Entrada",
     categoriasAdicionales: ["Sopas", "Verano"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://images.hola.com/imagenes/cocina/recetas/2017062296209/receta-gazpacho-andaluz/0-962-900/gazpa-and-adobe-t.jpg",
     ingredientes: [
       "Tomates",
       "Pimiento verde",
@@ -214,7 +214,7 @@ export const recetas = [
     nombre: "Pollo al Curry",
     categoria: "Plato principal",
     categoriasAdicionales: ["Carnes", "Cocina asiática"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://i.blogs.es/9ea7a4/pollo_curry-copia/650_1200.jpg",
     ingredientes: [
       "Pollo",
       "Cebolla",
@@ -243,7 +243,7 @@ export const recetas = [
     nombre: "Cheesecake de Fresa",
     categoria: "Postre",
     categoriasAdicionales: ["Pasteles", "Frutas"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://annaspasteleria.com/images/2020post/_videoCover/DSC_5323web.jpg",
     ingredientes: [
       "Galletas",
       "Mantequilla",
@@ -271,7 +271,7 @@ export const recetas = [
     nombre: "Ensalada César",
     categoria: "Entrada",
     categoriasAdicionales: ["Ensaladas"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://recetasdecocina.elmundo.es/wp-content/uploads/2021/07/Ensalada-cesar.jpg",
     ingredientes: [
       "Lechuga romana",
       "Pan tostado",
@@ -304,7 +304,7 @@ export const recetas = [
     nombre: "Lasaña de Verduras",
     categoria: "Plato principal",
     categoriasAdicionales: ["Pastas", "Vegetariano"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://www.cocinacaserayfacil.net/wp-content/uploads/2018/08/recetas-vegetarianas.jpg",
     ingredientes: [
       "Láminas de lasaña",
       "Calabacín",
@@ -335,7 +335,7 @@ export const recetas = [
     nombre: "Tarta de Limón",
     categoria: "Postre",
     categoriasAdicionales: ["Postres caseros"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://img-global.cpcdn.com/recipes/cc25e06bba8d746f/1360x964cq70/tarta-de-limon-tarte-au-citron-meringuee-francia-foto-principal.webp",
     ingredientes: [
       "Galletas",
       "Mantequilla",
@@ -360,27 +360,32 @@ export const recetas = [
   },
   {
     id: 14,
-    nombre: "Ensalada Caprese",
-    categoria: "Entrada",
-    categoriasAdicionales: ["Ensaladas", "Italiano"],
-    imagen: "url_de_la_imagen",
+    nombre: "Tacos de Pescado al Coco",
+    categoria: "Plato principal",
+    categoriasAdicionales: ["Mexicana", "Mariscos"],
+    imagen: "https://www.goya.com/media/3670/grilled-fish-tacos-with-peach-salsa.jpg?quality=80",
     ingredientes: [
-      "Tomates",
-      "Mozzarella",
-      "Hojas de albahaca",
-      "Aceite de oliva",
-      "Vinagre balsámico",
-      "Sal",
-      "Pimienta"
+      "Filetes de pescado blanco (como tilapia o mero)",
+      "Harina de trigo",
+      "Huevos",
+      "Coco rallado",
+      "Aceite para freír",
+      "Tortillas de maíz",
+      "Repollo morado picado",
+      "Cilantro fresco",
+      "Crema agria o mayonesa",
+      "Salsa de chile o pico de gallo",
+      "Limón"
     ],
     instrucciones: [
-      "1. Corta los tomates y la mozzarella en rodajas de grosor medio.",
-      "2. En un plato, coloca una rodaja de tomate, luego una rodaja de mozzarella y una hoja de albahaca.",
-      "3. Repite hasta que hayas utilizado todos los tomates y la mozzarella.",
-      "4. Espolvorea con sal y pimienta al gusto.",
-      "5. Riega con aceite de oliva y vinagre balsámico justo antes de servir.",
-      "6. Puedes decorar con más hojas de albahaca si lo deseas.",
-      "7. Sirve la ensalada Caprese fría y disfruta de esta deliciosa especialidad italiana."
+      "1. Prepara una estación de empanizado con tres tazones: uno con harina, otro con huevos batidos y el último con coco rallado.",
+      "2. Pasa cada filete de pescado por la harina, luego por los huevos batidos y finalmente por el coco rallado, asegurándote de cubrir bien cada filete.",
+      "3. Calienta suficiente aceite en una sartén grande a fuego medio-alto. Fríe los filetes de pescado empanizados hasta que estén dorados y crujientes por ambos lados.",
+      "4. Mientras se fríen los filetes, calienta las tortillas de maíz en un comal o sartén caliente.",
+      "5. Para armar los tacos, coloca un filete de pescado al coco en el centro de cada tortilla calentada. Agrega un poco de repollo morado picado y cilantro fresco.",
+      "6. Añade una cucharada de crema agria o mayonesa y una cucharada de salsa de chile o pico de gallo encima de cada taco.",
+      "7. Exprime un poco de jugo de limón sobre los tacos antes de doblar las tortillas y servir.",
+      "8. ¡Disfruta de estos deliciosos tacos de pescado al coco con un toque exótico y tropical!"
     ]
   },
 
@@ -388,7 +393,7 @@ export const recetas = [
     id: 15,
     nombre: "Risotto de Champiñones",
     categoria: "Plato principal",
-    imagen: "url_de_la_imagen",
+    imagen: "https://recetarisotto.es/img/risotto-de-champinones-450.jpg",
     categoriasAdicionales: ["Arroces", "Vegetariano"],
     ingredientes: [
               "Arroz Arborio",
@@ -411,7 +416,7 @@ export const recetas = [
           nombre: "Flan de Huevo",
           categoria: "Postre",
           categoriasAdicionales: ["Postres caseros"],
-          imagen: "url_de_la_imagen",
+          imagen: "https://www.recetasderechupete.com/wp-content/uploads/2015/07/flan_de_huevo.jpg",
           ingredientes: [
             "Huevos",
             "Leche",
@@ -425,7 +430,7 @@ export const recetas = [
             nombre: "Empanadas Argentinas",
             categoria: "Entrada",
             categoriasAdicionales: ["Latinoamericano", "Aperitivos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn7.kiwilimon.com/recetaimagen/37490/47376.jpg",
             ingredientes: [
               "Harina de trigo",
               "Manteca",
@@ -446,7 +451,7 @@ export const recetas = [
           nombre: "Hamburguesa Casera",
           categoria: "Plato principal",
           categoriasAdicionales: ["Carnes", "Rápido y fácil"],
-          imagen: "url_de_la_imagen",
+          imagen: "https://s2.ppllstatics.com/diariovasco/www/multimedia/202205/18/media/cortadas/burger-RtwN88WBAR2yhwDHASHLf2L-1248x770@Diario%20Vasco.jpg",
           ingredientes: [
             "Carne picada",
             "Pan de hamburguesa",
@@ -466,7 +471,7 @@ export const recetas = [
           nombre: "Tiramisú",
           categoria: "Postre",
           categoriasAdicionales: ["Postres caseros", "Italiano"],
-          imagen: "url_de_la_imagen",
+          imagen: "https://recetasdecocina.elmundo.es/wp-content/uploads/2022/08/tiramisu-postre-italiano.jpg",
           ingredientes: [
             "Bizcochos de soletilla",
             "Café espresso",
@@ -483,7 +488,7 @@ export const recetas = [
           nombre: "Ceviche de Pescado",
           categoria: "Entrada",
           categoriasAdicionales: ["Mariscos", "Cocina latinoamericana"],
-          imagen: "url_de_la_imagen",
+          imagen: "https://www.laylita.com/recetas/wp-content/uploads/Ceviche-de-pescado-receta.jpg",
           ingredientes: [
             "Filetes de pescado blanco",
             "Limones",
@@ -503,7 +508,7 @@ export const recetas = [
             nombre: "Gazpacho de Sandía",
             categoria: "Entrada",
             categoriasAdicionales: ["Sopas", "Verano"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://images.cookforyourlife.org/wp-content/uploads/2018/08/shutterstock_149024090-min.jpg",
             ingredientes: [
               "Sandía",
               "Tomates",
@@ -523,7 +528,7 @@ export const recetas = [
             nombre: "Sopa de Calabaza",
             categoria: "Entrada",
             categoriasAdicionales: ["Sopas", "Otoño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.hogarmania.com/archivos/202108/crema-de-calabaza-receta-karlos-arguinano-848x477x80xX.jpg",
             ingredientes: [
               "Calabaza",
               "Cebolla",
@@ -538,27 +543,46 @@ export const recetas = [
           },
           {
             id: 23,
-            nombre: "Ensalada Caprese",
+            nombre: "Ceviche de Camarón",
             categoria: "Entrada",
-            categoriasAdicionales: ["Ensaladas", "Italiana"],
-            imagen: "url_de_la_imagen",
+            categoriasAdicionales: ["Ensaladas", "Peruana"],
+            imagen: "https://img-global.cpcdn.com/recipes/68eb52a9744fa6a6/1360x964cq70/ceviche-de-camaron-ecuatoriano-foto-principal.webp",
             ingredientes: [
-              "Tomates",
-              "Queso mozzarella",
-              "Albahaca fresca",
-              "Aceite de oliva",
-              "Vinagre balsámico",
+              "Camarones frescos",
+              "Jugo de limón",
+              "Cebolla morada",
+              "Ají amarillo",
+              "Cilantro",
+              "Ajo",
+              "Maíz tostado",
+              "Cancha (maíz inflado)",
+              "Batata",
+              "Leche de tigre",
               "Sal",
               "Pimienta"
             ],
-            instrucciones: ["1. Corta los tomates y el queso mozzarella en rodajas.\n2. Dispón las rodajas de tomate y queso alternativamente en un plato.\n3. Espolvorea con hojas de albahaca fresca.\n4. Riega con aceite de oliva y vinagre balsámico.\n5. Sazona con sal y pimienta al gusto.\n6. Deja reposar durante unos minutos para que los sabores se mezclen.\n7. Sirve y disfruta."]
+            instrucciones: [
+              "1. Limpia y pela los camarones, quitando la vena.",
+              "2. Corta los camarones en trozos pequeños y colócalos en un recipiente.",
+              "3. Agrega el jugo de limón a los camarones y mezcla bien. Deja marinar en el refrigerador por al menos 30 minutos.",
+              "4. Mientras tanto, corta la cebolla morada en juliana fina y el ají amarillo en rodajas finas.",
+              "5. Pica el cilantro y el ajo finamente.",
+              "6. Retira los camarones del refrigerador y escúrrelos. Reserva el jugo de limón.",
+              "7. En un tazón grande, mezcla los camarones con la cebolla morada, el ají amarillo, el cilantro y el ajo.",
+              "8. Agrega el maíz tostado y la cancha a la mezcla.",
+              "9. Pela y corta la batata en rodajas finas. Sirve el ceviche sobre las rodajas de batata.",
+              "10. Baña el ceviche con leche de tigre y el jugo de limón reservado.",
+              "11. Sazona con sal y pimienta al gusto.",
+              "12. Sirve el ceviche de camarón frío y disfruta de esta deliciosa especialidad peruana."
+            ]
           },
+          
           {
             id: 24,
             nombre: "Lomo Saltado",
             categoria: "Plato principal",
             categoriasAdicionales: ["Carnes", "Peruana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://assets.afcdn.com/recipe/20210416/119490_w1024h768c1cx363cy240.webp",
             ingredientes: [
               "Lomo de res",
               "Cebolla",
@@ -579,7 +603,7 @@ export const recetas = [
             nombre: "Ratatouille",
             categoria: "Plato principal",
             categoriasAdicionales: ["Vegetariano", "Francesa"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://imag.bonviveur.com/ratatouille-confit-byaldi.webp",
             ingredientes: [
               "Berenjena",
               "Calabacín",
@@ -597,27 +621,43 @@ export const recetas = [
           },
           {
             id: 26,
-            nombre: "Tarta de Limón",
+            nombre: "Torta de Mango y Coco",
             categoria: "Postre",
-            categoriasAdicionales: ["Frutas", "Pasteles"],
-            imagen: "url_de_la_imagen",
+            categoriasAdicionales: ["Frutas", "Tortas"],
+            imagen: "https://www.nutricienta.com/imagenes/recetas/receta-nutricienta-tarta-de-coco-y-mango-sin-horno.jpg",
             ingredientes: [
               "Masa para tarta",
-              "Limones",
+              "Mangos maduros",
               "Huevos",
               "Azúcar",
-              "Harina",
-              "Mantequilla",
-              "Azúcar glas (opcional)"
+              "Harina de trigo",
+              "Coco rallado",
+              "Leche de coco",
+              "Mantequilla derretida",
+              "Azúcar glas (opcional)",
             ],
-            instrucciones: ["1. Precalienta el horno a 180°C (350°F).\n2. Extiende la masa para tarta en un molde y pincha el fondo con un tenedor.\n3. Ralla la cáscara de los limones y exprime su jugo.\n4. En un bol, bate los huevos con el azúcar hasta obtener una mezcla homogénea.\n5. Añade la ralladura de limón, el jugo de limón, la harina y la mantequilla derretida. Mezcla bien.\n6. Vierte la mezcla sobre la masa para tarta.\n7. Hornea durante aproximadamente 30-35 minutos o hasta que la tarta esté dorada y firme al tacto.\n8. Deja enfriar antes de desmoldar.\n9. Opcionalmente, espolvorea con azúcar glas antes de servir."]
+            instrucciones: [
+              "1. Precalienta el horno a 180°C (350°F). Engrasa un molde para tarta.",
+              "2. Extiende la masa para tarta en el molde y pincha el fondo con un tenedor.",
+              "3. Pela los mangos y córtalos en rodajas finas. Reserva algunas rodajas para decorar.",
+              "4. En un bol, bate los huevos con el azúcar hasta obtener una mezcla homogénea.",
+              "5. Agrega la harina de trigo y el coco rallado a la mezcla de huevos y azúcar, y mezcla bien.",
+              "6. Incorpora la leche de coco y la mantequilla derretida, y mezcla hasta obtener una masa suave.",
+              "7. Vierte la mitad de la masa en el molde con la masa para tarta.",
+              "8. Coloca una capa de rodajas de mango sobre la masa.",
+              "9. Vierte el resto de la masa sobre las rodajas de mango.",
+              "10. Decora la superficie con las rodajas de mango reservadas.",
+              "11. Hornea la torta durante aproximadamente 40-45 minutos o hasta que esté dorada y firme al tacto.",
+              "12. Deja enfriar antes de desmoldar.",
+              "13. Opcionalmente, espolvorea con azúcar glas antes de servir.",
+            ],
           },
           {
             id: 27,
             nombre: "Mousse de Chocolate",
             categoria: "Postre",
             categoriasAdicionales: ["Chocolate", "Postres fríos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.comedera.com/wp-content/uploads/2016/12/dessert-4034053_1280.jpg",
             ingredientes: [
               "Chocolate negro",
               "Huevos",
@@ -632,7 +672,7 @@ export const recetas = [
             nombre: "Sopa de Fideos",
             categoria: "Entrada",
             categoriasAdicionales: ["Sopas", "Comfort food"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://mejorconsalud.as.com/wp-content/uploads/2018/05/sopa-fideos-500x339.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe",
             ingredientes: [
               "Fideos",
               "Caldo de pollo",
@@ -649,50 +689,82 @@ export const recetas = [
           },
           {
             id: 29,
-            nombre: "Pollo al Curry",
-            categoria: "Plato principal",
-            categoriasAdicionales: ["Carnes", "Curry"],
-            imagen: "url_de_la_imagen",
+            nombre: "Pastel de Tres Leches",
+            categoria: "Postre",
+            categoriasAdicionales: ["Latinoamericana", "Tres Leches"],
+            imagen: "https://i.ytimg.com/vi/n0ymEFZJBho/maxresdefault.jpg",
             ingredientes: [
-              "Pechugas de pollo",
-              "Cebolla",
-              "Ajo",
-              "Jengibre",
-              "Leche de coco",
-              "Curry en polvo",
-              "Cúrcuma",
-              "Comino",
-              "Cilantro fresco",
-              "Aceite de oliva",
-              "Sal",
-              "Pimienta"
+              "1 taza de harina de trigo",
+              "1 1/2 cucharadita de polvo para hornear",
+              "1/4 de taza de mantequilla",
+              "1 taza de azúcar",
+              "5 huevos",
+              "1 cucharadita de esencia de vainilla",
+              "1 lata de leche evaporada",
+              "1 lata de leche condensada",
+              "1 taza de leche entera",
+              "1 taza de crema para batir",
+              "2 cucharadas de azúcar glass",
             ],
-            instrucciones: ["1. Corta las pechugas de pollo en trozos.\n2. En una sartén grande, calienta el aceite de oliva a fuego medio-alto.\n3. Añade la cebolla picada, el ajo picado y el jengibre rallado. Cocina hasta que estén dorados.\n4. Agrega el pollo y cocina hasta que esté dorado por todos los lados.\n5. Añade el curry en polvo, la cúrcuma y el comino. Mezcla bien.\n6. Vierte la leche de coco y deja que hierva.\n7. Reduce el fuego y cocina a fuego lento durante unos 15-20 minutos, o hasta que el pollo esté tierno y la salsa se haya espesado.\n8. Sazona con sal y pimienta al gusto.\n9. Espolvorea con cilantro fresco picado antes de servir.\n10. Sirve con arroz blanco o naan."]
+            instrucciones: [
+              "1. Precalienta el horno a 180°C (350°F). Engrasa y enharina un molde para pastel.",
+              "2. En un tazón, mezcla la harina de trigo con el polvo para hornear.",
+              "3. En otro tazón, bate la mantequilla con el azúcar hasta obtener una mezcla cremosa.",
+              "4. Agrega los huevos uno a uno, sin dejar de batir. Añade la esencia de vainilla.",
+              "5. Incorpora la mezcla de harina poco a poco y mezcla bien hasta obtener una masa homogénea.",
+              "6. Vierte la masa en el molde preparado y extiéndela de manera uniforme.",
+              "7. Hornea el pastel en el horno precalentado durante aproximadamente 25-30 minutos, o hasta que al insertar un palillo en el centro, este salga limpio.",
+              "8. Mientras el pastel se hornea, prepara el jarabe de tres leches: en un tazón, mezcla la leche evaporada, la leche condensada y la leche entera.",
+              "9. Una vez que el pastel esté listo, sácalo del horno y déjalo enfriar por unos minutos.",
+              "10. Perfora la superficie del pastel con un tenedor en varias ocasiones, para que absorba bien el jarabe de tres leches.",
+              "11. Vierte el jarabe de tres leches sobre el pastel de manera uniforme, asegurándote de que se impregne bien.",
+              "12. Deja que el pastel repose en el refrigerador durante al menos 2 horas para que absorba bien el jarabe.",
+              "13. Antes de servir, bate la crema para batir con el azúcar glass hasta obtener picos suaves.",
+              "14. Decora el pastel con la crema batida y disfruta de este delicioso postre latinoamericano."
+            ]
           },
+          
           {
             id: 30,
-            nombre: "Tarta de Manzana",
-            categoria: "Postre",
-            categoriasAdicionales: ["Frutas", "Pasteles"],
-            imagen: "url_de_la_imagen",
+            nombre: "Moules-Frites",
+            categoria: "Plato principal",
+            categoriasAdicionales: ["Belga", "Mariscos"],
+            imagen: "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/F122679C-CEAF-4182-ABC2-4C43178F5C8E/Derivates/9A9250AB-D812-41D3-83C7-A84FE53C00C5.jpg",
             ingredientes: [
-              "Masa para tarta",
-              "Manzanas",
-              "Azúcar",
-              "Canela",
-              "Harina",
-              "Mantequilla",
-              "Azúcar glas (opcional)"
+              "2 kg de mejillones frescos",
+              "1 cebolla grande, picada",
+              "2 dientes de ajo, picados",
+              "100 ml de vino blanco",
+              "200 ml de caldo de pescado",
+              "200 ml de crema de leche",
+              "1 manojo de perejil fresco, picado",
+              "Sal y pimienta al gusto",
+              "Aceite de oliva",
+              "1 kg de papas para freír",
+              "Aceite vegetal para freír"
             ],
-            instrucciones: ["1. Precalienta el horno a 180°C (350°F).\n2. Forra un molde para tarta con la masa y pincha el fondo con un tenedor.\n3. Pela y corta las manzanas en rodajas finas.\n4. En un bol, mezcla el azúcar, la canela y la harina.\n5. Coloca una capa de manzanas en el molde para tarta y espolvorea con la mezcla de azúcar, canela y harina.\n6. Repite el proceso hasta que todas las manzanas estén utilizadas.\n7. Distribuye pequeños trozos de mantequilla sobre la capa superior.\n8. Hornea durante aproximadamente 40-45 minutos o hasta que la tarta esté dorada y las manzanas estén tiernas.\n9. Deja enfriar antes de desmoldar.\n10. Opcionalmente, espolvorea con azúcar glas antes de servir."]
+            instrucciones: [
+              "1. Limpia los mejillones bajo agua fría y desecha aquellos que estén rotos o abiertos.",
+              "2. En una cacerola grande, calienta un poco de aceite de oliva a fuego medio.",
+              "3. Agrega la cebolla y el ajo, y cocina hasta que estén tiernos.",
+              "4. Vierte el vino blanco y el caldo de pescado en la cacerola, y lleva a ebullición.",
+              "5. Añade los mejillones a la cacerola y cubre con una tapadera. Cocina por unos 5-7 minutos o hasta que los mejillones se abran.",
+              "6. Retira los mejillones cocidos de la cacerola y colócalos en un tazón grande. Desecha aquellos que no se hayan abierto.",
+              "7. En la misma cacerola, agrega la crema de leche y el perejil picado. Cocina a fuego medio hasta que la salsa se espese ligeramente.",
+              "8. Añade sal y pimienta al gusto.",
+              "9. Mientras tanto, pela las papas y córtalas en tiras para freír.",
+              "10. Calienta aceite vegetal en una sartén grande y fríe las papas hasta que estén doradas y crujientes.",
+              "11. Sirve los mejillones con la salsa y las papas fritas. ¡Disfruta de esta deliciosa especialidad belga, Moules-Frites!"
+            ]
           },
+          
     
           {
             id: 31,
             nombre: "Pad Thai",
             categoria: "Plato principal",
             categoriasAdicionales: ["Tailandesa", "Fideos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://imag.bonviveur.com/pad-thai.webp",
             ingredientes: [
               "Fideos de arroz",
               "Tofu",
@@ -714,7 +786,7 @@ export const recetas = [
             nombre: "Ceviche",
             categoria: "Entrada",
             categoriasAdicionales: ["Peruana", "Mariscos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.laylita.com/recetas/wp-content/uploads/2013/08/1-Cebiche-de-pescado.jpg",
             ingredientes: [
               "Pescado blanco (corvina, lenguado)",
               "Limones",
@@ -734,7 +806,7 @@ export const recetas = [
             nombre: "Curry de Coco y Pollo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Tailandesa", "Curry"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.recetasenlamochila.com/wp-content/uploads/2018/04/curry-pollo-leche-coco-anacardos-1280x742.jpg",
             ingredientes: [
               "Pechugas de pollo",
               "Cebolla",
@@ -759,7 +831,7 @@ export const recetas = [
             nombre: "Enchiladas Verdes",
             categoria: "Plato principal",
             categoriasAdicionales: ["Mexicana", "Picante"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.maricruzavalos.com/wp-content/uploads/2020/06/enchiladas_suizas_green_enchilada.jpg",
             ingredientes: [
               "Tortillas de maíz",
               "Pechugas de pollo",
@@ -781,7 +853,7 @@ export const recetas = [
             nombre: "Sushi",
             categoria: "Plato principal",
             categoriasAdicionales: ["Japonesa", "Mariscos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://imag.bonviveur.com/sushi-casero.webp",
             ingredientes: [
               "Arroz para sushi",
               "Algas nori",
@@ -796,33 +868,38 @@ export const recetas = [
           },
           {
             id: 36,
-            nombre: "Lomo Saltado",
+            nombre: "Cevapi",
             categoria: "Plato principal",
-            categoriasAdicionales: ["Peruana", "Carnes"],
-            imagen: "url_de_la_imagen",
+            categoriasAdicionales: ["Croata", "Carnes"],
+            imagen: "https://www.recipesfromeurope.com/wp-content/uploads/2023/04/cevapi-recipe.jpg",
             ingredientes: [
-              "Lomo de res",
-              "Cebolla roja",
-              "Tomate",
-              "Ají amarillo",
-              "Ajo",
-              "Papas fritas",
-              "Arroz blanco",
-              "Vinagre de vino",
-              "Salsa de soja",
-              "Cilantro fresco",
-              "Aceite vegetal",
-              "Sal",
-              "Pimienta"
+              "500 g de carne molida (mezcla de ternera y cordero)",
+              "1 cebolla pequeña, finamente picada",
+              "1 diente de ajo, triturado",
+              "1 cucharadita de pimentón",
+              "1 cucharadita de comino",
+              "Sal y pimienta al gusto",
+              "Pan pita o pan de torta",
+              "Ajvar (salsa de pimientos rojos)",
+              "Cebolla picada y perejil para decorar",
+              "Aceite de oliva"
             ],
-            instrucciones: ["1. Corta el lomo de res en tiras delgadas.\n2. En una sartén grande, calienta un poco de aceite vegetal a fuego alto y saltea la carne hasta que esté dorada. Retira de la sartén y reserva.\n3. En la misma sartén, añade un poco más de aceite y saltea la cebolla roja, el tomate picado, el ají amarillo y el ajo picado hasta que estén tiernos.\n4. Agrega la carne reservada y mezcla bien.\n5. Añade las papas fritas y mezcla nuevamente.\n6. Agrega un poco de vinagre de vino y salsa de soja al gusto. Remueve bien.\n7. Sazona con sal y pimienta al gusto.\n8. Sirve el lomo saltado caliente sobre un lecho de arroz blanco y espolvorea cilantro fresco por encima."]
+            instrucciones: [
+              "1. En un tazón grande, mezcla la carne molida con la cebolla picada, el ajo triturado, el pimentón, el comino, la sal y la pimienta. Mezcla bien hasta que todos los ingredientes estén incorporados.",
+              "2. Forma pequeñas salchichas alargadas con la mezcla de carne y colócalas en una bandeja.",
+              "3. Calienta un poco de aceite de oliva en una sartén grande a fuego medio-alto. Cocina las salchichas de carne hasta que estén doradas y cocidas por dentro.",
+              "4. Mientras tanto, calienta el pan pita o pan de torta en una parrilla o sartén caliente.",
+              "5. Sirve las cevapi en el pan pita y acompáñalas con ajvar, cebolla picada y perejil.",
+              "6. ¡Disfruta de este delicioso plato croata, Cevapi!"
+            ]
           },
+          
           {
             id: 37,
             nombre: "Tacos al Pastor",
             categoria: "Plato principal",
             categoriasAdicionales: ["Mexicana", "Carnes"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.comedera.com/wp-content/uploads/2017/08/tacos-al-pastor-receta.jpg",
             ingredientes: [
               "Carne de cerdo",
               "Piña",
@@ -845,7 +922,7 @@ export const recetas = [
             nombre: "Sopa Tom Kha Gai",
             categoria: "Entrada",
             categoriasAdicionales: ["Tailandesa", "Sopa"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://imag.bonviveur.com/sopa-tom-kha-kai.webp",
             ingredientes: [
               "Pechugas de pollo",
               "Leche de coco",
@@ -867,7 +944,7 @@ export const recetas = [
             nombre: "Moussaka",
             categoria: "Plato principal",
             categoriasAdicionales: ["Griega", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://estoyhechouncocinillas.com/wp-content/uploads/2014/09/moussaka-griega.jpg",
             ingredientes: [
               "Berenjenas",
               "Papas",
@@ -891,7 +968,7 @@ export const recetas = [
             nombre: "Falafel",
             categoria: "Entrada",
             categoriasAdicionales: ["Oriental", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://i0.wp.com/iran-cuisine.com/wp-content/uploads/2022/11/Falafel-libanais.jpg?fit=1170%2C1452&ssl=1",
             ingredientes: [
               "Garbanzos",
               "Cebolla",
@@ -913,7 +990,7 @@ export const recetas = [
             nombre: "Ajiaco",
             categoria: "Plato principal",
             categoriasAdicionales: ["Colombiana", "Sopas"],
-            imagen: "url_de_la_imagen",
+            imagen: "uhttps://cdn.colombia.com/gastronomia/2011/07/22/ajiaco-1458.jpg",
             ingredientes: [
               "Papas",
               "Pollo",
@@ -934,7 +1011,7 @@ export const recetas = [
             nombre: "Causa Limeña",
             categoria: "Entrada",
             categoriasAdicionales: ["Peruana", "Papas"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://images-gmi-pmc.edge-generalmills.com/1fdf2172-1313-49e0-b964-9c2cbb484672.jpg",
             ingredientes: [
               "Papas amarillas",
               "Ají amarillo",
@@ -957,7 +1034,7 @@ export const recetas = [
             nombre: "Locro",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentino", "Sopas"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.rionegro.com.ar/wp-content/uploads/2021/07/locro-criollo-abundante-D_NQ_NP_982225-MLA27393397210_052018-F.jpg?w=1024",
             ingredientes: [
               "Zapallo",
               "Maíz",
@@ -980,7 +1057,7 @@ export const recetas = [
             nombre: "Tacu Tacu",
             categoria: "Plato principal",
             categoriasAdicionales: ["Peruana", "Arroz y frijoles"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tacu_Tacu.jpg/1280px-Tacu_Tacu.jpg",
             ingredientes: [
               "Arroz cocido",
               "Frijoles",
@@ -1003,7 +1080,7 @@ export const recetas = [
             nombre: "Humitas",
             categoria: "Entrada",
             categoriasAdicionales: ["Ecuatoriana", "Mazorcas de maíz"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://canalcocina.es/medias/_cache/zoom-51ab54ea26f412d264af14e881a83770-920-518.jpg",
             ingredientes: [
               "Mazorcas de maíz",
               "Queso fresco",
@@ -1025,7 +1102,7 @@ export const recetas = [
             nombre: "Caldillo de Congrio",
             categoria: "Plato principal",
             categoriasAdicionales: ["Chilena", "Pescado"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://virginiademaria.cl/wp-content/uploads/2015/07/virginia-recetas.caldillo.jpg",
             ingredientes: [
               "Congrio fresco",
               "Cebolla",
@@ -1049,7 +1126,7 @@ export const recetas = [
             nombre: "Picante de Pollo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Boliviana", "Pollo"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://patujutricolor.org/wp-content/uploads/2020/11/picante-de-pollo.jpg",
             ingredientes: [
               "Pollo troceado",
               "Cebolla",
@@ -1073,7 +1150,7 @@ export const recetas = [
             nombre: "Pastel de Choclo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Chilena", "Maíz"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.comedera.com/wp-content/uploads/2022/12/Pastel-de-choclo-chileno.jpg",
             ingredientes: [
               "Choclo",
               "Carne de res molida",
@@ -1096,7 +1173,7 @@ export const recetas = [
             nombre: "Sancocho",
             categoria: "Plato principal",
             categoriasAdicionales: ["Colombiana", "Sopas"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn0.recetasgratis.net/es/posts/1/8/1/sancocho_de_gallina_o_pollo_12181_600_square.jpg",
             ingredientes: [
               "Carne de res",
               "Pollo",
@@ -1122,7 +1199,7 @@ export const recetas = [
             nombre: "Pabellón Criollo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Venezolana", "Carne"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.goya.com/media/4098/venezuelan-shredded-beef.jpg?quality=80",
             ingredientes: [
               "Carne de res",
               "Frijoles negros",
@@ -1145,7 +1222,7 @@ export const recetas = [
             nombre: "Skyr",
             categoria: "Postre",
             categoriasAdicionales: ["Islandesa", "Lácteos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2020/09/16/5f6232addfc6f.r_d.625-419-0.jpeg",
             ingredientes: ["Leche desnatada"],
             instrucciones: [
               "1. Calienta la leche desnatada en una olla hasta que esté tibia.",
@@ -1159,7 +1236,7 @@ export const recetas = [
             nombre: "Haggis",
             categoria: "Plato principal",
             categoriasAdicionales: ["Escocesa", "Vísceras"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn.britannica.com/32/188132-050-E4D1C04E/Haggis.jpg",
             ingredientes: ["Vísceras de oveja", "Avena", "Cebolla", "Especias"],
             instrucciones: [
               "1. Limpia y cocina las vísceras de oveja hasta que estén tiernas.",
@@ -1174,7 +1251,7 @@ export const recetas = [
             nombre: "Paella",
             categoria: "Plato principal",
             categoriasAdicionales: ["Española", "Arroz"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn-geocp.nitrocdn.com/fDFrSSYWfGItWOEZGsrBIHnCqgylYQCG/assets/images/optimized/rev-bcb82f2/wp-content/themes/Nutrioli/img/null.jpg",
             ingredientes: ["Arroz", "Pollo", "Conejo", "Mariscos", "Pimientos", "Azafrán", "Aceite de oliva", "Caldo de pescado"],
             instrucciones: [
               "1. En una paellera, calienta aceite de oliva y añade el pollo y el conejo troceados.",
@@ -1187,31 +1264,39 @@ export const recetas = [
           },
           {
             id: 54,
-            nombre: "Moussaka",
+            nombre: "Wiener Schnitzel",
             categoria: "Plato principal",
-            categoriasAdicionales: ["Griega", "Carne"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Carne de cordero", "Berenjenas", "Tomates", "Cebolla", "Ajo", "Queso feta", "Aceite de oliva", "Leche", "Harina", "Mantequilla", "Nuez moscada"],
+            categoriasAdicionales: ["Austriaca", "Carne"],
+            imagen: "https://imag.bonviveur.com/wiener-schnitzel-o-escalope-vienes.webp",
+            ingredientes: [
+              "Filetes de ternera finos",
+              "Harina",
+              "Huevos",
+              "Pan rallado",
+              "Aceite vegetal",
+              "Limón",
+              "Sal",
+              "Pimienta"
+            ],
             instrucciones: [
-              "1. Precalienta el horno a 180°C.",
-              "2. En una sartén, cocina la carne de cordero picada junto con la cebolla y el ajo picados hasta que estén dorados.",
-              "3. Agrega los tomates picados y cocina a fuego lento durante unos minutos.",
-              "4. En otra sartén, cocina las berenjenas cortadas en rodajas hasta que estén tiernas.",
-              "5. En una fuente para horno, alterna capas de berenjenas, carne de cordero y queso feta desmenuzado.",
-              "6. Repite las capas hasta que se agoten los ingredientes, terminando con una capa de queso feta.",
-              "7. En una cacerola, derrite la mantequilla y agrega la harina. Cocina por unos minutos y luego agrega la leche caliente.",
-              "8. Cocina la bechamel hasta que espese y sazona con nuez moscada, sal y pimienta.",
-              "9. Vierte la bechamel sobre las capas de moussaka en la fuente para horno.",
-              "10. Hornea durante aproximadamente 45 minutos hasta que esté dorada y burbujeante.",
-              "11. Deja reposar durante unos minutos antes de servir."
+              "1. Prepara los filetes de ternera, asegurándote de que sean finos y de tamaño similar.",
+              "2. Salpica un poco de sal y pimienta sobre los filetes.",
+              "3. Prepara tres platos: uno con harina, otro con huevos batidos y el último con pan rallado.",
+              "4. Pasa cada filete por la harina, luego por los huevos batidos y finalmente por el pan rallado, asegurándote de que estén bien cubiertos.",
+              "5. En una sartén grande, calienta suficiente aceite vegetal para cubrir la base.",
+              "6. Fríe los filetes empanizados en el aceite caliente hasta que estén dorados y crujientes por ambos lados.",
+              "7. Retira los filetes de la sartén y colócalos sobre papel absorbente para eliminar el exceso de aceite.",
+              "8. Sirve los Wiener Schnitzel calientes, acompañados de rodajas de limón para exprimir sobre ellos.",
+              "9. Puedes servirlos con una guarnición de ensalada de papas o cualquier otra guarnición de tu elección."
             ]
-          },
+          }
+          ,
           {
             id: 55,
             nombre: "Pierogi",
             categoria: "Entrada",
             categoriasAdicionales: ["Polaca", "Empanadas"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://i.blogs.es/b563ef/pierogi-ruskie/1366_2000.jpg",
             ingredientes: ["Harina", "Huevo", "Agua", "Papas", "Cebolla", "Mantequilla", "Bacon", "Sal", "Pimienta"],
             instrucciones: [
               "1. En un tazón grande, mezcla la harina con los huevos y el agua hasta obtener una masa suave.",
@@ -1228,26 +1313,43 @@ export const recetas = [
           },
           {
             id: 56,
-            nombre: "Ratatouille",
+            nombre: "Pelmeni",
             categoria: "Plato principal",
-            categoriasAdicionales: ["Francesa", "Vegetariana"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Berenjenas", "Calabacines", "Tomates", "Pimientos", "Cebolla", "Ajo", "Aceite de oliva", "Hierbas provenzales", "Sal", "Pimienta"],
+            categoriasAdicionales: ["Rusa", "Carne"],
+            imagen: "https://recetinas.com/wp-content/uploads/2019/10/pelmeni.jpg.webp",
+            ingredientes: [
+              "Harina",
+              "Agua",
+              "Carne de res",
+              "Carne de cerdo",
+              "Cebolla",
+              "Ajo",
+              "Sal",
+              "Pimienta",
+              "Caldo de res (opcional)",
+              "Crema agria (opcional)",
+              "Eneldo fresco (opcional)"
+            ],
             instrucciones: [
-              "1. Corta las berenjenas, calabacines, tomates y pimientos en rodajas finas.",
-              "2. En una sartén grande, calienta aceite de oliva y agrega la cebolla picada y el ajo picado. Sofríe hasta que estén dorados.",
-              "3. Agrega las rodajas de berenjenas, calabacines, tomates y pimientos a la sartén. Cocina a fuego medio durante unos minutos hasta que las verduras estén tiernas.",
-              "4. Condimenta con hierbas provenzales, sal y pimienta al gusto. Mezcla bien.",
-              "5. Cocina a fuego lento durante unos minutos más para que los sabores se mezclen.",
-              "6. Sirve el ratatouille caliente como plato principal o como guarnición."
+              "1. Prepara la masa mezclando la harina con agua hasta obtener una masa suave y elástica.",
+              "2. Cubre la masa con un paño y déjala reposar durante unos 30 minutos.",
+              "3. Mientras tanto, prepara el relleno mezclando la carne de res, la carne de cerdo, la cebolla y el ajo picados en un tazón. Sazona con sal y pimienta al gusto.",
+              "4. Estira la masa con un rodillo hasta que quede muy fina.",
+              "5. Corta la masa en círculos pequeños con un cortador o un vaso.",
+              "6. Coloca una pequeña cantidad de relleno en el centro de cada círculo de masa.",
+              "7. Dobla la masa sobre el relleno y presiona los bordes para sellar los pelmeni.",
+              "8. En una olla grande con agua hirviendo, agrega sal al gusto y cocina los pelmeni hasta que floten en la superficie del agua.",
+              "9. Retira los pelmeni del agua con una espumadera y sirve caliente.",
+              "10. Opcionalmente, puedes servir los pelmeni con caldo de res, crema agria y espolvorear eneldo fresco por encima para darle un toque ruso auténtico."
             ]
           },
+          
           {
             id: 57,
             nombre: "Goulash",
             categoria: "Plato principal",
             categoriasAdicionales: ["Húngara", "Carne"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://saborgourmet.com/wp-content/uploads/goulash-que-es-receta-istock-1200x900.jpg",
             ingredientes: ["Carne de res", "Cebolla", "Pimientos", "Paprika", "Tomate", "Caldo de carne", "Harina", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. Corta la carne de res en trozos y sazónala con sal y pimienta al gusto.",
@@ -1265,7 +1367,7 @@ export const recetas = [
             nombre: "Baklava",
             categoria: "Postre",
             categoriasAdicionales: ["Turca", "Frutos secos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://recetinas.com/wp-content/uploads/2022/06/baklava.jpg.webp",
             ingredientes: ["Masa filo", "Frutos secos (como nueces, almendras o pistachos)", "Azúcar", "Agua", "Jugo de limón", "Miel", "Mantequilla"],
             instrucciones: [
               "1. Precalienta el horno a 180°C.",
@@ -1287,7 +1389,7 @@ export const recetas = [
             nombre: "Crepes",
             categoria: "Postre",
             categoriasAdicionales: ["Francesa", "Desayuno"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.divinacocina.es/wp-content/uploads/2022/03/crepes-frutas-v2.jpg.webp",
             ingredientes: ["Harina", "Huevos", "Leche", "Azúcar", "Sal", "Mantequilla"],
             instrucciones: [
               "1. En un tazón, mezcla la harina, los huevos, la leche, el azúcar y la sal hasta obtener una masa suave.",
@@ -1301,19 +1403,28 @@ export const recetas = [
           },
           {
             id: 60,
-            nombre: "Tacos al pastor",
+            nombre: "Mămăligă cu Brânză și Smântână",
             categoria: "Plato principal",
-            categoriasAdicionales: ["Mexicana", "Carnes"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Carne de cerdo", "Pimiento", "Cebolla", "Piña", "Achiote", "Orégano", "Comino", "Pimienta", "Sal", "Tortillas de maíz"],
+            categoriasAdicionales: ["Rumana", "Vegetariana"],
+            imagen: "https://ideideretete.net/wp-content/uploads/2022/05/464-mbs-cu-ou-si-branza-02.jpg",
+            ingredientes: [
+              "Harina de maíz",
+              "Agua",
+              "Sal",
+              "Queso feta (brânză)",
+              "Crema agria (smântână)",
+              "Mantequilla"
+            ],
             instrucciones: [
-              "1. Corta la carne de cerdo en tiras delgadas y mézclala con achiote, orégano, comino, pimienta y sal al gusto. Marínala durante al menos 1 hora.",
-              "2. En una sartén grande, calienta un poco de aceite y agrega la carne marinada. Cocina hasta que esté dorada por todos lados.",
-              "3. Agrega el pimiento y la cebolla picados a la sartén y cocina hasta que estén tiernos.",
-              "4. En otra sartén, dora las rodajas de piña hasta que estén caramelizadas.",
-              "5. Calienta las tortillas de maíz en una plancha o sartén.",
-              "6. Para armar los tacos, coloca una porción de carne al pastor en cada tortilla, luego agrega pimiento, cebolla y piña caramelizada.",
-              "7. Sirve los tacos al pastor calientes, acompañados de salsa, limón y cilantro si lo deseas."
+              "1. En una olla grande, lleva a ebullición el agua con una pizca de sal.",
+              "2. Agrega gradualmente la harina de maíz mientras revuelves constantemente para evitar grumos.",
+              "3. Reduce el fuego y cocina a fuego lento durante unos 10-15 minutos, revolviendo ocasionalmente hasta que la masa se espese y se desprenda de los lados de la olla.",
+              "4. Retira la olla del fuego y vierte la masa en un plato o bandeja grande.",
+              "5. Deja enfriar la masa durante unos minutos.",
+              "6. Corta la masa en porciones y sirve caliente.",
+              "7. Acompaña la mămăligă con trozos de queso feta (brânză) desmenuzado por encima y una generosa cantidad de crema agria (smântână).",
+              "8. Puedes agregar un poco de mantequilla derretida para darle un toque de sabor extra.",
+              "9. Disfruta de este delicioso plato tradicional rumano como guarnición o como plato principal por sí solo."
             ]
           },
           {
@@ -1321,7 +1432,7 @@ export const recetas = [
             nombre: "Asado",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentina", "Carne"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://saboryestilo.com.mx/wp-content/uploads/elementor/thumbs/tips-para-hacer-la-mejor-carne-asada-pqgnlqt5z6x7ss8apc43j7e473n8ofhfwd1wcfd268.jpg",
             ingredientes: ["Costillas de res", "Sal", "Pimienta", "Chimichurri"],
             instrucciones: [
               "1. Prepara el fuego en el asador y deja que las brasas se formen.",
@@ -1337,7 +1448,7 @@ export const recetas = [
             nombre: "Choripán",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentina", "Embutidos"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn.kiwilimon.com/brightcove/6919/6919.jpg",
             ingredientes: ["Chorizos", "Pan", "Chimichurri"],
             instrucciones: [
               "1. Precalienta una parrilla o sartén a fuego medio-alto.",
@@ -1353,7 +1464,7 @@ export const recetas = [
             nombre: "Milanesa de carne",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentina", "Carne"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://assets.unileversolutions.com/recipes-v2/231498.jpg?imwidth=2000",
             ingredientes: ["Bistec de carne", "Huevos", "Pan rallado", "Aceite", "Sal", "Pimienta"],
             instrucciones: [
               "1. Precalienta el horno a 180°C.",
@@ -1370,7 +1481,7 @@ export const recetas = [
             nombre: "Matambre arrollado",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentina", "Carne"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://clarin.com/img//2020/11/19/6jxuJnbtX_1200x630__1.jpg",
             ingredientes: ["Matambre", "Huevos duros", "Zanahorias", "Pimientos", "Aceitunas", "Ajo", "Perejil", "Sal", "Pimienta"],
             instrucciones: [
               "1. Hierve los huevos hasta que estén duros. Pela y reserva.",
@@ -1389,7 +1500,7 @@ export const recetas = [
             nombre: "Provoleta",
             categoria: "Entrada",
             categoriasAdicionales: ["Argentina", "Queso"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn7.kiwilimon.com/recetaimagen/21771/640x426/11560.jpg.webp",
             ingredientes: ["Provoleta", "Tomates", "Orégano", "Aceite de oliva"],
             instrucciones: [
               "1. Precalienta la parrilla a fuego medio-alto.",
@@ -1403,23 +1514,39 @@ export const recetas = [
           },
           {
             id: 66,
-            nombre: "Empanadas argentinas",
-            categoria: "Entrada",
-            categoriasAdicionales: ["Argentina", "Empanadas"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Masa de empanadas", "Carne picada", "Cebolla", "Pimientos", "Aceitunas", "Comino", "Pimentón", "Ají molido", "Sal", "Huevos"],
+            nombre: "Gulyás (Estofado Húngaro)",
+            categoria: "Plato principal",
+            categoriasAdicionales: ["Húngara", "Estofado"],
+            imagen: "https://kep.index.hu/1/0/2752/27528/275286/27528607_40b5b6018cc758eeb7b8e99ce309c31b_wm.jpg",
+            ingredientes: [
+              "Carne de res (goulash)",
+              "Cebolla",
+              "Pimientos",
+              "Tomates",
+              "Paprika",
+              "Caldo de carne",
+              "Papas",
+              "Zanahorias",
+              "Pimiento rojo",
+              "Ajo",
+              "Comino",
+              "Pimienta",
+              "Sal",
+              "Aceite de oliva",
+              "Crema agria (opcional)"
+            ],
             instrucciones: [
-              "1. Prepara la masa de empanadas o utiliza masa comprada.",
-              "2. En una sartén, cocina la cebolla y los pimientos picados hasta que estén tiernos.",
-              "3. Agrega la carne picada a la sartén y cocínala hasta que esté dorada.",
-              "4. Añade las aceitunas picadas, el comino, el pimentón, el ají molido y la sal al gusto. Mezcla bien todos los ingredientes.",
-              "5. Estira la masa de empanadas y corta círculos del tamaño deseado.",
-              "6. Coloca una porción del relleno en el centro de cada círculo de masa.",
-              "7. Dobla la masa sobre el relleno y sella los bordes presionando con un tenedor.",
-              "8. Bate los huevos y pinta las empanadas con huevo batido.",
-              "9. Coloca las empanadas en una bandeja para horno y hornéalas a 180°C durante aproximadamente 20-25 minutos o hasta que estén doradas.",
-              "10. Retira las empanadas del horno y déjalas enfriar antes de servir.",
-              "11. Sirve las empanadas argentinas calientes o a temperatura ambiente."
+              "1. En una olla grande, calienta un poco de aceite de oliva a fuego medio.",
+              "2. Agrega la cebolla y los pimientos picados y cocina hasta que estén tiernos.",
+              "3. Añade la carne de res (goulash) cortada en cubos y cocina hasta que esté dorada por todos lados.",
+              "4. Agrega el ajo picado, el comino, la paprika, la pimienta y la sal al gusto. Mezcla bien los ingredientes.",
+              "5. Incorpora los tomates picados y el caldo de carne a la olla. Lleva a ebullición.",
+              "6. Reduce el fuego, tapa la olla y deja cocinar a fuego lento durante aproximadamente 2 horas, o hasta que la carne esté tierna y el guiso haya espesado.",
+              "7. Agrega las papas, zanahorias y pimientos rojos cortados en trozos y continúa cocinando hasta que las verduras estén tiernas.",
+              "8. Ajusta la sazón al gusto con más sal y paprika si es necesario.",
+              "9. Sirve el Gulyás caliente en platos individuales.",
+              "10. Opcionalmente, agrega una cucharada de crema agria por encima antes de servir para un toque de cremosidad.",
+              "11. Acompaña este delicioso estofado húngaro con pan de centeno o dumplings para una experiencia culinaria auténtica."
             ]
           },
           {
@@ -1427,7 +1554,7 @@ export const recetas = [
             nombre: "Ravioles de carne",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentina", "Pasta"],
-            imagen: "url_de_la_imagen",
+            imagen: "http://www.recetasfusion.com/wp-content/uploads/2018/10/Ravioles-con-Carne-Molida.jpg",
             ingredientes: ["Masa para ravioles", "Carne picada", "Cebolla", "Ajo", "Perejil", "Queso rallado", "Huevos", "Sal", "Pimienta"],
             instrucciones: [
               "1. Prepara la masa para ravioles o utiliza masa comprada.",
@@ -1447,7 +1574,7 @@ export const recetas = [
             nombre: "Entraña",
             categoria: "Plato principal",
             categoriasAdicionales: ["Argentina", "Carne"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://i0.wp.com/www.brasasysabores.com/wp-content/uploads/2017/06/La-entran%CC%83a-un-corte-especial-para-la-parrilla.jpg",
             ingredientes: ["Entraña", "Sal", "Pimienta"],
             instrucciones: [
               "1. Precalienta la parrilla a fuego medio-alto.",
@@ -1462,7 +1589,7 @@ export const recetas = [
             nombre: "Provoleta al horno",
             categoria: "Entrada",
             categoriasAdicionales: ["Argentina", "Queso"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://recetasdecocina.elmundo.es/wp-content/uploads/2016/02/provolone-al-horno.jpg",
             ingredientes: ["Provoleta", "Tomates", "Orégano", "Aceite de oliva"],
             instrucciones: [
               "1. Precalienta el horno a 200°C.",
@@ -1477,22 +1604,39 @@ export const recetas = [
           },
           {
             id: 70,
-            nombre: "Locro argentino",
+            nombre: "Svíčková (Estofado Checo de Ternera)",
             categoria: "Plato principal",
-            categoriasAdicionales: ["Argentina", "Estofado"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Maíz blanco", "Porotos", "Carne de cerdo", "Carne de vaca", "Chorizo", "Panceta", "Cebolla", "Pimientos", "Ajo", "Comino", "Pimentón", "Sal", "Pimienta"],
+            categoriasAdicionales: ["Checa", "Estofado"],
+            imagen: "https://espanol.radio.cz/sites/default/files/styles/rcz_lightbox_v2/public/images/svickova1.jpg?itok=7D3grOvi&timestamp=1682667847",
+            ingredientes: [
+              "Carne de ternera (lomo o aguja)",
+              "Cebolla",
+              "Zanahorias",
+              "Apio",
+              "Pasta de rábano picante",
+              "Caldo de carne",
+              "Crema agria",
+              "Harina",
+              "Azúcar",
+              "Vinagre",
+              "Laurel",
+              "Aceite de oliva",
+              "Sal",
+              "Pimienta",
+              "Dumplings (knedlíky) o Spätzle (nudle)"
+            ],
             instrucciones: [
-              "1. Remoja el maíz blanco y los porotos durante varias horas o durante la noche anterior.",
-              "2. En una olla grande, cocina la carne de cerdo y la carne de vaca hasta que estén tiernas.",
-              "3. Retira las carnes de la olla y córtalas en trozos más pequeños.",
-              "4. En la misma olla, cocina el chorizo y la panceta hasta que estén dorados.",
-              "5. Agrega la cebolla, los pimientos y el ajo picados a la olla y cocínalos hasta que estén tiernos.",
-              "6. Vuelve a colocar las carnes en la olla y agrega el maíz blanco y los porotos remojados, junto con el agua suficiente para cubrir todos los ingredientes.",
-              "7. Añade el comino, el pimentón, la sal y la pimienta al gusto. Mezcla bien todos los ingredientes.",
-              "8. Cocina el locro a fuego medio-bajo durante varias horas, hasta que el maíz blanco y los porotos estén tiernos y el caldo haya espesado.",
-              "9. Remueve de vez en cuando para evitar que se pegue en el fondo.",
-              "10. Sirve el locro argentino caliente, acompañado de pan o empanadas."
+              "1. Corta la carne de ternera en trozos grandes y sazónala con sal y pimienta al gusto.",
+              "2. En una olla grande, calienta un poco de aceite de oliva a fuego medio-alto y dora la carne por todos los lados.",
+              "3. Agrega la cebolla, las zanahorias y el apio picados a la olla y cocina hasta que estén tiernos.",
+              "4. Añade suficiente caldo de carne para cubrir la carne y las verduras. Agrega también unas hojas de laurel.",
+              "5. Tapa la olla y cocina a fuego lento durante aproximadamente 2 horas, o hasta que la carne esté tierna y el caldo se haya reducido.",
+              "6. Retira la carne y las verduras de la olla y cuela el caldo.",
+              "7. En una sartén aparte, mezcla la pasta de rábano picante, la crema agria, la harina, el azúcar y el vinagre.",
+              "8. Agrega un poco del caldo de la olla a la mezcla y revuelve bien para evitar grumos.",
+              "9. Vuelve a colocar la carne y las verduras en la olla y vierte la mezcla de crema agria y rábano picante sobre ellos.",
+              "10. Cocina a fuego lento durante unos minutos más hasta que la salsa se espese.",
+              "11. Sirve el Svíčková caliente, acompañado de dumplings (knedlíky) o Spätzle (nudle) para completar este delicioso plato checo."
             ]
           },
           {
@@ -1500,7 +1644,7 @@ export const recetas = [
             nombre: "Samosas",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Indio"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.comedera.com/wp-content/uploads/2022/06/samosas-de-pollo.jpg",
             ingredientes: ["Pasta de samosas", "Papa", "Guisantes", "Cebolla", "Jengibre", "Ajo", "Comino", "Cúrcuma", "Cilantro", "Sal", "Aceite vegetal"],
             instrucciones: [
               "1. Hierve las papas hasta que estén tiernas. Pélalas y písalas en un tazón.",
@@ -1516,20 +1660,30 @@ export const recetas = [
           },
           {
             id: 72,
-            nombre: "Tacos de pescado",
+            nombre: "Escargots à la Bourguignonne (Caracoles a la Borgoña)",
             categoria: "Entrada",
-            categoriasAdicionales: ["Exótico", "Mexicano"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Filetes de pescado blanco", "Harina de maíz", "Harina de trigo", "Paprika", "Comino", "Cilantro", "Cebolla", "Tomate", "Salsa de yogur", "Limón", "Aceite vegetal", "Sal", "Pimienta"],
+            categoriasAdicionales: ["Francesa", "Exótico"],
+            imagen: "https://cache.marieclaire.fr/data/photo/w1536_c17/cuisine/i13_ratrap_img1/28640672.webp",
+            ingredientes: [
+              "Caracoles de tierra",
+              "Mantequilla",
+              "Ajo",
+              "Perejil",
+              "Chalotas",
+              "Vino blanco seco",
+              "Pan baguette",
+              "Sal",
+              "Pimienta"
+            ],
             instrucciones: [
-              "1. En un tazón, mezcla la harina de maíz, la harina de trigo, la paprika, el comino, el cilantro picado y la sal.",
-              "2. Sazona los filetes de pescado con sal, pimienta y un poco de jugo de limón.",
-              "3. Pasa los filetes de pescado por la mezcla de harinas, asegurándote de cubrirlos completamente.",
-              "4. Calienta suficiente aceite vegetal en una sartén y fríe los filetes de pescado hasta que estén dorados y crujientes por ambos lados.",
-              "5. Mientras tanto, prepara la salsa de yogur mezclando salsa de yogur, cilantro picado, cebolla picada y tomate picado.",
-              "6. Calienta las tortillas de maíz en una sartén o en el horno.",
-              "7. Rellena las tortillas con los filetes de pescado fritos y añade la salsa de yogur por encima.",
-              "8. Sirve los tacos de pescado con limón y disfrútalos mientras están calientes."
+              "1. Limpia bien los caracoles de tierra y cuécelos en agua hirviendo con sal durante unos 10 minutos.",
+              "2. Escurre los caracoles y retira las conchas vacías.",
+              "3. En un tazón, mezcla la mantequilla ablandada, el ajo picado y el perejil picado para hacer la mantequilla de ajo y perejil.",
+              "4. Rellena cada caracol con la mantequilla de ajo y perejil.",
+              "5. En una sartén grande, saltea las chalotas picadas en mantequilla hasta que estén doradas.",
+              "6. Agrega los caracoles rellenos a la sartén y vierte el vino blanco seco por encima.",
+              "7. Cocina a fuego lento durante unos minutos para que los sabores se mezclen.",
+              "8. Sirve los Escargots à la Bourguignonne calientes, acompañados de pan baguette para mojar en la deliciosa mantequilla de ajo y perejil."
             ]
           },
           {
@@ -1537,7 +1691,7 @@ export const recetas = [
             nombre: "Rollitos de primavera",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Chino"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://assets.unileversolutions.com/recipes-v2/235694.jpg?imwidth=2000",
             ingredientes: ["Pasta de rollitos de primavera", "Repollo", "Zanahoria", "Puerro", "Cebolla", "Ajo", "Setas", "Salsa de soja", "Aceite vegetal", "Sal", "Pimienta"],
             instrucciones: [
               "1. Corta el repollo, la zanahoria, el puerro, la cebolla y las setas en tiras finas.",
@@ -1556,7 +1710,7 @@ export const recetas = [
             nombre: "Humus",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Mediterráneo"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/e9964c08-1177-4cb9-880a-185e1eeee576/Derivates/22085e12-5a3b-4b0b-bf0e-5ad1c9a05017.jpg",
             ingredientes: ["Garbanzos", "Tahini", "Ajo", "Jugo de limón", "Aceite de oliva", "Comino", "Paprika", "Sal", "Pimienta"],
             instrucciones: [
               "1. Enjuaga los garbanzos enlatados y escúrrelos bien.",
@@ -1570,28 +1724,41 @@ export const recetas = [
           },
           {
             id: 75,
-            nombre: "Ceviche de camarón",
+            nombre: "Borek (Pastel de hojaldre relleno de espinacas y queso feta)",
             categoria: "Entrada",
-            categoriasAdicionales: ["Exótico", "Latinoamericano"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Camarones", "Jugo de limón", "Cebolla roja", "Ají limo", "Cilantro", "Ajo", "Sal", "Pimienta"],
+            categoriasAdicionales: ["Exótico", "Turco"],
+            imagen: "https://www.petitchef.es/imgupl/recipe/borek-empanada-turca-de-espinacas-y-queso--md-461732p728289.jpg",
+            ingredientes: [
+              "400 gramos de hojaldre",
+              "300 gramos de espinacas frescas",
+              "200 gramos de queso feta",
+              "1 cebolla",
+              "3 cucharadas de aceite de oliva",
+              "1 huevo batido",
+              "Sal",
+              "Pimienta"
+            ],
             instrucciones: [
-              "1. Cuece los camarones en agua hirviendo con sal hasta que estén rosados y cocidos.",
-              "2. Escurre los camarones y colócalos en un tazón.",
-              "3. Exprime suficiente jugo de limón sobre los camarones para cubrirlos completamente. Deja marinar durante unos minutos.",
-              "4. Agrega la cebolla roja picada, el ají limo picado sin semillas, el cilantro picado y el ajo picado al tazón de camarones.",
-              "5. Mezcla bien todos los ingredientes.",
-              "6. Sazona con sal y pimienta al gusto.",
-              "7. Deja reposar el ceviche en el refrigerador durante al menos 30 minutos para que los sabores se mezclen.",
-              "8. Sirve el ceviche de camarón frío y disfrútalo con galletas saladas o chips de plátano."
+              "1. Precalienta el horno a 180°C (350°F) y prepara una bandeja para hornear.",
+              "2. Lava y pica finamente las espinacas.",
+              "3. En una sartén grande, calienta el aceite de oliva y saltea la cebolla picada hasta que esté tierna.",
+              "4. Agrega las espinacas picadas a la sartén y cocina hasta que estén marchitas.",
+              "5. Desmenuza el queso feta y agrégalo a la sartén. Mezcla bien todos los ingredientes.",
+              "6. Extiende la masa de hojaldre sobre la bandeja para hornear.",
+              "7. Coloca el relleno de espinacas y queso feta en un extremo de la masa de hojaldre.",
+              "8. Enrolla la masa de hojaldre alrededor del relleno para formar un rollo.",
+              "9. Pincela el rollo con huevo batido para darle un brillo dorado.",
+              "10. Hornea el Borek en el horno precalentado durante unos 25-30 minutos, o hasta que esté dorado y crujiente.",
+              "11. Deja enfriar un poco antes de cortar el Borek en porciones y servirlo como una deliciosa entrada turca."
             ]
-          },
+          }
+          ,
           {
             id: 76,
             nombre: "Baba ganoush",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Mediterráneo"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://falasteenifoodie.com/wp-content/uploads/2023/02/baba-ghanoush-2.jpeg",
             ingredientes: ["Berengenas", "Tahini", "Ajo", "Jugo de limón", "Aceite de oliva", "Comino", "Sal", "Pimienta"],
             instrucciones: [
               "1. Precalienta el horno a 200°C.",
@@ -1611,7 +1778,7 @@ export const recetas = [
             nombre: "Arepa de queso",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Venezolano"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://arepasdelgringo.com/wp-content/uploads/2015/02/arepas_with_cheese_recipe1-1500x1000.jpg",
             ingredientes: ["Harina de maíz", "Agua", "Sal", "Queso blanco"],
             instrucciones: [
               "1. En un tazón, mezcla la harina de maíz con sal y agua suficiente para formar una masa suave y maleable.",
@@ -1629,7 +1796,7 @@ export const recetas = [
             nombre: "Hummus de remolacha",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Mediterráneo"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.pequerecetas.com/wp-content/uploads/2021/01/como-hacer-hummus-de-remolacha.jpg",
             ingredientes: ["Garbanzos", "Remolacha cocida", "Tahini", "Ajo", "Jugo de limón", "Aceite de oliva", "Comino", "Sal", "Pimienta"],
             instrucciones: [
               "1. Enjuaga los garbanzos enlatados y escúrrelos bien.",
@@ -1643,21 +1810,35 @@ export const recetas = [
           },
           {
             id: 79,
-            nombre: "Causa limeña",
+            nombre: "Dolmades (Hojas de parra rellenas)",
             categoria: "Entrada",
-            categoriasAdicionales: ["Exótico", "Peruano"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Papa amarilla", "Ají amarillo", "Limón", "Aceite vegetal", "Atún enlatado", "Mayonesa", "Aceitunas", "Cebolla roja", "Huevo duro", "Cilantro", "Sal", "Pimienta"],
+            categoriasAdicionales: ["Exótico", "Griego"],
+            imagen: "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/dolmades_72399_16x9.jpg",
+            ingredientes: [
+              "Hojas de parra en conserva",
+              "Arroz de grano corto",
+              "Cebolla",
+              "Ajo",
+              "Tomate",
+              "Aceite de oliva",
+              "Jugo de limón",
+              "Menta fresca",
+              "Perejil fresco",
+              "Sal",
+              "Pimienta"
+            ],
             instrucciones: [
-              "1. Hierve las papas amarillas hasta que estén tiernas. Pélalas y aplástalas en un tazón.",
-              "2. En un tazón aparte, mezcla el ají amarillo molido con jugo de limón y un poco de aceite vegetal.",
-              "3. Añade la mezcla de ají amarillo a las papas amarillas y mezcla bien.",
-              "4. En otro tazón, mezcla el atún enlatado con mayonesa, aceitunas picadas, cebolla roja picada, huevo duro picado, cilantro picado, sal y pimienta.",
-              "5. Toma una porción de la mezcla de papas y ají amarillo y aplánala en una superficie.",
-              "6. Coloca una porción de la mezcla de atún en el centro y envuélvelo con la mezcla de papas, formando una especie de pastel.",
-              "7. Repite el proceso con el resto de los ingredientes.",
-              "8. Refrigera las causas limeñas durante al menos una hora antes de servirlas.",
-              "9. Sirve las causas limeñas frías y disfrútalas como entrada o plato principal."
+              "1. Enjuaga las hojas de parra en conserva bajo agua corriente y escúrrelas.",
+              "2. En una sartén grande, calienta un poco de aceite de oliva y saltea la cebolla y el ajo picados hasta que estén tiernos.",
+              "3. Agrega el arroz de grano corto a la sartén y cocínalo por unos minutos hasta que esté ligeramente dorado.",
+              "4. Añade el tomate picado, el jugo de limón, la menta fresca picada y el perejil fresco picado. Mezcla bien todos los ingredientes.",
+              "5. Sazona con sal y pimienta al gusto y agrega un poco de agua para cocinar el arroz hasta que esté tierno y haya absorbido el líquido.",
+              "6. Toma una hoja de parra y coloca una cucharada de la mezcla de arroz en el centro.",
+              "7. Dobla los lados de la hoja hacia adentro y enrolla desde la parte inferior hacia arriba, formando una especie de paquetito.",
+              "8. Repite el proceso con el resto de las hojas y la mezcla de arroz.",
+              "9. Coloca los dolmades en una olla grande, con el lado del cierre hacia abajo para evitar que se desarmen.",
+              "10. Cubre los dolmades con agua y cocina a fuego medio-bajo durante unos 30-40 minutos, o hasta que el arroz esté completamente cocido.",
+              "11. Deja enfriar antes de servir los dolmades como una deliciosa y exótica entrada griega."
             ]
           },
           {
@@ -1665,7 +1846,7 @@ export const recetas = [
             nombre: "Sopa de fideos de arroz",
             categoria: "Entrada",
             categoriasAdicionales: ["Exótico", "Tailandés"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://1.bp.blogspot.com/-GBewGdmZKBY/X4lPeFyxV2I/AAAAAAAAbTk/_j_uQRCFtvMobZNoQYUsfLQGaqSnELheACLcBGAsYHQ/s16000/sopa%2Bde%2Brepollo%2B%25284%2529.jpg",
             ingredientes: ["Fideos de arroz", "Caldo de pollo", "Pechuga de pollo", "Champiñones", "Cebolla verde", "Cilantro", "Salsa de pescado", "Jugo de limón", "Azúcar", "Chiles picados", "Aceite vegetal", "Sal", "Pimienta"],
             instrucciones: [
               "1. Hierve los fideos de arroz según las instrucciones del paquete. Escúrrelos y enjuágalos con agua fría. Reserva.",
@@ -1684,7 +1865,7 @@ export const recetas = [
             nombre: "Spaghetti Carbonara",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://i.blogs.es/8819e1/carbonara-rec/650_1200.jpg",
             ingredientes: ["Spaghetti", "Huevos", "Queso Pecorino Romano", "Panceta o guanciale", "Pimienta negra molida", "Sal"],
             instrucciones: [
               "1. Cocina el spaghetti en una olla con agua salada hirviendo hasta que esté al dente.",
@@ -1702,7 +1883,7 @@ export const recetas = [
             nombre: "Fettuccine Alfredo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://bakeitwithlove.com/wp-content/uploads/2021/04/Grilled-Chicken-Fettucine-Alfredo-lg.jpg",
             ingredientes: ["Fettuccine", "Mantequilla", "Nata o crema de leche", "Queso parmesano rallado", "Nuez moscada", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina el fettuccine en una olla con agua salada hirviendo hasta que esté al dente.",
@@ -1720,7 +1901,7 @@ export const recetas = [
             nombre: "Pasta Primavera",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.twopeasandtheirpod.com/wp-content/uploads/2019/05/Pasta-Primavera-3.jpg",
             ingredientes: ["Pasta", "Aceite de oliva", "Ajo picado", "Calabacín en rodajas", "Brócoli en floretes", "Zanahorias en rodajas", "Pimiento rojo en rodajas", "Pimiento amarillo en rodajas", "Guisantes", "Nata o crema de leche", "Queso parmesano rallado", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina la pasta en una olla con agua salada hirviendo hasta que esté al dente.",
@@ -1742,7 +1923,7 @@ export const recetas = [
             nombre: "Raviolis de Ricotta y Espinacas",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://img2.rtve.es/i/?w=1600&i=1603815882741.jpg",
             ingredientes: ["Raviolis", "Ricotta", "Espinacas cocidas y picadas", "Queso parmesano rallado", "Huevo batido", "Nuez moscada", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina los raviolis en una olla con agua salada hirviendo hasta que estén al dente.",
@@ -1759,7 +1940,7 @@ export const recetas = [
             nombre: "Lasagna de Berenjena",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://i.ytimg.com/vi/ZUjLPpfj3Q0/maxresdefault.jpg",
             ingredientes: ["Berenjenas", "Salsa de tomate", "Queso mozzarella rallado", "Queso parmesano rallado", "Hojas de lasaña", "Albahaca fresca", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. Precalienta el horno a 180°C.",
@@ -1781,7 +1962,7 @@ export const recetas = [
             nombre: "Gnocchi a la Sorrentina",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://i.blogs.es/36238d/noquis_sorrentina/1366_2000.jpg",
             ingredientes: ["Gnocchi", "Salsa de tomate", "Queso mozzarella rallado", "Queso parmesano rallado", "Albahaca fresca", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina los gnocchi en una olla con agua salada hirviendo hasta que floten en la superficie.",
@@ -1803,7 +1984,7 @@ export const recetas = [
             nombre: "Pasta Aglio e Olio",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://theplantbasedschool.com/wp-content/uploads/2020/12/Spaghetti-4.jpg",
             ingredientes: ["Pasta", "Aceite de oliva", "Ajo picado", "Guindilla o pimiento rojo picado", "Perejil fresco picado", "Queso parmesano rallado", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina la pasta en una olla con agua salada hirviendo hasta que esté al dente.",
@@ -1822,7 +2003,7 @@ export const recetas = [
             nombre: "Rigatoni alla Norma",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://static01.nyt.com/images/2019/08/22/dining/ch-pasta-all-norma-sorta/merlin_159056889_629cd218-e73f-4e8e-acab-a6ef08b41de1-articleLarge.jpg",
             ingredientes: ["Rigatoni", "Berenjenas", "Salsa de tomate", "Queso ricotta", "Queso parmesano rallado", "Albahaca fresca", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina los rigatoni en una olla con agua salada hirviendo hasta que estén al dente.",
@@ -1843,7 +2024,7 @@ export const recetas = [
             nombre: "Pasta Alfredo con Pollo",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://assets.kraftfoods.com/recipe_images/opendeploy/108286_MXM_%20K54368V1_OR1_V_640x428.jpg",
             ingredientes: ["Pasta", "Pechuga de pollo", "Mantequilla", "Nata o crema de leche", "Queso parmesano rallado", "Nuez moscada", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina la pasta en una olla con agua salada hirviendo hasta que esté al dente.",
@@ -1865,7 +2046,7 @@ export const recetas = [
             nombre: "Pasta con Salsa de Champiñones",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Italiana", "Vegetariana"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://img-global.cpcdn.com/recipes/a4cc3afb82a295cf/1200x630cq70/photo.jpg",
             ingredientes: ["Pasta", "Champiñones en rodajas", "Cebolla picada", "Ajo picado", "Vino blanco", "Caldo de verduras", "Nata o crema de leche", "Queso parmesano rallado", "Perejil fresco picado", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina la pasta en una olla con agua salada hirviendo hasta que esté al dente.",
@@ -1886,7 +2067,7 @@ export const recetas = [
             nombre: "Pollo al Horno con Papas",
             categoria: "Plato principal",
             categoriasAdicionales: ["Carnes", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.lasrecetascocina.com/wp-content/uploads/2016/08/pollo-al-horno.jpg.webp",
             ingredientes: ["Pollo entero", "Papas", "Aceite de oliva", "Sal", "Pimienta", "Hierbas aromáticas"],
             instrucciones: [
               "1. Precalienta el horno a 180°C.",
@@ -1904,7 +2085,7 @@ export const recetas = [
             nombre: "Estofado de Ternera",
             categoria: "Plato principal",
             categoriasAdicionales: ["Carnes", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://amimaneracocinando.com/wp-content/uploads/2021/09/estofado-de-carne-700-.jpg",
             ingredientes: ["Ternera en trozos", "Cebolla picada", "Zanahorias en rodajas", "Patatas en cubos", "Caldo de carne", "Vino tinto", "Tomate triturado", "Ajo picado", "Aceite de oliva", "Sal", "Pimienta", "Hierbas aromáticas"],
             instrucciones: [
               "1. En una olla grande, calienta un poco de aceite de oliva a fuego medio-alto.",
@@ -1924,7 +2105,7 @@ export const recetas = [
             nombre: "Macarrones con Queso",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pasta", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.javirecetas.com/wp-content/uploads/2021/11/macarrones-con-queso-600x900.jpg",
             ingredientes: ["Macarrones", "Queso cheddar rallado", "Queso parmesano rallado", "Mantequilla", "Harina", "Leche", "Pan rallado", "Sal", "Pimienta"],
             instrucciones: [
               "1. Cocina los macarrones en una olla con agua salada hirviendo hasta que estén al dente.",
@@ -1947,7 +2128,7 @@ export const recetas = [
             nombre: "Guiso de Lentejas",
             categoria: "Plato principal",
             categoriasAdicionales: ["Legumbres", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://assets.elgourmet.com/wp-content/uploads/2023/03/guiso_mlHzbf0x36N15kJwcY9tGUOayKXp4B-1024x683.png.webp",
             ingredientes: ["Lentejas", "Cebolla picada", "Zanahorias en rodajas", "Patatas en cubos", "Tomate triturado", "Ajo picado", "Caldo de verduras", "Aceite de oliva", "Sal", "Pimienta", "Comino", "Pimentón"],
             instrucciones: [
               "1. Lava las lentejas y déjalas en remojo durante 30 minutos.",
@@ -1963,32 +2144,45 @@ export const recetas = [
           },
           {
             id: 95,
-            nombre: "Tortilla de Patatas",
+            nombre: "Beshbarmak",
             categoria: "Entrada",
-            categoriasAdicionales: ["Huevos", "Hogareño"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Patatas", "Cebolla", "Huevos", "Aceite de oliva", "Sal"],
+            categoriasAdicionales: ["Exótico", "Kazajo"],
+            imagen: "https://mf.b37mrtl.ru/rbthmedia/images/2022.10/article/63468e3b7c5f522ef90ea857.jpg",
+            ingredientes: [
+              "Carne de cordero o caballo",
+              "Fideos caseros",
+              "Cebolla",
+              "Zanahoria",
+              "Papa",
+              "Harina",
+              "Aceite vegetal",
+              "Caldo de carne",
+              "Sal",
+              "Pimienta",
+              "Hierbas frescas (eneldo, perejil)"
+            ],
             instrucciones: [
-              "1. Lava, pela y corta las patatas en rodajas finas.",
-              "2. Pela y corta la cebolla en rodajas finas.",
-              "3. En una sartén grande, calienta abundante aceite de oliva a fuego medio.",
-              "4. Añade las patatas y las cebollas a la sartén y cocina hasta que estén tiernas y ligeramente doradas.",
-              "5. Mientras tanto, en un tazón aparte, bate los huevos y sazona con sal al gusto.",
-              "6. Una vez que las patatas y las cebollas estén listas, escúrrelas y mézclalas con los huevos batidos.",
-              "7. Calienta otra sartén con un poco de aceite de oliva.",
-              "8. Vierte la mezcla de patatas, cebolla y huevo en la sartén caliente.",
-              "9. Cocina la tortilla a fuego medio-bajo durante unos minutos, hasta que esté dorada en la parte inferior.",
-              "10. Voltea la tortilla con la ayuda de un plato o tapa, y cocínela por el otro lado hasta que esté dorada y cocida por completo.",
-              "11. Retira la tortilla de la sartén y déjala reposar durante unos minutos antes de servir.",
-              "12. Sirve la tortilla de patatas caliente, cortada en porciones."
+              "1. Corta la carne de cordero o caballo en trozos pequeños y sazónala con sal y pimienta al gusto.",
+              "2. En una olla grande, calienta un poco de aceite vegetal y dora la carne a fuego medio-alto hasta que esté dorada por todos los lados.",
+              "3. Agrega suficiente caldo de carne para cubrir la carne y cocina a fuego medio-bajo hasta que esté tierna y suave.",
+              "4. Mientras tanto, prepara los fideos caseros y cocínalos en agua hirviendo con sal hasta que estén al dente.",
+              "5. Pela y corta las papas en trozos grandes, y corta la cebolla y la zanahoria en rodajas finas.",
+              "6. En una sartén aparte, calienta un poco de aceite y saltea la cebolla y la zanahoria hasta que estén tiernas.",
+              "7. Agrega las papas a la sartén y cocina hasta que estén doradas y tiernas.",
+              "8. Mezcla las papas, cebolla y zanahoria salteadas con la carne cocida y su caldo en la olla grande.",
+              "9. Prepara una masa simple con harina y agua, y agrégala a la olla para espesar el caldo y hacerlo más sustancioso.",
+              "10. Cocina todo junto por unos minutos hasta que la masa se haya cocido y el caldo tenga una consistencia más espesa.",
+              "11. Sirve el Beshbarmak caliente en un plato grande y espolvorea hierbas frescas picadas como eneldo y perejil por encima.",
+              "12. Disfruta esta tradicional y deliciosa entrada kazaja en compañía de amigos y familiares."
             ]
           },
+          
           {
             id: 96,
             nombre: "Sopa de Pollo",
             categoria: "Entrada",
             categoriasAdicionales: ["Sopas", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_700/https://www.recetasjudias.com/wp-content/uploads/2014/12/Sopa-de-Pollo-1.jpg",
             ingredientes: ["Pollo troceado", "Cebolla picada", "Zanahorias en rodajas", "Apio picado", "Ajo picado", "Caldo de pollo", "Fideos de sopa", "Sal", "Pimienta", "Hierbas aromáticas"],
             instrucciones: [
               "1. En una olla grande, coloca el pollo troceado, la cebolla picada, las zanahorias en rodajas, el apio picado y el ajo picado.",
@@ -2006,7 +2200,7 @@ export const recetas = [
             nombre: "Lasagna de Carne",
             categoria: "Plato principal",
             categoriasAdicionales: ["Pastas", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://sivarious.com/wp-content/uploads/2017/03/lasana-de-carne-con-verduras.jpg",
             ingredientes: ["Pasta para lasaña", "Carne molida", "Cebolla picada", "Ajo picado", "Tomate triturado", "Salsa de tomate", "Queso ricotta", "Queso mozzarella rallado", "Queso parmesano rallado", "Huevos", "Aceite de oliva", "Sal", "Pimienta", "Orégano", "Albahaca"],
             instrucciones: [
               "1. En una sartén grande, calienta un poco de aceite de oliva a fuego medio-alto.",
@@ -2028,33 +2222,38 @@ export const recetas = [
           },
           {
             id: 98,
-            nombre: "Tarta de Manzana",
+            nombre: "Tarta de Arce",
             categoria: "Postre",
-            categoriasAdicionales: ["Frutas", "Hogareño"],
-            imagen: "url_de_la_imagen",
-            ingredientes: ["Masa para tarta", "Manzanas", "Azúcar", "Canela", "Harina", "Mantequilla", "Huevo", "Azúcar glas (opcional)"],
+            categoriasAdicionales: ["Frutas", "Canadiense"],
+            imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmcvDLl1rltNxHUN4vM4bgexyL_8gucs5J2x70XA4s-oRZWSE6O-Fi5xNMi4Fyxff6UHE&usqp=CAU",
+            ingredientes: [
+              "Masa para tarta",
+              "Jarabe de arce",
+              "Azúcar moreno",
+              "Mantequilla",
+              "Crema espesa",
+              "Huevo",
+              "Extracto de vainilla",
+              "Sal"
+            ],
             instrucciones: [
               "1. Precalienta el horno a 180°C.",
-              "2. Pelar, descorazonar y cortar las manzanas en rodajas finas.",
-              "3. En un tazón, mezcla las rodajas de manzana con azúcar y canela al gusto.",
-              "4. Extiende la masa para tarta en un molde para tarta engrasado.",
-              "5. Espolvorea harina sobre la masa.",
-              "6. Coloca las rodajas de manzana sobre la masa, cubriendo toda la superficie.",
-              "7. Corta la mantequilla en pequeños trozos y distribúyelos sobre las manzanas.",
-              "8. Dobla los bordes de la masa hacia adentro, creando un borde alrededor de la tarta.",
-              "9. Bate el huevo y pincela el borde de la masa con él.",
-              "10. Hornea la tarta de manzana durante aproximadamente 30-40 minutos, o hasta que la masa esté dorada y las manzanas estén tiernas.",
-              "11. Deja enfriar la tarta de manzana antes de desmoldarla.",
-              "12. Opcionalmente, puedes espolvorear azúcar glas sobre la tarta antes de servir.",
-              "13. Sirve la tarta de manzana a temperatura ambiente o ligeramente caliente."
+              "2. Extiende la masa para tarta en un molde para tarta engrasado.",
+              "3. En un tazón grande, mezcla el jarabe de arce, el azúcar moreno y la mantequilla derretida hasta que estén bien combinados.",
+              "4. Agrega la crema espesa, el huevo, el extracto de vainilla y una pizca de sal a la mezcla de jarabe de arce. Mezcla bien todos los ingredientes.",
+              "5. Vierte la mezcla sobre la masa en el molde para tarta.",
+              "6. Hornea la tarta de arce durante aproximadamente 35-40 minutos, o hasta que esté dorada en la parte superior y el relleno esté ligeramente firme.",
+              "7. Deja enfriar la tarta de arce antes de servirla.",
+              "8. Sirve la tarta de arce a temperatura ambiente o fría, y disfruta del delicioso sabor dulce y auténtico del jarabe de arce canadiense."
             ]
           },
+          
           {
             id: 99,
             nombre: "Albóndigas en Salsa de Tomate",
             categoria: "Plato principal",
             categoriasAdicionales: ["Carnes", "Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://cdn.cookmonkeys.es/recetas/medium/albondigas-con-salsa-de-tomate-9414.jpg",
             ingredientes: ["Carne picada", "Pan rallado", "Leche", "Cebolla picada", "Ajo picado", "Huevo", "Perejil picado", "Sal", "Pimienta", "Tomate triturado", "Salsa de tomate", "Aceite de oliva"],
             instrucciones: [
               "1. En un tazón, mezcla la carne picada, el pan rallado, la leche, la cebolla picada, el ajo picado, el huevo, el perejil picado, la sal y la pimienta. Amasa bien hasta obtener una mezcla homogénea.",
@@ -2070,10 +2269,10 @@ export const recetas = [
           },
           {
             id: 100,
-            nombre: "Puré de Patatas",
+            nombre: "Puré de Papas",
             categoria: "Acompañamiento",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://recetasdecocina.elmundo.es/wp-content/uploads/2015/10/pure-de-patatas-receta.jpg",
             ingredientes: ["Patatas", "Mantequilla", "Leche", "Sal", "Pimienta", "Nuez moscada"],
             instrucciones: [
               "1. Lava, pela y corta las patatas en trozos.",
@@ -2093,7 +2292,7 @@ export const recetas = [
             nombre: "Salsa de Queso",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://recetastips.com/wp-content/uploads/2019/10/Salsa-de-Queso-1-1.jpg",
             ingredientes: ["Queso cheddar", "Leche", "Mantequilla", "Harina", "Sal", "Pimienta", "Nuez moscada"],
             instrucciones: [
               "1. En una olla a fuego medio, derrite la mantequilla.",
@@ -2111,7 +2310,7 @@ export const recetas = [
             nombre: "Salsa de Tomate y Albahaca",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://t1.uc.ltmcdn.com/es/posts/7/8/2/como_hacer_salsa_de_tomate_y_albahaca_28287_600.webp",
             ingredientes: ["Tomates maduros", "Cebolla picada", "Ajo picado", "Aceite de oliva", "Azúcar", "Sal", "Pimienta", "Albahaca fresca"],
             instrucciones: [
               "1. En una olla grande, calienta el aceite de oliva a fuego medio.",
@@ -2130,7 +2329,7 @@ export const recetas = [
             nombre: "Salsa de Mostaza y Miel",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://imag.bonviveur.com/foto-portada-de-la-salsa-de-mostaza-y-miel.webp",
             ingredientes: ["Mostaza Dijon", "Miel", "Vinagre de manzana", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. En un tazón pequeño, mezcla la mostaza Dijon, la miel y el vinagre de manzana.",
@@ -2146,7 +2345,7 @@ export const recetas = [
             nombre: "Salsa de Champiñones",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/3ffc2e1096bc34ab65fd0cf71512b79f.png",
             ingredientes: ["Champiñones frescos", "Cebolla picada", "Ajo picado", "Mantequilla", "Harina", "Caldo de pollo", "Crema de leche", "Sal", "Pimienta", "Perejil picado"],
             instrucciones: [
               "1. Limpia y corta los champiñones en rodajas.",
@@ -2166,7 +2365,7 @@ export const recetas = [
             nombre: "Salsa de Cilantro y Limón",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://d36fw6y2wq3bat.cloudfront.net/recipes/salsa-de-cilantro/900/salsa-de-cilantro.jpg",
             ingredientes: ["Cilantro fresco", "Jugo de limón", "Aceite de oliva", "Ajo picado", "Sal", "Pimienta"],
             instrucciones: [
               "1. En una licuadora o procesadora de alimentos, agrega el cilantro fresco, el jugo de limón, el ajo picado, el aceite de oliva, la sal y la pimienta.",
@@ -2181,7 +2380,7 @@ export const recetas = [
             nombre: "Salsa de Queso Azul",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://gastronomiaycia.republica.com/wp-content/photos/salsa_quesoazul_nueces1.jpg",
             ingredientes: ["Queso azul", "Crema agria", "Leche", "Jugo de limón", "Sal", "Pimienta"],
             instrucciones: [
               "1. En un tazón pequeño, desmenuza el queso azul.",
@@ -2198,7 +2397,7 @@ export const recetas = [
             nombre: "Salsa de Mantequilla y Limón",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.cocinayvino.com/wp-content/uploads/2017/10/salsamantequilla2.jpg",
             ingredientes: ["Mantequilla", "Jugo de limón", "Perejil picado", "Sal", "Pimienta"],
             instrucciones: [
               "1. En una sartén pequeña, derrite la mantequilla a fuego medio-bajo.",
@@ -2214,7 +2413,7 @@ export const recetas = [
             nombre: "Salsa BBQ Casera",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.recetasderechupete.com/wp-content/uploads/2022/02/Salsa-barbacoa-cuenco-cristal.jpg",
             ingredientes: ["Ketchup", "Vinagre de sidra", "Azúcar moreno", "Mostaza", "Salsa Worcestershire", "Salsa de soja", "Ajo en polvo", "Cebolla en polvo", "Pimentón ahumado", "Sal", "Pimienta"],
             instrucciones: [
               "1. En un tazón mediano, mezcla el ketchup, el vinagre de sidra, el azúcar moreno, la mostaza, la salsa Worcestershire, la salsa de soja, el ajo en polvo, la cebolla en polvo, el pimentón ahumado, la sal y la pimienta.",
@@ -2229,7 +2428,7 @@ export const recetas = [
             nombre: "Salsa de Champiñones y Vino Tinto",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.alqueria.com.co/sites/default/files/styles/1327_612/public/salsa-de-champinones-y-vino-tinto_0.jpg?h=2dfa7a18&itok=xn6BDXUw",
             ingredientes: ["Champiñones frescos", "Cebolla picada", "Ajo picado", "Vino tinto", "Caldo de carne", "Crema de leche", "Harina", "Mantequilla", "Sal", "Pimienta"],
             instrucciones: [
               "1. Limpia y corta los champiñones en láminas.",
@@ -2249,7 +2448,7 @@ export const recetas = [
             nombre: "Salsa de Cebolla Caramelizada",
             categoria: "Salsa",
             categoriasAdicionales: ["Hogareño"],
-            imagen: "url_de_la_imagen",
+            imagen: "https://www.petitchef.es/imgupl/recipe/salsa-de-cebolla-confitada-paso-a-paso--md-107642p159317.jpg",
             ingredientes: ["Cebollas", "Azúcar moreno", "Vinagre balsámico", "Aceite de oliva", "Sal", "Pimienta"],
             instrucciones: [
               "1. Corta las cebollas en rodajas finas.",
@@ -2267,7 +2466,7 @@ export const recetas = [
     nombre: "Pan de Campo",
     categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInN0KUEm4cfS3Gbp3Pm9gowzY1G_TmGZTiw&usqp=CAU",
     ingredientes: ["Harina", "Sal", "Levadura", "Agua"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina y la sal.",
@@ -2285,7 +2484,7 @@ export const recetas = [
     nombre: "Facturas de Manteca",
     categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://cocinerosargentinos.com/content/recipes/500x500/recipes.12842.jpeg",
     ingredientes: ["Harina", "Azúcar", "Manteca", "Leche", "Levadura", "Esencia de vainilla", "Dulce de leche", "Azúcar impalpable"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina, el azúcar y la levadura.",
@@ -2305,7 +2504,7 @@ export const recetas = [
     nombre: "Pan de Centeno",
     categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://recetasfacilesdeirene.com/wp-content/uploads/2021/02/receta-de-pan-de-centeno.jpg",
     ingredientes: ["Harina de centeno", "Harina de trigo", "Sal", "Levadura", "Agua"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina de centeno, la harina de trigo y la sal.",
@@ -2323,7 +2522,7 @@ export const recetas = [
     nombre: "Medialunas",
     categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://alicante.com.ar/uploads/recetas/2663_receta.jpg",
     ingredientes: ["Harina", "Azúcar", "Manteca", "Leche", "Levadura", "Esencia de vainilla", "Sal"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina, el azúcar y la sal.",
@@ -2344,7 +2543,7 @@ export const recetas = [
     nombre: "Pan de Leche",
     categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://poramoralhorno.com/wp-content/uploads/2020/05/20170620_175701-1-2048x1152.jpg",
     ingredientes: ["Harina", "Azúcar", "Leche", "Manteca", "Levadura", "Sal", "Huevo"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina, el azúcar y la sal.",
@@ -2364,7 +2563,7 @@ export const recetas = [
     nombre: "Facturas de Dulce de Leche",
     categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://i.ytimg.com/vi/fF9Z-RAWJH4/maxresdefault.jpg",
     ingredientes: ["Harina", "Azúcar", "Levadura", "Leche", "Manteca", "Dulce de leche", "Azúcar impalpable"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina, el azúcar y la levadura.",
@@ -2384,7 +2583,7 @@ export const recetas = [
     nombre: "Pan de Maíz",
     categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://cdn0.recetasgratis.net/es/posts/2/0/0/pan_de_maiz_7002_600.webp",
     ingredientes: ["Harina de maíz", "Harina de trigo", "Azúcar", "Levadura", "Sal", "Agua"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina de maíz, la harina de trigo, el azúcar y la sal.",
@@ -2402,7 +2601,7 @@ export const recetas = [
     nombre: "Budín de Pan",
     categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://cdn0.recetasgratis.net/es/posts/5/1/0/budin_de_pan_casero_52015_600.jpg",
     ingredientes: ["Pan viejo", "Leche", "Azúcar", "Huevos", "Esencia de vainilla", "Pasas de uva", "Caramelo líquido"],
     instrucciones: [
       "1. Remoja el pan viejo en leche caliente hasta que esté suave.",
@@ -2418,7 +2617,7 @@ export const recetas = [
     nombre: "Pan de Ajo",
     categoria: "Panaderia",
     categoriasAdicionales: ["Pan"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://i.blogs.es/8e3bfe/pan_ajo/1366_2000.jpg",
     ingredientes: ["Pan baguette", "Mantequilla", "Ajo", "Perejil", "Sal"],
     instrucciones: [
       "1. Precalienta el horno a 180°C.",
@@ -2435,7 +2634,7 @@ export const recetas = [
     nombre: "Medialunas de Grasa",
     categoria: "Panaderia",
     categoriasAdicionales: ["Factura"],
-    imagen: "url_de_la_imagen",
+    imagen: "https://media.urgente24.com/p/646f7e815cfb99fce9e4ebcfe04bfeb7/adjuntos/319/imagenes/002/304/0002304434/1200x675/smart/mediaslunas-grasa-y-manteca-la-venta-una-panaderia-al-centro-buenos-aires.jpg",
     ingredientes: ["Harina", "Azúcar", "Sal", "Levadura", "Manteca", "Leche", "Huevo"],
     instrucciones: [
       "1. En un tazón grande, mezcla la harina, el azúcar y la sal.",

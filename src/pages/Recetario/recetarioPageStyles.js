@@ -55,6 +55,16 @@ export const RecipeDetailContainer = styled.div`
   margin-bottom: 20px;
 `;
 
+
+
+export const RecipeCardMiniaturaListContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 10px;
+`;
+
 export const RecipeDetailButton = styled.button`
   padding: 10px 20px;
   background-color: #e0c4ac; /* Color de fondo de botón de volver */

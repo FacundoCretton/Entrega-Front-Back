@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import CategoryList from '../../components/Recetario/CategoryList';
 import RecipeCard from '../../components/Recetario/RecipeCard';
+import RecipeCardMiniatura from '../../components/Recetario/RecipeCardMiniatura'; 
 import SearchBar from '../../components/Recetario/SearchBar';
 import { recetas } from '../../components/data/recetas';
+import { RecipeCardMiniaturaListContainer, RecipeDetailButton } from './recetarioPageStyles';
+
 
 const RecetarioPage = () => {
   const [currentRecipe, setCurrentRecipe] = useState(null);
@@ -50,19 +53,20 @@ const RecetarioPage = () => {
       <SearchBar onSearch={handleSearch} />
       {currentRecipe ? (
         <div>
-          <button onClick={() => setCurrentRecipe(null)}>Volver</button>
+          <RecipeDetailButton onClick={() => setCurrentRecipe(null)}>Volver</RecipeDetailButton>
           <RecipeCard receta={currentRecipe} />
         </div>
       ) : (
-        <div>
-          {showRecipes &&
-            filterRecipes().map((receta) => (
-              <div key={receta.id} onClick={() => handleRecipeSelect(receta)}>
-                <h3>{receta.nombre}</h3>
-                <p>{receta.descripcion}</p>
-              </div>
-            ))}
-        </div>
+        <RecipeCardMiniaturaListContainer>
+        {showRecipes &&
+          filterRecipes().map((receta) => (
+            <RecipeCardMiniatura
+              key={receta.id}
+              receta={receta}
+              onClick={() => handleRecipeSelect(receta)}
+            />
+          ))}
+      </RecipeCardMiniaturaListContainer>
       )}
     </div>
   );

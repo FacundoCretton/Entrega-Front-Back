@@ -2,33 +2,50 @@ import styled from 'styled-components';
 
 export const RecipeCardContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e0c4ac;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
-export const RecipeCard = styled.div`
-  width: 200px;
-  margin: 10px;
-  padding: 20px;
-  background-color: #e0c4ac; /* Color de fondo de cuadro de receta */
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+export const RecipeImage = styled.img`
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    transform: scale(1.1);
   }
 `;
 
-export const RecipeTitle = styled.h3`
-  font-size: 24px;
+export const RecipeTitle = styled.h2`
+  font-size: 28px;
   margin-bottom: 10px;
-  color: #6b4226; /* Color de texto marrón */
-  text-align: center;
+  color: #6b4226;
 `;
 
-export const RecipeDescription = styled.p`
-  color: #6b4226; /* Color de texto marrón */
+export const RecipeSubtitle = styled.p`
+  font-size: 16px;
+  color: #6b4226;
+`;
+
+export const IngredientList = styled.ul`
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+`;
+
+export const InstructionList = styled.ol`
+  list-style-type: decimal;
+  margin-left: 20px;
+  padding: 0;
 `;
