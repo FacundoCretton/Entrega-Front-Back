@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const ProductosContainerStyled = styled.div`
   width: 40%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 320px;
+  }
+
 `;
 
 export const ProductsTitleStyled = styled.h2`

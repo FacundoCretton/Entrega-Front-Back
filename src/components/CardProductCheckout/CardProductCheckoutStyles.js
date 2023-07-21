@@ -52,4 +52,9 @@ export const PriceStyled = styled.span`
 export const QuantityContainerStyled = styled.span`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+
+  }
 `;

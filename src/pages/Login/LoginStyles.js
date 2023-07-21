@@ -16,6 +16,10 @@ export const LoginContainerStyled = styled.div`
   align-items: center;
   gap: 20px;
   margin-top: 50px;
+
+  @media (max-width: 450px) {
+    width: 320px;
+  }
 `;
 
 export const LoginH2 = styled.h2`

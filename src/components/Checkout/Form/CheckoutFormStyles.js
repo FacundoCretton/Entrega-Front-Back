@@ -4,6 +4,10 @@ import { Formik as FormikContainer, Form as FormikForm } from 'formik';
 export const CheckoutDatosStyled = styled.div`
   width: 50%;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 320px;
+  }
 `;
 
 export const Formik = styled(FormikContainer)`
