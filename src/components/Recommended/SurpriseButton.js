@@ -1,43 +1,19 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Button from '../UI/Button/Button';
 
-const SurpriseButton = ({ onClick, disabled }) => {
-  const [isRolling, setRolling] = useState(false);
-  const speedRef = useRef(30);
-  const counterRef = useRef(0);
-
-  useEffect(() => {
-    let interval;
-
-    if (isRolling) {
-      interval = setInterval(() => {
-        counterRef.current++;
-
-        if (counterRef.current === 80) {
-          clearInterval(interval);
-          setRolling(false);
-          counterRef.current = 0;
-        } else {
-          if (counterRef.current > 50) {
-            // Decrease speed after rolling for a while
-            speedRef.current += 1;
-          }
-
-          onClick();
-        }
-      }, speedRef.current);
-    }
-
-    return () => clearInterval(interval);
-  }, [isRolling, onClick]);
+const SurpriseButton = ({ disabled }) => {
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    setRolling(true);
+    navigate('/recetas'); // Redirige a /recetas
+    window.scrollTo(0, 0); // Hace scroll hacia arriba
   };
 
   return (
-    <button onClick={handleClick} disabled={disabled}>
+    <Button onClick={handleClick} disabled={disabled}>
       Sorpréndeme
-    </button>
+    </Button>
   );
 };
 
