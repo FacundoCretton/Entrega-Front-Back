@@ -30,7 +30,7 @@ const CardProductCheckout = ({img, name, price, id, quantity}) => {
 
       <CardInfoStyled>
         <ProductTitleStyled>{name}</ProductTitleStyled>
-        <TextStyled>Cheta</TextStyled>
+        <TextStyled></TextStyled>
         <PriceStyled>{formatPrice(price)}</PriceStyled>
       </CardInfoStyled>
       <QuantityContainerStyled>

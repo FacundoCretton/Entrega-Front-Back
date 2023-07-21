@@ -1,10 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 
 import Button from '../../components/UI/Button/Button';
+import exito from "../../Assets/compra-exitosa.png"
 
 import {
+  Congrats,
   ContainerInfoStyled,
-  PatternStyled,
   TextStyled,
   TitleStyled,
 } from './FelicitacionesStyles';
@@ -12,19 +13,19 @@ import {
 const Felicitaciones = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <Congrats>
       <TextStyled>
         <img
-          src='https://www.regalosdelvirrey.com.ar/images/compra-exitosa.png'
+          src={exito}
           alt=''
         />
         <ContainerInfoStyled>
           <TitleStyled>¡Felicitaciones!</TitleStyled>
           <p>Tu pedido fué realizado</p>
         </ContainerInfoStyled>
-        <Button onClick={() => navigate('/ordenes')}>Volver</Button>
+        <Button onClick={() => navigate('/')}>Volver</Button>
       </TextStyled>
-    </div>
+    </Congrats>
   );
 };
 

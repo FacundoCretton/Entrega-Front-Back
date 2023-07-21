@@ -9,7 +9,6 @@ import Checkout from '../../pages/Checkout/Checkout';
 import Login from "../../pages/Login/Login"
 import Register from '../../pages/Register/Register';
 import ProtectedRoute from "../../components/ProtectedRoute/ProtectedRoute";
-import Ordenes from "../../pages/Ordenes/Ordenes";
 import Felicitaciones from "../../pages/Felicitaciones/Felicitaciones";
 import Contact from '../../components/Contact/Contact';
 import About from '../../components/About/About';
@@ -32,7 +31,6 @@ function Routes() {
         }
       />
       <Route path='/login' element={<Login />} />
-      <Route path='/ordenes' element={<Ordenes />} />
       <Route path='/felicitaciones' element={<Felicitaciones />} />
 
 

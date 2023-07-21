@@ -27,3 +27,8 @@ export const PatternStyled = styled.img`
   z-index: -100000000;
   bottom: -80px;
 `;
+
+
+export const Congrats= styled.div`
+margin-top: 100px;
+`;

@@ -12,7 +12,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearCart } from '../../../redux/cart/cartSlide';
 
 import Loader from "../../UI/Loader/Loader"
-import { createOrder } from '../../../Axios/Axios.orders';
 
 const CheckoutForm = ({cartItems, price, shippingCost}) => {
 
@@ -27,23 +26,14 @@ const CheckoutForm = ({cartItems, price, shippingCost}) => {
         initialValues={checkoutInitialValues}
         validationSchema={checkoutValidationSchema}
         onSubmit={ async (values) => {
-          const orderData = {
-            items: cartItems,
-            price,
-            shippingCost,
-            total: price + shippingCost,
-            shippingDetails: {
-              ...values
-            }
-          };
+          
 
           try {
-            await createOrder(orderData, dispatch, currentUser);
+            await 
             navigate("/felicitaciones");
             dispatch(clearCart());
           } catch (error) {
             console.log(error);
-            alert("error al crear la orden")
           }
 
         } }
