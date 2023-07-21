@@ -6,8 +6,8 @@ const SurpriseButton = ({ disabled }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/recetas'); // Redirige a /recetas
-    window.scrollTo(0, 0); // Hace scroll hacia arriba
+    navigate('/recetas'); 
+    window.scrollTo(0, 0); 
   };
 
   return (
