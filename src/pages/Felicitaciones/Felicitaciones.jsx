@@ -15,7 +15,7 @@ const Felicitaciones = () => {
     <div>
       <TextStyled>
         <img
-          src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648433/coding/NucbaZappi/Assets/Success-illustration_sbucqm.png'
+          src='https://www.regalosdelvirrey.com.ar/images/compra-exitosa.png'
           alt=''
         />
         <ContainerInfoStyled>
@@ -24,11 +24,6 @@ const Felicitaciones = () => {
         </ContainerInfoStyled>
         <Button onClick={() => navigate('/ordenes')}>Volver</Button>
       </TextStyled>
-      <PatternStyled
-        src='https://res.cloudinary.com/dcatzxqqf/image/upload/v1656648434/coding/NucbaZappi/Assets/Pattern_lt5uru.png'
-        alt=''
-        className='pattern'
-      />
     </div>
   );
 };
