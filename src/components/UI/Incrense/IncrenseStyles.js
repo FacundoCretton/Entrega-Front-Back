@@ -7,7 +7,7 @@ export const IncrenseStyled = styled(motion.button)`
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: ${({ bgColor }) => bgColor || 'var(--btn-gradient)'};
+  background: ${({ bgColor }) => bgColor || '#6B8E23CC'};
   border: none;
   border-radius: 15px;
   font-size: 1.1rem;
@@ -18,5 +18,11 @@ export const IncrenseStyled = styled(motion.button)`
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 30px;
+    height: 30px;
+    
   }
 `;

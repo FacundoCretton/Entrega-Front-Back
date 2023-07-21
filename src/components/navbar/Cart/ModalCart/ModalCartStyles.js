@@ -92,7 +92,7 @@ export const ProductContainerStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  width: 360px;
+  max-width: 360px;
 
   background: #B0CBA1;
   padding: 1rem;
@@ -104,6 +104,14 @@ export const ProductContainerStyled = styled.div`
     border-radius: 16px;
     object-fit: cover;
   }
+  @media (max-width: 500px) {
+
+    & img {
+      width: 60px;
+      height: 60px;
+    }
+    max-width: 320px;
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -112,12 +120,18 @@ export const TextContainerStyled = styled.div`
   gap: 5px;
 
   width: 190px;
+
+  
 `;
 
 export const CardTitleStyled = styled.h3`
   margin: 0;
   margin-bottom: 2px;
   font-weight: 500;
+
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const TextStyled = styled.p`
@@ -129,6 +143,10 @@ export const TextStyled = styled.p`
 export const PriceStyled = styled.span`
   font-weight: 800;
   font-size: 1.2rem;
+
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
+  }
 
 `;
 

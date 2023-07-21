@@ -21,7 +21,7 @@ const Contact = () => {
   };
 
   return (
-    <ContactSection>
+    <ContactSection id = "contact">
       <ContactColumn>
         <ContactHeading>Contacto</ContactHeading>
         <ContactInfoContainer>
@@ -29,10 +29,10 @@ const Contact = () => {
             <FiPhone /> +112965478
           </ContactInfoText>
           <ContactInfoText>
-            <FiMail /> turecital@endirecto.com
+            <FiMail /> Ladespensa@gmail.com
           </ContactInfoText>
           <ContactInfoText>
-            <FiMapPin /> Buenos Aires, Argentina
+            <FiMapPin /> Esquel, Chubut
           </ContactInfoText>
         </ContactInfoContainer>
         <p>Bienvenido a La Despensa de la Abuela</p>

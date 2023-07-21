@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../UI/Button/Button';
-import { Card, CardImg, CardText, CardTitle, InfoCard } from './CardsRecommendedStyles';
+import { Card, CardImageWrapper, CardImg, CardText, CardTitle, InfoCard } from './CardsRecommendedStyles';
 import { useNavigate } from 'react-router-dom';
 
 const CardRecommended = ({ nombre, imagen, categoria, id }) => {
@@ -12,7 +12,9 @@ const CardRecommended = ({ nombre, imagen, categoria, id }) => {
 
   return (
     <Card onClick={handleCardClick}>
-      <CardImg src={imagen} alt={nombre} />
+      <CardImageWrapper>
+        <CardImg src={imagen} alt={nombre} />
+      </CardImageWrapper>
       <CardText>
         <CardTitle>{nombre}</CardTitle>
         <InfoCard>{categoria}</InfoCard>

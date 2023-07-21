@@ -15,7 +15,7 @@ const Categories = () => {
 
   return (
     <CategoriesWrapper>
-      <CategoriesTitle>Categorías</CategoriesTitle>
+      <CategoriesTitle id = "productos">Categorías</CategoriesTitle>
       <CategoryList>
         {categories.map((categoria) => (
           <CategoryCard

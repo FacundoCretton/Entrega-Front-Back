@@ -9,11 +9,13 @@ export const NavbarContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   /* gap: 1rem; */
-  height:60px ;
+  height: 60px;
   margin: auto;
   font-family: 'Bebas Neue';
   padding: 0 2rem;
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
 `;
 
 

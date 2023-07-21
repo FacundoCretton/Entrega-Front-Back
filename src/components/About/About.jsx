@@ -3,7 +3,7 @@ import { AboutContainer, AboutLeft, AboutRight, AboutSpan, ContenedorSpan, Detal
 
 const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id ="about">
       <AboutLeft>
         <Imagen src="/La abuela.jpg" alt="Imagen" />
         <Imagen src="/5.jpg" alt="Imagen" />

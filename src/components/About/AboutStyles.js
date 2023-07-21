@@ -23,74 +23,97 @@ export const AboutContainer = styled.div`
 `;
 
 
+
 export const AboutLeft = styled.div`
-    flex: 1 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    grid-auto-rows: 1fr;
-    flex-wrap: wrap;
+  flex: 1 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(150px, 1fr);
+  flex-wrap: wrap;
 
-    & > :first-child{
-        width: 12rem;
-        grid-row: 1 / 3;
-        height: 28rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1; /* Mantener relación de aspecto cuadrada */
+  }
+
+  & > :first-child {
+    width: 12rem;
+    grid-row: 1 / 3;
+    height: 28rem;
+  }
+
+  & > :nth-child(2) {
+    width: 25rem;
+    height: 16rem;
+    grid-column: 2 / 4;
+  }
+
+  & > :nth-child(3) {
+    width: 14rem;
+    grid-column: 2 / 3;
+    grid-row: 2;
+    height: 11.2rem;
+  }
+
+  & > :nth-child(4) {
+    width: 10rem;
+    grid-row: 2;
+    grid-column: 3 / 4;
+    height: 11.2rem;
+  }
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+
+    & > :first-child {
+      width: 7rem;
+      height: 20rem;
     }
 
     & > :nth-child(2) {
-        width:25rem;
-        height: 16rem;
-        grid-column: 2 / 4;
-
+      width: 16rem;
+      height: 10rem;
     }
 
     & > :nth-child(3) {
-        width:14rem;
-        grid-column: 2 / 3;
-        grid-row: 2;
-        height: 11.2rem;
-
-
+      width: 7rem;
+      height: 9rem;
     }
+
     & > :nth-child(4) {
-        width: 10rem;
-        grid-row: 2;
-        grid-column: 3/4;
-        height: 11.2rem;
+      width: 7rem;
+      height: 9rem;
     }
+  }
 
-    @media screen and (max-width: 992px) {
-        grid-auto-rows: auto;
-        overflow: hidden;
-        gap: 5px;
-        & > :first-child{
-        width: 7rem;
-        height: 20rem;
+  @media screen and (max-width: 576px) {
+    grid-template-columns: repeat(1, 1fr);
+
+    & > :first-child {
+      width: 100%;
+      height: 20rem;
     }
 
     & > :nth-child(2) {
-        width:16rem;
-        height: 10rem;
-        
-
+      width: 100%;
+      height: 10rem;
     }
 
     & > :nth-child(3) {
-        width:7rem;
-        height: 9rem;
-        
-
+      width: 100%;
+      height: 9rem;
     }
+
     & > :nth-child(4) {
-        width: 7rem;
-        height: 9rem;
+      width: 100%;
+      height: 9rem;
     }
-        
-
-    }
-
-
+  }
 `;
+
 
 export const Imagen = styled.img`
     object-fit: cover;

@@ -37,13 +37,13 @@ const Navbar = () => {
           <a href="/">Home</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="/">Productos</a>
+          <a href="#productos">Productos</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="/">Conocenos</a>
+          <a href="#about">Conocenos</a>
         </NavbarItem>
         <NavbarItem>
-          <a href="/">Contactanos</a>
+          <a href="#contact">Contactanos</a>
         </NavbarItem>
         <NavbarItem onClick={handleLoginClick}>
           <CustomButton isActive={currentUser}>

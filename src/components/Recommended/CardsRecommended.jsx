@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import CardRecommended from './CardRecommended';
-import { RecommendationContainer, Title } from './CardsRecommendedStyles';
 import { useSelector } from 'react-redux';
 import { pickRandomProducts } from '../../utils/pickRandomProducts';
+import CardRecommended from './CardRecommended';
 import SurpriseButton from './SurpriseButton';
+import { RecommendationContainer, Title } from './CardsRecommendedStyles';
 
 const CardsRecommended = () => {
   const recommended = useSelector((state) => state.recommended.recommended);

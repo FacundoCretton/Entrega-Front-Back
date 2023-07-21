@@ -37,7 +37,7 @@ const AllProductsCards = () => {
 
   return (
     <>
-      <ProductsContainer>
+      <ProductsContainer >
         {visibleProductsData.map((product) => (
           <ProductCard
             key={product.id}
