@@ -29,17 +29,29 @@ import {
 import { ModalOverlayStyled } from '../../navbarStyles';
 
 const ModalCart = () => {
-  const hiddenCart = useSelector(state=>state.cart.hidden)
+  const hiddenCart = useSelector((state) => state.cart.hidden);
   const navigate = useNavigate();
-  const dispatch = useDispatch()
-  const {cartItems, shippingCost}= useSelector(state => state.cart)
+  const dispatch = useDispatch();
+  const { cartItems, shippingCost } = useSelector((state) => state.cart);
 
-  const totalPrice = cartItems.reduce ((acc,item)=> {
-    return (acc += item.price * item.quantity)
-  }, 0)
+  // Obtiene el estado actual del usuario (verificado o no)
+  const currentUser = useSelector((state) => state.user.currentUser);
+
+  const totalPrice = cartItems.reduce((acc, item) => {
+    return (acc += item.price * item.quantity);
+  }, 0);
   const formattedShippingCost =
-  totalPrice > 2000 ? 'Gratis en compras superiores a $2000' : formatPrice(shippingCost);
+    totalPrice > 2000 ? 'Gratis en compras superiores a $2000' : formatPrice(shippingCost);
 
+  const handleStartOrder = () => {
+    if (currentUser && currentUser.verified) {
+      // El usuario está verificado, permite el proceso de pedido
+      navigate('/checkout');
+      dispatch(toggleCartHidden());
+    } else {
+      // El usuario no está verificado, redirige a la página de verificación
+      navigate('/verify', { state: { showVerificationMessage: true } });    }
+  };
 
   return (
     <>
@@ -72,7 +84,7 @@ const ModalCart = () => {
               <TitleStyled>
                 <h1>Tus Productos</h1>
                 <Increase
-                  onClick={()=>dispatch(clearCart())}
+                  onClick={() => dispatch(clearCart())}
                   bgColor='blue'
                   disabled={!cartItems.length}
                 >
@@ -81,20 +93,14 @@ const ModalCart = () => {
               </TitleStyled>
 
               <ProductsWrapperStyled>
-                {
-                  cartItems.length ?(
-                    cartItems.map((item)=>{
-                      return <ModalCardCart {...item} key ={item.id} /> 
-
-                    })
-                   
-                  ) : (
-                    <p>No hay nada por aquí</p>
-                  )
-                }
-                
+                {cartItems.length ? (
+                  cartItems.map((item) => {
+                    return <ModalCardCart {...item} key={item.id} />;
+                  })
+                ) : (
+                  <p>No hay nada por aquí</p>
+                )}
               </ProductsWrapperStyled>
-              
             </MainContainerStyled>
 
             <PriceContainerStyled>
@@ -109,13 +115,12 @@ const ModalCart = () => {
               <hr />
               <TotalStyled>
                 <p>Total:</p>
-                <PriceStyled>{formatPrice(totalPrice+shippingCost)}</PriceStyled>
+                <PriceStyled>{formatPrice(totalPrice + shippingCost)}</PriceStyled>
               </TotalStyled>
               <ButtonContainerStyled>
-                <Submit onClick={() => {navigate('/checkout');
-                dispatch(toggleCartHidden())}} //Para esconder el carrito al redirigir al checkout
-                disabled ={!cartItems.length}
-                
+                <Submit
+                  onClick={handleStartOrder} // Utiliza la función para la verificación del usuario
+                  disabled={!cartItems.length}
                 >
                   Iniciar pedido
                 </Submit>
@@ -124,10 +129,8 @@ const ModalCart = () => {
           </ContainerStyled>
         )}
       </AnimatePresence>
-      
     </>
   );
 };
 
 export default ModalCart;
-

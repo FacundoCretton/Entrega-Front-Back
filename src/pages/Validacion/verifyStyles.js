@@ -8,11 +8,11 @@ export const ValidateContainerStyled = styled.div`
   align-items: center;
   gap: 12px 20px;
   padding: 20px;
-  background-color: #f0e68c;
+  background-color: rgba(107, 142, 35, 0.8);;
   border-radius: 6px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 
-  border: 1px solid var(--lines);
+  border: 1px solid  black;
   @media (max-width: 768px) {
     width: 90%;
   }
@@ -27,7 +27,7 @@ export const ValidateTitleStyled = styled.h1`
 `;
 
 export const LoginInputStyled = styled.input`
-  background-color: #ffffdd;
+  background-color: rgba(107, 142, 35, 0.8);
   padding: 10px;
   border-radius: 6px;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -40,7 +40,7 @@ export const FormStyled = styled.form`
 
 
 export const LoginInputStyled2 = styled.input`
-    background-color: #ffffdd;
+    background-color: rgba(107, 142, 35, 0.8);;
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -56,7 +56,7 @@ export const FormStyled2= styled.form`
     align-items: center;
     gap: 12px 20px;
     padding: 20px;
-    background-color: #f0e68c;
+    background-color: rgba(107, 142, 35, 0.8);;
     border-radius: 6px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 
@@ -64,4 +64,13 @@ export const FormStyled2= styled.form`
     @media (max-width: 768px) {
         width: 90%;
     }
+`;
+
+
+export const TextoCarrito = styled.p`
+  font-size: 15px;
+  text-align: center;
+  color: #554533;
+  font-weight: 700;
+  margin: 0;
 `;
