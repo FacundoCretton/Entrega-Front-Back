@@ -5,7 +5,7 @@ const About = () => {
   return (
     <AboutContainer id ="about">
       <AboutLeft>
-        <Imagen src="/La abuela.jpg" alt="Imagen" />
+        <Imagen src="/abuela-cocinando.jpg" alt="Imagen" />
         <Imagen src="/5.jpg" alt="Imagen" />
         <Imagen src="/Rural1.jpeg" alt="Imagen" />
         <Imagen src="/4.webp" alt="Imagen" />
