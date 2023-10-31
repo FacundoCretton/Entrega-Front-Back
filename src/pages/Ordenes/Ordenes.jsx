@@ -23,10 +23,13 @@ const Ordenes = () => {
   const { orders, error } = useSelector((state) => state.orders);
 
   useEffect(() => {
-    if (!orders) {
+    if (!currentUser?.token) {
+      // Si el usuario no está autenticado, redirige a la página de inicio de sesión
+      navigate('/login'); // Cambia '/login' por la ruta de inicio de sesión
+    } else if (!orders) {
       getOrders(dispatch, currentUser);
     }
-  }, [currentUser, orders, dispatch]);
+  }, [currentUser, orders, dispatch, navigate]);
 
   useEffect(() => {
     if (!currentUser?.token) {
@@ -43,7 +46,7 @@ const Ordenes = () => {
       <OrdenesContentStyled>
         <CardsOrdenes />
         <OrdenesButtonContainerStyled>
-          <Button onClick={() => navigate('/')}>Volver a comprar</Button>
+          <Button onClick={() => navigate('/')}>Volver a la tienda</Button>
         </OrdenesButtonContainerStyled>
       </OrdenesContentStyled>
     </OrdenesContainerStyled>

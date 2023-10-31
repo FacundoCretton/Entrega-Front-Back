@@ -43,7 +43,7 @@ const ProductCard = ({ img, name, description, price, id }) => {
         <p>{formatPrice(price)}</p>
         <Button
           onClick={() =>
-            dispatch(addToCart({ img, name, description, price, id }))
+            dispatch(addToCart({ img, name,  price, id }))
           }
           radius={"10"}
         >

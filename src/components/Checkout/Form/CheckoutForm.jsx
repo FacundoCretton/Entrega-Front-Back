@@ -10,6 +10,7 @@ import {checkoutInitialValues} from "../../../Formik/initialValues"
 import {checkoutValidationSchema} from "../../../Formik/validationSchema"
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart } from '../../../redux/cart/cartSlide';
+import {createOrder} from '../../../Axios/Axios-orders'
 
 import Loader from "../../UI/Loader/Loader"
 
@@ -26,14 +27,27 @@ const CheckoutForm = ({cartItems, price, shippingCost}) => {
         initialValues={checkoutInitialValues}
         validationSchema={checkoutValidationSchema}
         onSubmit={ async (values) => {
+          const orderData = {
+            items: cartItems,
+            price,
+            shippingCost,
+            total: price + shippingCost,
+            shippingDetails: {
+              ...values
+            }
+          };
           
+          console.log('Order Data:', orderData); 
+
 
           try {
-            await 
+            await createOrder(orderData, dispatch, currentUser);
             navigate("/felicitaciones");
             dispatch(clearCart());
           } catch (error) {
             console.log(error);
+            alert("error al crear la orden")
+
           }
 
         } }

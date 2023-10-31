@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatPrice } from '../../utils';
+import { formatPrice } from '../../utils/formatPrice';
 
 import {
   ProductLeftStyled,
@@ -7,17 +7,18 @@ import {
   ProductStyled,
   PriceContainerStyled,
 } from './CardResumenStyles';
+import { getImagePath } from '../../utils/imageHelper';
 
-const CardResumen = ({title, quantity, img, price}) => {
+const CardResumen = ({name, quantity, img, price}) => {
+  const imagePath = getImagePath(img);
+
+
   return (
     <ProductStyled>
       <ProductLeftStyled>
-        <img
-          src={img}
-          alt={title}
-        />
+      <img src={imagePath} alt={name} />
         <div>
-          <h3>{title}</h3>
+          <h3>{name}</h3>
         </div>
       </ProductLeftStyled>
       <PriceContainerStyled>
