@@ -12,7 +12,7 @@ import {
   OrdenesContentStyled,
   OrdenesButtonContainerStyled,
 } from './OrdenesStyles';
-import { getOrders } from '../../Axios/Axios.orders';
+import { getOrders } from '../../Axios/Axios-orders';
 import { clearError, fetchOrdersFail } from '../../redux/order/orderSlice';
 
 const Ordenes = () => {

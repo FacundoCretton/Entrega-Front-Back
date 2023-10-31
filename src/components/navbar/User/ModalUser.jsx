@@ -25,6 +25,8 @@ const ModalUser = () => {
         >
           <UsernameStyled>{currentUser?.name}</UsernameStyled>
           <HrStyled />
+          <LinkStyled to='/orders'>Mis Ordenes</LinkStyled>
+
           <span
             onClick={() => {
               dispatch(setCurrentUser(null));
