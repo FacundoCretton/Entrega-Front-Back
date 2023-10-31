@@ -3,10 +3,10 @@ import { BASE_URL } from "../utils/constants";
 
 //Aquí (en este .js) vamos a guardar las peticiones a la API de usuarios
 
-export const createUser = async (nombre, email, password) => {
+export const createUser = async (name, email, password) => {
   try {
     const response = await axios.post(`${BASE_URL}auth/register`, {
-      nombre,
+      name,
       email,
       password,
     });
