@@ -25,9 +25,18 @@ const userSlice = createSlice({
  
  
     },
-  },
-});
+    setVerify: (state, action) => {
+      console.log("Llamando a setVerify");
+      return {
+        ...state,
+        currentUser: {
+          ...state.currentUser,
+          verified: action.payload,
+        },
+      };
+    },
+  },});
 
-export const { setCurrentUser, toggleMenuHidden } = userSlice.actions;
+export const { setCurrentUser, toggleMenuHidden, setVerify } = userSlice.actions;
 
 export default userSlice.reducer;

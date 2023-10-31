@@ -47,7 +47,7 @@ const Navbar = () => {
         </NavbarItem>
         <NavbarItem onClick={handleLoginClick}>
           <CustomButton isActive={currentUser}>
-            {currentUser ? currentUser.nombre : "Iniciar sesión"}
+            {currentUser ? currentUser.name : "Iniciar sesión"}
           </CustomButton>
         </NavbarItem>
       </NavbarMenuUl>

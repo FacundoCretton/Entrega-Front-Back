@@ -14,7 +14,7 @@ const LoInput = ({ name, type, placeholder }) => {
               {...field}
               isError={errors[field.name] && touched[field.name]}
             />
-            <InputLabelStyled>{placeholder}</InputLabelStyled>
+            {/* <InputLabelStyled>{placeholder}</InputLabelStyled> */}
           </LoginInputContainer>
 
           <ErrorMessage name={field.name}>

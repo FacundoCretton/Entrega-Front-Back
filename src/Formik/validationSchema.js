@@ -28,3 +28,12 @@ export const loginValidationSchema = Yup.object({
     .max(24, 'Máximo 24 caracteres')
     .required('Campo requerido'),
 });
+
+export const verifyValidationSchema = Yup.object({
+  code: Yup.string()
+    .min(10, 'Mínimo de 10 caracteres')
+    .max(10, 'Máximo 10 caracteres')
+    .required('Campo requerido'),
+
+
+});

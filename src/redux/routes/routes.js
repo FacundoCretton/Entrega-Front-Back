@@ -14,6 +14,7 @@ import Contact from '../../components/Contact/Contact';
 import About from '../../components/About/About';
 import CardsRecommended from '../../components/Recommended/CardsRecommended';
 import RecipeCard from '../../components/Recetario/RecipeCard';
+import Verify from '../../pages/Validacion/verify';
 function Routes() {
   return (
     <ReactDomRoutes>
@@ -21,6 +22,7 @@ function Routes() {
       <Route path="/recetas" element={<RecetarioPage />} />
       <Route path="/recetas/:id" element={<RecipeCard />} />
       <Route path='/register' element={<Register />} />
+      <Route path='/verify' element = {<Verify/>}/>
       
       <Route
         path='/checkout'

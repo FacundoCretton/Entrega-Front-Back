@@ -1,18 +1,23 @@
 export const checkoutInitialValues = {
-    name: '',
-    cellphone: '',
-    location: '',
-    address: '',
-  };
+  name: '',
+  cellphone: '',
+  location: '',
+  address: '',
+};
   
-  export const registerInitialValues = {
-    name: '',
-    email: '',
-    password: '',
-  };
+export const registerInitialValues = {
+  name: '',
+  email: '',
+  password: '',
+};
   
-  export const loginInitialValues = {
-    email: '',
-    password: '',
-  };
+export const loginInitialValues = {
+  email: '',
+  password: '',
+};
+
+export const verifyInitialValues = {
+
+  code: '',
   
+};

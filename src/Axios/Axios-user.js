@@ -32,3 +32,19 @@ export const loginUser = async (email, password) => {
     return alert(error.response.data.msg);
   }
 };
+
+export const verifyUser = async (email, code) => {
+  try {
+    const response = await axios.patch(`${BASE_URL}auth/verify`, {
+      email,
+      code,
+    });
+    return response.data;
+  } catch (error) {
+    if (error.response.status === 400) {
+      throw new Error('Código de verificación incorrecto.');
+    } else {
+      throw error;
+    }
+  }
+};
