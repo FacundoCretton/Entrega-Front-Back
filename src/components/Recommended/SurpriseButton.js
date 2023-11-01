@@ -34,11 +34,11 @@ const SurpriseButton = ({ onClick, disabled }) => {
     setRolling(true);
   };
 
-  return (
-    <button onClick={handleClick} disabled={disabled}>
-      Sorpréndeme
-    </button>
-  );
+  // return (
+  //   <button onClick={handleClick} disabled={disabled}>
+  //     Sorpréndeme
+  //   </button>
+  // );
 };
 
 export default SurpriseButton;

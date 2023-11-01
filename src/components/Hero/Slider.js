@@ -25,7 +25,7 @@ function Slider(props) {
 
     setTimeout(() => {
       setIsPaused(false);
-    }, 15000); 
+    }, 15000);
   };
 
   const handleSlideClick = () => {
@@ -54,12 +54,18 @@ function Slider(props) {
         sliderImage={sliderImage}
         onClick={handleSlideClick}
       />
-      <Arrows prevSlide={handlePrevSlide} nextSlide={handleNextSlide} />
-      <Dots
-        activeIndex={activeIndex}
-        sliderImage={sliderImage}
-        onclick={handleDotClick}
-      />
+      {sliderImage.length > 1 && (
+        <div className="arrows">
+          <Arrows prevSlide={handlePrevSlide} nextSlide={handleNextSlide} />
+        </div>
+      )}
+      {sliderImage.length > 1 && (
+        <Dots
+          activeIndex={activeIndex}
+          sliderImage={sliderImage}
+          onclick={handleDotClick}
+        />
+      )}
     </div>
   );
 }

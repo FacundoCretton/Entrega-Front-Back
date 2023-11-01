@@ -15,8 +15,7 @@ export const StyledLink = styled(Link)`
   padding: 0.8rem 1.5rem;
   outline: none;
   border: none;
-  border-radius: ${({ borderRadius }) => `${borderRadius}px`};
-  background: var(--gray-bg);
+  border-radius: ${({ borderRadius }) => `${borderRadius}px`};;
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
@@ -24,7 +23,6 @@ export const StyledLink = styled(Link)`
   & span {
     font-weight: 800;
     font-size: 1rem;
-    background: var(--btn-gradient);
     -webkit-background-clip: text;
     color: transparent;
   }

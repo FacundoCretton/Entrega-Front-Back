@@ -5,9 +5,17 @@ import { useSelector } from 'react-redux';
 
 const RecipeCard = () => {
   const { id } = useParams();
-  const recetas = useSelector(state => state.recommended.recommended);
+  console.log('ID de receta:', id);
 
+
+  const recetas = useSelector(state => state.recommended.recommended);
+  // console.log('ID de receta:', id);
+  // console.log('Recetas:', recetas);
+
+  
   const receta = recetas.find(receta => receta.id === Number(id));
+
+  console.log('Receta actual:', receta);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -16,6 +24,8 @@ const RecipeCard = () => {
   if (!receta) {
     return <div>Receta no encontrada</div>;
   }
+
+
 
   return (
     <RecipeCardContainer>

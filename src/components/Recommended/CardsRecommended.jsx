@@ -11,8 +11,10 @@ const CardsRecommended = () => {
 
   const handleSurpriseClick = () => {
     const randomRecipe = pickRandomProducts(1)[0];
+
     setCurrentRecipe(randomRecipe);
   };
+  // console.log('Recetas recomendadas:', recommended);
 
   return (
     <RecommendationContainer>
